@@ -23,4 +23,6 @@ public class JsonSchema {
     public static final String CREATE_CATEGORY_SCHEMA = "schema/create_category_schema.json";
     public static final String GET_COMPLAINT_PROCESS_BY_ID_SCHEMA = "schema/get_complaint_process_by_id_schema.json";
     public static final String CREATE_COMPLAINT_PROCESS_SCHEMA = "schema/create_complaint_process_schema.json";
+    public static final String GET_ALL_NEWS_SCHEMA = "schema/get_all_news_schema.json";
+    public static final String GET_NEWS_BY_ID_SCHEMA = "schema/get_news_by_id_schema.json";
 }

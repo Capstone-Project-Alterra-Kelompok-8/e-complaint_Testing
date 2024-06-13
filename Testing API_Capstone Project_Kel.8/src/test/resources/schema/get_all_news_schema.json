@@ -1,0 +1,214 @@
+{
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "$ref": "#/definitions/Welcome",
+  "definitions": {
+    "Welcome": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "status": {
+          "type": "boolean"
+        },
+        "message": {
+          "type": "string"
+        },
+        "metadata": {
+          "$ref": "#/definitions/Metadata"
+        },
+        "data": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Datum"
+          }
+        }
+      },
+      "required": [
+        "data",
+        "message",
+        "metadata",
+        "status"
+      ],
+      "title": "Welcome"
+    },
+    "Datum": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "type": "integer"
+        },
+        "admin": {
+          "$ref": "#/definitions/Admin"
+        },
+        "category": {
+          "$ref": "#/definitions/Category"
+        },
+        "title": {
+          "type": "string"
+        },
+        "content": {
+          "type": "string"
+        },
+        "total_likes": {
+          "type": "integer"
+        },
+        "files": {
+          "anyOf": [
+            {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/File"
+              }
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "updated_at": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "admin",
+        "category",
+        "content",
+        "files",
+        "id",
+        "title",
+        "total_likes",
+        "updated_at"
+      ],
+      "title": "Datum"
+    },
+    "Admin": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "type": "integer"
+        },
+        "name": {
+          "type": "string"
+        },
+        "email": {
+          "type": "string"
+        },
+        "password": {
+          "type": "string"
+        },
+        "telephone_number": {
+          "type": "string"
+        },
+        "is_super_admin": {
+          "type": "boolean"
+        },
+        "profile_photo": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "email",
+        "id",
+        "is_super_admin",
+        "name",
+        "password",
+        "profile_photo",
+        "telephone_number"
+      ],
+      "title": "Admin"
+    },
+    "Category": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "type": "integer"
+        },
+        "name": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "description",
+        "id",
+        "name"
+      ],
+      "title": "Category"
+    },
+    "File": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "type": "integer"
+        },
+        "news_id": {
+          "type": "integer"
+        },
+        "path": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "id",
+        "news_id",
+        "path"
+      ],
+      "title": "File"
+    },
+    "Metadata": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "total_data": {
+          "type": "integer"
+        },
+        "Pagination": {
+          "$ref": "#/definitions/Pagination"
+        }
+      },
+      "required": [
+        "Pagination",
+        "total_data"
+      ],
+      "title": "Metadata"
+    },
+    "Pagination": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "total_data_per_page": {
+          "type": "integer"
+        },
+        "first_page": {
+          "type": "integer"
+        },
+        "last_page": {
+          "type": "integer"
+        },
+        "current_page": {
+          "type": "integer"
+        },
+        "next_page": {
+          "type": "integer"
+        },
+        "prev_page": {
+          "type": "integer"
+        }
+      },
+      "required": [
+        "current_page",
+        "first_page",
+        "last_page",
+        "next_page",
+        "prev_page",
+        "total_data_per_page"
+      ],
+      "title": "Pagination"
+    }
+  }
+}
