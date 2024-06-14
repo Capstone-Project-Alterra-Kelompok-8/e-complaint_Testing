@@ -5,13 +5,13 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import net.serenitybdd.annotations.Steps;
-import starter.user.news.DeleteNewsByID;
+import starter.user.news.DeleteNewsById;
 
 
 public class DeleteNewsByIDSteps {
 
     @Steps
-    DeleteNewsByID deleteNewsByID;
+    DeleteNewsById deleteNewsByID;
 
     @Given("I set valid endpoint and method")
     public void setValidEndpointAndMethod(){

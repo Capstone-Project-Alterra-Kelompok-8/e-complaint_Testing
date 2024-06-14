@@ -9,7 +9,7 @@ import static io.restassured.module.jsv.JsonSchemaValidator.matchesJsonSchema;
 import static net.serenitybdd.rest.SerenityRest.restAssuredThat;
 import static org.hamcrest.Matchers.notNullValue;
 
-public class GetNewsByID {
+public class GetNewsById {
     private static String url = "https://qe-capstone.mdrizki.my.id/api/v1";
 
     @Step("I set API endpoint and method with valid")

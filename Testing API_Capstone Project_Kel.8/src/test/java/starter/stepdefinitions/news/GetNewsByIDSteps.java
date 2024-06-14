@@ -5,12 +5,12 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import net.serenitybdd.annotations.Steps;
-import starter.user.news.GetNewsByID;
+import starter.user.news.GetNewsById;
 
 public class GetNewsByIDSteps {
 
     @Steps
-    GetNewsByID getNewsByID;
+    GetNewsById getNewsByID;
 
     @Given("I set API endpoint and method with valid")
     public void setApiEndpointAndMethodWithValid(){
