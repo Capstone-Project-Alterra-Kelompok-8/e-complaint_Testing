@@ -5,7 +5,7 @@ import net.serenitybdd.rest.SerenityRest;
 
 import static net.serenitybdd.rest.SerenityRest.restAssuredThat;
 
-public class DeleteNewsByID {
+public class DeleteNewsById {
     private static String url = "https://qe-capstone.mdrizki.my.id/api/v1";
 
     @Step("I set valid endpoint and method")
