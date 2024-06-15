@@ -24,4 +24,9 @@ public class DeleteCategorySteps {
     public void receiveDeleteCategoryResponse(){
         deleteCategory.receiveCategoryResponseBody();
     }
+
+    @Given("I set API endpoint for delete category with invalid ID")
+    public void setDeleteInValidCategory(){
+        deleteCategory.setApiDeleteInvalidIdCategoryEndpoint();
+    }
 }

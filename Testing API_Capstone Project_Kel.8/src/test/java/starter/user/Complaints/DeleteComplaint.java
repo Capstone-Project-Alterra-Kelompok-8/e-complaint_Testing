@@ -35,4 +35,8 @@ public class DeleteComplaint {
 
         restAssuredThat(response -> response.body(matchesJsonSchema(schema)));
     }
+    @Step("I set API endpoint for delete complaint with Invalid ID")
+    public String setApiInvalidDeleteComplaintEndpoint() {
+        return url + "/complaints/ABCD";
+    }
 }

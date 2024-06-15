@@ -9,3 +9,9 @@ Feature: Delete Category with valid ID
     When I send request endpoint for delete category
     Then I receive status code 200 OK response
     And I receive response body that category deleted
+
+  Scenario: As an admin I can delete category with invalid ID
+    Given I set API endpoint for delete category with invalid ID
+    When I send request endpoint for delete category
+    Then I receive status code 400 Bad Request
+    And I receive error message that not found

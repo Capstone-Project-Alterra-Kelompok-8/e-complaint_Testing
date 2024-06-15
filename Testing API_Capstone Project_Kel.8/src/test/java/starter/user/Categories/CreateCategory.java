@@ -44,4 +44,18 @@ public class CreateCategory {
         restAssuredThat(response -> response.body("'data'.'description'", Matchers.equalTo("Lorem ipsum dolor sit amet")));
         restAssuredThat(response -> response.body(matchesJsonSchema(schema)));
     }
+    @Step("I sent the endpoint a request to create a new category by leaving one of the fields blank")
+    public void sendCreateCategoryBlankFieldRequest() {
+        JSONObject requestBody = new JSONObject();
+
+        requestBody.put("name", "New Complaint Category");
+        requestBody.put("description", "");
+
+        String token = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwibmFtZSI6IlN1cGVyIEFkbWluIiwiZW1haWwiOiJzdXBlcl9hZG1pbkBnbWFpbC5jb20iLCJyb2xlIjoic3VwZXJfYWRtaW4ifQ.2wN36slPPgg24CE6Tl1o0q-Fy_Yyy-FWKhfc-UxzC18";
+        SerenityRest.given()
+                .header("Content-Type", "application/json")
+                .header("Authorization", "Bearer " + token)
+                .body(requestBody.toString())
+                .post(setApiForNewCategory());
+    }
 }

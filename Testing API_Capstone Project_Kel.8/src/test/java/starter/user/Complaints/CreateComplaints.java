@@ -58,4 +58,31 @@ public class CreateComplaints {
 
         restAssuredThat(response -> response.body(matchesJsonSchema(schema)));
     }
+    @Step("I send request endpoint for create new complaints with Invalid credentials(Invalid category_id)")
+    public void sendInvalidCreateComplaint() {
+        File sampleFile = new File("src/test/resources/melewatijalanberlubang.jpg");
+        String token = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwibmFtZSI6IlN1cGVyIEFkbWluIiwiZW1haWwiOiJzdXBlcl9hZG1pbkBnbWFpbC5jb20iLCJyb2xlIjoic3VwZXJfYWRtaW4ifQ.2wN36slPPgg24CE6Tl1o0q-Fy_Yyy-FWKhfc-UxzC18";
+        SerenityRest.given()
+                .header("Authorization", "Bearer " + token)
+                .header("Content-Type", "application/json")
+                .contentType(ContentType.MULTIPART)
+                .multiPart("regency_id", "3602")
+                .multiPart("category_id", "400")
+                .multiPart("address", "Jl. pemuda no 31, RT. 04 RW. 05, Lorem ipsum, Indonesia")
+                .multiPart("type","public")
+                .multiPart("description", "Lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet")
+                .multiPart("files",sampleFile)
+                .multiPart("date", "13-06-2024")
+                .post(setApiNewComplaint());
+    }
+    @Step("I receive error message that category not found")
+    public void receiveInValidDataForNewComplaint() {
+        JsonSchemaHelper helper = new JsonSchemaHelper();
+        String schema = helper.getResponseSchema(JsonSchema.STATUS_MESSAGE_SCHEMA);
+
+        restAssuredThat(response -> response.body("status", Matchers.equalTo(false)));
+        restAssuredThat(response -> response.body("message",Matchers.equalTo("category not found")));
+
+        restAssuredThat(response -> response.body(matchesJsonSchema(schema)));
+    }
 }

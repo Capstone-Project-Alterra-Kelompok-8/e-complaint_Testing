@@ -13,12 +13,12 @@ import static org.hamcrest.Matchers.notNullValue;
 public class GetComplaintProcess {
     private static String url = "https://qe-capstone.mdrizki.my.id/api/v1";
 
-    @Step("I set API endpoint with an valid ID to get complaint process by ID")
+    @Step("I set API endpoint with an valid ID to get complaint process by valid ID")
     public String setApiGetEndValidComplaintProcessID() {
         return url + "/complaints/C-8ksh&s9280/processes";
     }
 
-    @Step("I send request endpoint for get complaint process by valid ID")
+    @Step("I send request endpoint for get complaint process by ID")
     public void sendGetRequestValidComplaintProcessID() {
         String token = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwibmFtZSI6IlN1cGVyIEFkbWluIiwiZW1haWwiOiJzdXBlcl9hZG1pbkBnbWFpbC5jb20iLCJyb2xlIjoic3VwZXJfYWRtaW4ifQ.2wN36slPPgg24CE6Tl1o0q-Fy_Yyy-FWKhfc-UxzC18";
         SerenityRest.given()

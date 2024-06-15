@@ -35,4 +35,18 @@ public class DeleteComplaintProcess {
 
         restAssuredThat(response -> response.body(matchesJsonSchema(schema)));
     }
+    @Step("I set API endpoint for delete complaint process with invalid ID")
+    public String setApiInvalidDeleteComplaintProcessEndpoint() {
+        return url + "/complaints/ABCD/processes/3";
+    }
+    @Step("I receive response body that complaint process not found")
+    public void receiveErrorMessageComplaintProcessNotFounds() {
+        JsonSchemaHelper helper = new JsonSchemaHelper();
+        String schema = helper.getResponseSchema(JsonSchema.STATUS_MESSAGE_SCHEMA);
+
+        restAssuredThat(response -> response.body("status", Matchers.equalTo(false)));
+        restAssuredThat(response -> response.body("message",Matchers.equalTo("complaint process not found")));
+
+        restAssuredThat(response -> response.body(matchesJsonSchema(schema)));
+    }
 }

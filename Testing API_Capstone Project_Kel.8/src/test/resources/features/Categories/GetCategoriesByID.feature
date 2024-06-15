@@ -6,6 +6,12 @@ Feature: Get Category with Valid ID
 
   Scenario: As an admin/user i want to get categories with valid id
     Given I set API endpoint with an valid ID to get category by valid ID
-    When I send request endpoint for get category by valid ID
+    When I send request endpoint for get category
     Then I receive status code 200 OK response
     And I receive category information based on id
+
+  Scenario: As an admin/user i want to get categories with invalid id
+    Given I set API endpoint with an valid ID to get category by invalid ID
+    When I send request endpoint for get category
+    Then I receive status code 400 Bad Request
+    And I receive error message that not found
