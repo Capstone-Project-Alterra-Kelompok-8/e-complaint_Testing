@@ -10,12 +10,22 @@ import static net.serenitybdd.rest.SerenityRest.restAssuredThat;
 
 public class ErrorMessage {
     @Step("I received an error message that all fields must be filled in")
-    public void receiveErrorMessageFieldBlank() {
+    public void receiveErrorMessageFieldBlanks() {
         JsonSchemaHelper helper = new JsonSchemaHelper();
         String schema = helper.getResponseSchema(JsonSchema.STATUS_MESSAGE_SCHEMA);
 
         restAssuredThat(response -> response.body("status", Matchers.equalTo(false)));
         restAssuredThat(response -> response.body("message",Matchers.equalTo("all fields must be filled")));
+
+        restAssuredThat(response -> response.body(matchesJsonSchema(schema)));
+    }
+    @Step("I receive error message that not found")
+    public void receiveErrorMessageNotFounds() {
+        JsonSchemaHelper helper = new JsonSchemaHelper();
+        String schema = helper.getResponseSchema(JsonSchema.STATUS_MESSAGE_SCHEMA);
+
+        restAssuredThat(response -> response.body("status", Matchers.equalTo(false)));
+        restAssuredThat(response -> response.body("message",Matchers.equalTo("not found")));
 
         restAssuredThat(response -> response.body(matchesJsonSchema(schema)));
     }

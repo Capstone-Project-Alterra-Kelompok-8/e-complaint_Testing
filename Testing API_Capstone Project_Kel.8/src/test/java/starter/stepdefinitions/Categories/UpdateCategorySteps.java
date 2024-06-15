@@ -11,11 +11,11 @@ public class UpdateCategorySteps {
     UpdateCategory updateCategory;
 
     @Given("I set API endpoint for update category")
-    public void setApiGetEndValidCategory(){
+    public void setApiPutEndValidCategory(){
         updateCategory.setApiUpdateCategory();
     }
 
-    @When("I send request to update category")
+    @When("I send request to update category with valid credentials")
     public void sendGetRequestValidCategory(){
         updateCategory.sendPutRequestUpdateCategory();
     }
@@ -23,5 +23,10 @@ public class UpdateCategorySteps {
     @And("I should get data category that I updated")
     public void ReceiveDataCategoryUpdated(){
         updateCategory.receiveCategoryDataUpdated();
+    }
+
+    @When("I send request to update category by leaving one of the fields blank")
+    public void sendPutRequestBlankCategory(){
+        updateCategory.sendPutBlankRequestUpdateCategory();
     }
 }

@@ -20,7 +20,7 @@ public class UpdateCategory {
         return url + "/categories/9";
     }
 
-    @Step("I send request to update category")
+    @Step("I send request to update category with valid credentials")
     public void sendPutRequestUpdateCategory(){
         String token = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwibmFtZSI6IlN1cGVyIEFkbWluIiwiZW1haWwiOiJzdXBlcl9hZG1pbkBnbWFpbC5jb20iLCJyb2xlIjoic3VwZXJfYWRtaW4ifQ.2wN36slPPgg24CE6Tl1o0q-Fy_Yyy-FWKhfc-UxzC18";
         SerenityRest.given().header("Authorization", "Bearer " + token)
@@ -42,5 +42,15 @@ public class UpdateCategory {
         restAssuredThat(response -> response.body("'data'.'description'", Matchers.equalTo("Lorem ipsum dolor sit amet Update")));
 
         restAssuredThat(response -> response.body(matchesJsonSchema(schema)));
+    }
+    @Step("I send request to update category by leaving one of the fields blank")
+    public void sendPutBlankRequestUpdateCategory(){
+        String token = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwibmFtZSI6IlN1cGVyIEFkbWluIiwiZW1haWwiOiJzdXBlcl9hZG1pbkBnbWFpbC5jb20iLCJyb2xlIjoic3VwZXJfYWRtaW4ifQ.2wN36slPPgg24CE6Tl1o0q-Fy_Yyy-FWKhfc-UxzC18";
+        SerenityRest.given().header("Authorization", "Bearer " + token)
+                .header("Content-Type", "application/json")
+                .contentType(ContentType.MULTIPART)
+                .multiPart("name", "")
+                .multiPart("description", "")
+                .put(setApiUpdateCategory());
     }
 }

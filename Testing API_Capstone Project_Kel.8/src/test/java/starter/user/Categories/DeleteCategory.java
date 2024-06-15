@@ -35,4 +35,9 @@ public class DeleteCategory {
 
         restAssuredThat(response -> response.body(matchesJsonSchema(schema)));
     }
+
+    @Step("I set API endpoint for delete category with valid ID")
+    public String setApiDeleteInvalidIdCategoryEndpoint() {
+        return url + "/categories/199";
+    }
 }

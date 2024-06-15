@@ -10,6 +10,10 @@ public class ErrorMessageSteps {
 
     @And("I received an error message that all fields must be filled in")
     public void receiveErrorMessageFieldsBlank(){
-        errorMessage.receiveErrorMessageFieldBlank();
+        errorMessage.receiveErrorMessageFieldBlanks();
+    }
+    @And("I receive error message that not found")
+    public void receiveErrorMessageNotFound(){
+        errorMessage.receiveErrorMessageNotFounds();
     }
 }
