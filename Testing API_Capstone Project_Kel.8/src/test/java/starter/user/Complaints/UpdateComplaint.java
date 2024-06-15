@@ -19,10 +19,10 @@ public class UpdateComplaint {
 
     @Step("I set API endpoint for update complaint user")
     public String setApiUpdateComplaint(){
-        return url + "/complaints/C-6fe3560eda";
+        return url + "/complaints/C-2643e92ffc";
     }
 
-    @Step("I send request to update complaint user")
+    @Step("I send request to update complaint user by valid credentials")
     public void sendPutRequestUpdateComplaint(){
         File sampleFile = new File("src/test/resources/tanahlongsor.jpeg");
         String token = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwibmFtZSI6IlN1cGVyIEFkbWluIiwiZW1haWwiOiJzdXBlcl9hZG1pbkBnbWFpbC5jb20iLCJyb2xlIjoic3VwZXJfYWRtaW4ifQ.2wN36slPPgg24CE6Tl1o0q-Fy_Yyy-FWKhfc-UxzC18";
@@ -42,6 +42,41 @@ public class UpdateComplaint {
         JsonSchemaHelper helper = new JsonSchemaHelper();
         String schema = helper.getResponseSchema(JsonSchema.UPDATE_COMPLAINT_SCHEMA);
 
+        restAssuredThat(response -> response.body("status", Matchers.equalTo(true)));
+        restAssuredThat(response -> response.body("message", Matchers.equalTo("Success Update Report")));
+        restAssuredThat(response -> response.body("'data'.'id'", Matchers.equalTo("C-2643e92ffc")));
+        restAssuredThat(response -> response.body("'data'.'category'.'id'", Matchers.equalTo(7)));
+        restAssuredThat(response -> response.body("'data'.'regency'.'id'", Matchers.equalTo("3604")));
+        restAssuredThat(response -> response.body("'data'.'address'", Matchers.equalTo("Jl. pemuda no 31, RT. 04 RW. 05, Lorem ipsum, Indonesia")));
+        restAssuredThat(response -> response.body("'data'.'type'", Matchers.equalTo("public")));
+        restAssuredThat(response -> response.body("'data'.'description'", Matchers.equalTo("Lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet")));
+        restAssuredThat(response -> response.body("'data'.'files'", notNullValue()));
+        restAssuredThat(response -> response.body("'data'.'created_at'", notNullValue()));
+
+        restAssuredThat(response -> response.body(matchesJsonSchema(schema)));
+    }
+    @Step("I send request to update complaint user by invalid credentials(invalid regency_id)")
+    public void sendPutInvalidRequestUpdateComplaint(){
+        File sampleFile = new File("src/test/resources/tanahlongsor.jpeg");
+        String token = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwibmFtZSI6IlN1cGVyIEFkbWluIiwiZW1haWwiOiJzdXBlcl9hZG1pbkBnbWFpbC5jb20iLCJyb2xlIjoic3VwZXJfYWRtaW4ifQ.2wN36slPPgg24CE6Tl1o0q-Fy_Yyy-FWKhfc-UxzC18";
+        SerenityRest.given().header("Authorization", "Bearer " + token)
+                .header("Content-Type", "application/json")
+                .contentType(ContentType.MULTIPART)
+                .multiPart("regency_id", "360")
+                .multiPart("category_id", "7")
+                .multiPart("address", "Jl. pemuda no 31, RT. 04 RW. 05, Lorem ipsum, Indonesia")
+                .multiPart("type","public")
+                .multiPart("description", "Lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet")
+                .multiPart("files",sampleFile)
+                .put(setApiUpdateComplaint());
+    }
+    @Step("I receive error message that regency not found")
+    public void receiveErrorMessageUpdateComplaint() {
+        JsonSchemaHelper helper = new JsonSchemaHelper();
+        String schema = helper.getResponseSchema(JsonSchema.STATUS_MESSAGE_SCHEMA);
+
+        restAssuredThat(response -> response.body("status", Matchers.equalTo(false)));
+        restAssuredThat(response -> response.body("message",Matchers.equalTo("regency not found")));
 
         restAssuredThat(response -> response.body(matchesJsonSchema(schema)));
     }

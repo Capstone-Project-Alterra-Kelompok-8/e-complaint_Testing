@@ -16,4 +16,9 @@ public class ErrorMessageSteps {
     public void receiveErrorMessageNotFound(){
         errorMessage.receiveErrorMessageNotFounds();
     }
+
+    @And("I receive response body that complaint not found")
+    public void receiveErrorMessageComplaintNotFound(){
+        errorMessage.receiveErrorMessageComplaintNotFounds();
+    }
 }

@@ -24,4 +24,14 @@ public class CreateComplaintsSteps {
     public void receiveComplaintData(){
         createComplaints.receiveValidDataForNewComplaint();
     }
+
+    @When("I send request endpoint for create new complaints with Invalid credentials\\(Invalid category_id)")
+    public void sendRequestInvalidComplaint(){
+        createComplaints.sendInvalidCreateComplaint();
+    }
+
+    @And("I receive error message that category not found")
+    public void receiveErrorMessageComplaintData(){
+        createComplaints.receiveInValidDataForNewComplaint();
+    }
 }

@@ -4,8 +4,15 @@ Feature: Create Complaints with Valid Credentials
   I want to create a new complaints with valid credentials
   So that my complaints was successfully created
 
-  Scenario: As an user I can create a new complaints with valid credentials
+  Background:
     Given I set API endpoint for create new complaints
+
+  Scenario: As an user I can create a new complaints with valid credentials
     When I send request endpoint for create new complaints with valid credentials
     Then I receive status code 201 Created
     And I receive valid data for my complaints
+
+  Scenario: As an user I can create a new complaints with Invalid credentials(Invalid category_id)
+    When I send request endpoint for create new complaints with Invalid credentials(Invalid category_id)
+    Then I receive status code 400 Bad Request
+    And I receive error message that category not found

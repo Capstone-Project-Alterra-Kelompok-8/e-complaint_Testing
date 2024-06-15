@@ -29,4 +29,14 @@ public class ErrorMessage {
 
         restAssuredThat(response -> response.body(matchesJsonSchema(schema)));
     }
+    @Step("I receive response body that complaint not found")
+    public void receiveErrorMessageComplaintNotFounds() {
+        JsonSchemaHelper helper = new JsonSchemaHelper();
+        String schema = helper.getResponseSchema(JsonSchema.STATUS_MESSAGE_SCHEMA);
+
+        restAssuredThat(response -> response.body("status", Matchers.equalTo(false)));
+        restAssuredThat(response -> response.body("message",Matchers.equalTo("complaint not found")));
+
+        restAssuredThat(response -> response.body(matchesJsonSchema(schema)));
+    }
 }
