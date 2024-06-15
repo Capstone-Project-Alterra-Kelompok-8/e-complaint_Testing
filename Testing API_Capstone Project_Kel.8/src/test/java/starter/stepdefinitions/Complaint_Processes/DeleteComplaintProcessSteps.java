@@ -24,4 +24,13 @@ public class DeleteComplaintProcessSteps {
     public void receiveDeleteComplaintProcessResponse(){
         deleteComplaintProcess.receiveComplaintProcessResponseBody();
     }
+
+    @Given("I set API endpoint for delete complaint process with invalid ID")
+    public void setDeleteInValidComplaintProcess(){
+        deleteComplaintProcess.setApiInvalidDeleteComplaintProcessEndpoint();
+    }
+    @And("I receive response body that complaint not found")
+    public void receiveErrorMessageComplaintprocessNotFound(){
+        deleteComplaintProcess.receiveErrorMessageComplaintProcessNotFounds();
+    }
 }

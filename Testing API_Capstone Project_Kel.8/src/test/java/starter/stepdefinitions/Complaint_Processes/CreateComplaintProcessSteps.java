@@ -24,4 +24,14 @@ public class CreateComplaintProcessSteps {
     public void receiveNewComplaintProcess(){
         createComplaintProcess.receiveValidDataForCreateNewComplaintProcess();
     }
+
+    @When("I send request endpoint for create a complaint process with invalid status")
+    public void sendRequestInvalidNewComplaintProcess(){
+        createComplaintProcess.sendInvalidCreateComplaintProcessRequest();
+    }
+
+    @And("I receive error message that invalid status")
+    public void receiveInvalidStatusMessage(){
+        createComplaintProcess.receiveInValidDataForCreateNewComplaintProcess();
+    }
 }

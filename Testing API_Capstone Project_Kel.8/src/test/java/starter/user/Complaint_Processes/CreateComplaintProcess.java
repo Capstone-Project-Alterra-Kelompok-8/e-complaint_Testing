@@ -16,14 +16,14 @@ public class CreateComplaintProcess {
 
     @Step("I set API endpoint for create a complaint process")
     public String setApiForNewComplaintProcess() {
-        return url + "/complaints/C-123j9ak280/processes";
+        return url + "/complaints/C-2643e92ffc/processes";
     }
 
     @Step("I send request endpoint for create a complaint process with valid credentials")
     public void sendCreateComplaintProcessRequest() {
         JSONObject requestBody = new JSONObject();
 
-        requestBody.put("status", "on progress");
+        requestBody.put("status", "Verifikasi");
         requestBody.put("message", "Aduan anda sedang diproses");
 
         String token = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwibmFtZSI6IlN1cGVyIEFkbWluIiwiZW1haWwiOiJzdXBlcl9hZG1pbkBnbWFpbC5jb20iLCJyb2xlIjoic3VwZXJfYWRtaW4ifQ.2wN36slPPgg24CE6Tl1o0q-Fy_Yyy-FWKhfc-UxzC18";
@@ -43,6 +43,30 @@ public class CreateComplaintProcess {
         restAssuredThat(response -> response.body("'data'.'complaint_id'", Matchers.equalTo("C-123j9ak280")));
         restAssuredThat(response -> response.body("'data'.'status'", Matchers.equalTo("on progress")));
         restAssuredThat(response -> response.body("'data'.'message'", Matchers.equalTo("Aduan anda sedang diproses")));
+        restAssuredThat(response -> response.body(matchesJsonSchema(schema)));
+    }
+    @Step("I send request endpoint for create a complaint process with invalid status")
+    public void sendInvalidCreateComplaintProcessRequest() {
+        JSONObject requestBody = new JSONObject();
+
+        requestBody.put("status", "sedang diproses");
+        requestBody.put("message", "Aduan anda sedang diproses");
+
+        String token = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwibmFtZSI6IlN1cGVyIEFkbWluIiwiZW1haWwiOiJzdXBlcl9hZG1pbkBnbWFpbC5jb20iLCJyb2xlIjoic3VwZXJfYWRtaW4ifQ.2wN36slPPgg24CE6Tl1o0q-Fy_Yyy-FWKhfc-UxzC18";
+        SerenityRest.given()
+                .header("Content-Type", "application/json")
+                .header("Authorization", "Bearer " + token)
+                .body(requestBody.toString())
+                .post(setApiForNewComplaintProcess());
+    }
+    @Step("I receive error message that invalid status")
+    public void receiveInValidDataForCreateNewComplaintProcess() {
+        JsonSchemaHelper helper = new JsonSchemaHelper();
+        String schema = helper.getResponseSchema(JsonSchema.STATUS_MESSAGE_SCHEMA);
+
+        restAssuredThat(response -> response.body("status", Matchers.equalTo(false)));
+        restAssuredThat(response -> response.body("message",Matchers.equalTo("invalid status")));
+
         restAssuredThat(response -> response.body(matchesJsonSchema(schema)));
     }
 }

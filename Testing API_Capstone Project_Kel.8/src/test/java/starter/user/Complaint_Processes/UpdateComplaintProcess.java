@@ -13,7 +13,7 @@ import static net.serenitybdd.rest.SerenityRest.restAssuredThat;
 public class UpdateComplaintProcess {
     private static String url = "https://qe-capstone.mdrizki.my.id/api/v1";
 
-    @Step("I set API endpoint for update complaint process")
+    @Step("I set API endpoint for update complaint process by valid credentials")
     public String setApiUpdateComplaintProcess(){
         return url + "/complaints/C-123j9ak280/processes/12";
     }
@@ -40,5 +40,14 @@ public class UpdateComplaintProcess {
         restAssuredThat(response -> response.body("'data'.'message'", Matchers.equalTo("Aduan anda diverifikasi")));
 
         restAssuredThat(response -> response.body(matchesJsonSchema(schema)));
+    }
+    @Step("I send request to update complaint process by blank field")
+    public void sendPutBlankFieldRequestUpdateComplaintProcess(){
+        String token = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwibmFtZSI6IlN1cGVyIEFkbWluIiwiZW1haWwiOiJzdXBlcl9hZG1pbkBnbWFpbC5jb20iLCJyb2xlIjoic3VwZXJfYWRtaW4ifQ.2wN36slPPgg24CE6Tl1o0q-Fy_Yyy-FWKhfc-UxzC18";
+        SerenityRest.given().header("Authorization", "Bearer " + token)
+                .header("Content-Type", "application/json")
+                .contentType(ContentType.MULTIPART)
+                .multiPart("message", "")
+                .put(setApiUpdateComplaintProcess());
     }
 }

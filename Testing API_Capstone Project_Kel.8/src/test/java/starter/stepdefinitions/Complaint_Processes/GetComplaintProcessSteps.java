@@ -10,12 +10,12 @@ public class GetComplaintProcessSteps {
     @Steps
     GetComplaintProcess getComplaintProcess;
 
-    @Given("I set API endpoint with an valid ID to get complaint process by ID")
+    @Given("I set API endpoint with an valid ID to get complaint process by valid ID")
     public void setApiGetEndValidIDComplaintProcess(){
         getComplaintProcess.setApiGetEndValidComplaintProcessID();
     }
 
-    @When("I send request endpoint for get complaint process by valid ID")
+    @When("I send request endpoint for get complaint process by ID")
     public void sendGetRequestValidIDComplaintProcess(){
         getComplaintProcess.sendGetRequestValidComplaintProcessID();
     }
