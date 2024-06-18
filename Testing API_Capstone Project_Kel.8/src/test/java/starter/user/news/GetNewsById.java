@@ -84,7 +84,7 @@ public class GetNewsById {
 
     @Step("I set with valid method and invalid ID API endpoint")
     public String setWithValidMethodAndInvalidIdApiEndpoint() {
-        return url + "/news/10";
+        return url + "/news/100";
     }
     @Step("I set API endpoint and method with valid but ID was wrong")
     public void sendRequestToGetNewsDataByIdWithInvalidId() {
@@ -93,8 +93,8 @@ public class GetNewsById {
                 .header("Authorization", "Bearer " + token)
                 .get(setWithValidMethodAndInvalidIdApiEndpoint());
     }
-    @Step("I get a status code 400 bad request")
-    public void getAStatusCode400(){
-        restAssuredThat(response -> response.statusCode(400));
+    @Step("I see status code 404 not found")
+    public void seeStatusCode404(){
+        restAssuredThat(response -> response.statusCode(404));
     }
 }

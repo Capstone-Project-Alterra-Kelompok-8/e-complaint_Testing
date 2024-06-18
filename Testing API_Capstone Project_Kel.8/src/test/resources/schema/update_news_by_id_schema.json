@@ -100,7 +100,7 @@
             ]
           }
         },
-        "created_at": {
+        "updated_at": {
           "type": "string"
         }
       },
@@ -112,7 +112,7 @@
         "content",
         "total_likes",
         "files",
-        "created_at"
+        "updated_at"
       ]
     }
   },

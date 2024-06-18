@@ -25,7 +25,14 @@ public class JsonSchema {
     public static final String CREATE_COMPLAINT_PROCESS_SCHEMA = "schema/create_complaint_process_schema.json";
     public static final String GET_ALL_NEWS_SCHEMA = "schema/get_all_news_schema.json";
     public static final String GET_NEWS_BY_ID_SCHEMA = "schema/get_news_by_id_schema.json";
-    public static final String CREATE_NEWS_SCHEMA = "schema/create_news_schema.json";
-    public static final String UPDATE_NEWS_SCHEMA = "schema/update_news_schema.json";
+    public static final String GET_ALL_RECOMMENDATION_SCHEMA = "schema/get_all_recommendation_schema.json";
+    public static final String GET_NEWS_COMMENT_BY_ID_SCHEMA = "schema/get_news_comment_by_id_schema.json";
     public static final String GET_ALL_COMPLAINT_DISCUSSION_SCHEMA = "schema/get_all_complaint_discussion_schema.json";
+    public static final String CREATE_COMPLAINT_DISCUSSION_SCHEMA = "schema/create_complaint_discussion_schema.json";
+    public static final String UPDATE_COMPLAINT_DISCUSSION_BY_ID_SCHEMA = "schema/update_complaint_discussion_by_id_schema.json";
+    public static final String CREATE_NEWS_SCHEMA = "schema/create_news_schema.json";
+    public static final String UPDATE_NEWS_BY_ID_SCHEMA = "schema/update_news_by_id_schema.json";
+    public static final String CREATE_NEWS_COMMENT_BY_ID_SCHEMA = "schema/create_news_comment_by_id_schema.json";
+    public static final String UPDATE_NEWS_COMMENT_BY_ID_SCHEMA = "schema/update_news_comment_by_id_schema.json";
+
 }

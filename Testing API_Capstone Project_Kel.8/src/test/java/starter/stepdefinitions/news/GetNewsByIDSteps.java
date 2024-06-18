@@ -60,9 +60,8 @@ public class GetNewsByIDSteps {
     public void sendRequestToGetNewsDataByIdWithInvalidId(){
         getNewsByID.sendRequestToGetNewsDataByIdWithInvalidId();
     }
-    @And("I get a status code 400 bad request")
-    public void getAStatusCode400(){
-        getNewsByID.getAStatusCode400();
+    @And("I see status code 404 not found")
+    public void seeStatusCode404(){
+        getNewsByID.seeStatusCode404();
     }
-
 }
