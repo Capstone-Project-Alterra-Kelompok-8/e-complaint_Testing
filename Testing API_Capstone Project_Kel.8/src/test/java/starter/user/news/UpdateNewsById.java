@@ -38,7 +38,7 @@ public class UpdateNewsById {
 
     @Step("I see status 200 OK")
     public void seeStatus200() {
-        restAssuredThat(response -> response.statusCode(201));
+        restAssuredThat(response -> response.statusCode(200));
     }
 
     @Step("I see news data has been update with valid")
