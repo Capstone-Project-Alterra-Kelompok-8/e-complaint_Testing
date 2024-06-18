@@ -21,4 +21,9 @@ public class ErrorMessageSteps {
     public void receiveErrorMessageComplaintNotFound(){
         errorMessage.receiveErrorMessageComplaintNotFounds();
     }
+
+    @And("I receive error message that category not found")
+    public void receiveErrorMessageComplaintData(){
+        errorMessage.receiveInValidDataForNewComplaint();
+    }
 }

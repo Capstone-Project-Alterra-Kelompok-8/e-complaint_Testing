@@ -30,8 +30,5 @@ public class CreateComplaintsSteps {
         createComplaints.sendInvalidCreateComplaint();
     }
 
-    @And("I receive error message that category not found")
-    public void receiveErrorMessageComplaintData(){
-        createComplaints.receiveInValidDataForNewComplaint();
-    }
+
 }

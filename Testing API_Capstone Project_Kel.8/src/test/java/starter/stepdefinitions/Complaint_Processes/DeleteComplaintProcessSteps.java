@@ -29,8 +29,4 @@ public class DeleteComplaintProcessSteps {
     public void setDeleteInValidComplaintProcess(){
         deleteComplaintProcess.setApiInvalidDeleteComplaintProcessEndpoint();
     }
-    @And("I receive response body that complaint not found")
-    public void receiveErrorMessageComplaintprocessNotFound(){
-        deleteComplaintProcess.receiveErrorMessageComplaintProcessNotFounds();
-    }
 }
