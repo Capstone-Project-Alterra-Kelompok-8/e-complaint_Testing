@@ -13,5 +13,5 @@ Feature: Get Category with Valid ID
   Scenario: As an admin/user i want to get categories with invalid id
     Given I set API endpoint with an valid ID to get category by invalid ID
     When I send request endpoint for get category
-    Then I receive status code 400 Bad Request
-    And I receive error message that not found
+    Then I receive status code 404 not found
+    And I receive error message that category not found
