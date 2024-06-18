@@ -17,7 +17,7 @@ public class UpdateCategory {
 
     @Step("I set API endpoint for update category")
     public String setApiUpdateCategory(){
-        return url + "/categories/9";
+        return url + "/categories/15";
     }
 
     @Step("I send request to update category with valid credentials")

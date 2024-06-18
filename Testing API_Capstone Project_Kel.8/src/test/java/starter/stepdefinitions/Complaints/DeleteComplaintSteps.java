@@ -29,4 +29,8 @@ public class DeleteComplaintSteps {
     public void setDeleteInValidComplaint(){
         deleteComplaint.setApiInvalidDeleteComplaintEndpoint();
     }
+    @When("I send request endpoint for delete complaint with invalid ID")
+    public void sendInvalidDeleteComplaintRequest(){
+        deleteComplaint.sendInvalidDeleteComplaintUserRequest();
+    }
 }

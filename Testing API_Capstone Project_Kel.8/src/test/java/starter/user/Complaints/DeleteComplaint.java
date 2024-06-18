@@ -14,7 +14,7 @@ public class DeleteComplaint {
 
     @Step("I set API endpoint for delete complaint with valid ID")
     public String setApiDeleteComplaintEndpoint() {
-        return url + "/complaints/C-b37fc65be4";
+        return url + "/complaints/C-0c561ed3db";
     }
 
     @Step("I send request endpoint for delete complaint")
@@ -38,5 +38,13 @@ public class DeleteComplaint {
     @Step("I set API endpoint for delete complaint with Invalid ID")
     public String setApiInvalidDeleteComplaintEndpoint() {
         return url + "/complaints/ABCD";
+    }
+    @Step("I send request endpoint for delete complaint with invalid ID")
+    public void sendInvalidDeleteComplaintUserRequest() {
+        String token = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwibmFtZSI6IlN1cGVyIEFkbWluIiwiZW1haWwiOiJzdXBlcl9hZG1pbkBnbWFpbC5jb20iLCJyb2xlIjoic3VwZXJfYWRtaW4ifQ.2wN36slPPgg24CE6Tl1o0q-Fy_Yyy-FWKhfc-UxzC18";
+        SerenityRest.given()
+                .header("Content-Type","application/json")
+                .header("Authorization", "Bearer " + token)
+                .delete(setApiInvalidDeleteComplaintEndpoint());
     }
 }

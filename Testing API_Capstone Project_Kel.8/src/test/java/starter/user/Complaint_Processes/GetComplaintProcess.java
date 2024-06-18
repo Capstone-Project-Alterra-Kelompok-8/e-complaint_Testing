@@ -15,7 +15,7 @@ public class GetComplaintProcess {
 
     @Step("I set API endpoint with an valid ID to get complaint process by valid ID")
     public String setApiGetEndValidComplaintProcessID() {
-        return url + "/complaints/C-8ksh&s9280/processes";
+        return url + "/complaints/C-81jas92581/processes";
     }
 
     @Step("I send request endpoint for get complaint process by ID")
@@ -39,5 +39,13 @@ public class GetComplaintProcess {
     @Step("I set API endpoint with an valid ID to get complaint process by invalid ID")
     public String setApiGetEndInValidComplaintProcessID() {
         return url + "/complaints/ABCD/processes";
+    }
+    @Step("I send request endpoint for get complaint process by invalid ID")
+    public void sendGetRequestInValidComplaintProcessID() {
+        String token = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwibmFtZSI6IlN1cGVyIEFkbWluIiwiZW1haWwiOiJzdXBlcl9hZG1pbkBnbWFpbC5jb20iLCJyb2xlIjoic3VwZXJfYWRtaW4ifQ.2wN36slPPgg24CE6Tl1o0q-Fy_Yyy-FWKhfc-UxzC18";
+        SerenityRest.given()
+                .header("Content-Type", "application/json")
+                .header("Authorization", "Bearer " + token)
+                .get(setApiGetEndInValidComplaintProcessID());
     }
 }

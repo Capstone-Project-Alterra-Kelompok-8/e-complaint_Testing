@@ -1,5 +1,5 @@
 @UpdateCategory
-Feature: Update Category with
+Feature: Update Category
   As an admin
   I want to update category
   So that I can update information for specific category

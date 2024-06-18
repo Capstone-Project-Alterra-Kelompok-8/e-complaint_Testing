@@ -15,7 +15,7 @@ public class UpdateComplaintProcess {
 
     @Step("I set API endpoint for update complaint process by valid credentials")
     public String setApiUpdateComplaintProcess(){
-        return url + "/complaints/C-123j9ak280/processes/12";
+        return url + "/complaints/C-4abc1106dd/processes/22";
     }
 
     @Step("I send request to update complaint process")
@@ -34,10 +34,10 @@ public class UpdateComplaintProcess {
 
         restAssuredThat(response -> response.body("status", Matchers.equalTo(true)));
         restAssuredThat(response -> response.body("message", Matchers.equalTo("Success Update Complaint Process")));
-        restAssuredThat(response -> response.body("'data'.'id'", Matchers.equalTo(12)));
-        restAssuredThat(response -> response.body("'data'.'complaint_id'", Matchers.equalTo("C-123j9ak280")));
-        restAssuredThat(response -> response.body("'data'.'status'", Matchers.equalTo("verifikasi")));
-        restAssuredThat(response -> response.body("'data'.'message'", Matchers.equalTo("Aduan anda diverifikasi")));
+        restAssuredThat(response -> response.body("'data'.'id'", Matchers.equalTo(22)));
+        restAssuredThat(response -> response.body("'data'.'complaint_id'", Matchers.equalTo("C-4abc1106dd")));
+        restAssuredThat(response -> response.body("'data'.'status'", Matchers.equalTo("Pending")));
+        restAssuredThat(response -> response.body("'data'.'message'", Matchers.equalTo("Aduan anda akan segera kami periksa")));
 
         restAssuredThat(response -> response.body(matchesJsonSchema(schema)));
     }

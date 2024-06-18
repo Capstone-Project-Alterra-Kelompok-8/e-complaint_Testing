@@ -1,5 +1,5 @@
 @CreateComplaintProcess
-Feature: Create a Complaint Process with Valid Credentials
+Feature: Create a Complaint Process
   As an admin
   I want to create a complaint process
   So that complaint process was successfully created

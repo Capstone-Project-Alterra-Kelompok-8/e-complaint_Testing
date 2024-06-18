@@ -23,8 +23,8 @@ public class AddNewUser {
     public void sendCreateUser() {
         JSONObject requestBody = new JSONObject();
 
-        requestBody.put("name", "Naruto Senior");
-        requestBody.put("email", "borutoboy@gmail.com");
+        requestBody.put("name", "Naruto Senior2");
+        requestBody.put("email", "borutoboy2@gmail.com");
         requestBody.put("telephone_number", "089777777");
         requestBody.put("password","123456");
 
@@ -42,8 +42,8 @@ public class AddNewUser {
         restAssuredThat(response -> response.body("status", Matchers.equalTo(true)));
         restAssuredThat(response -> response.body("message", Matchers.equalTo("Success Register")));
         restAssuredThat(response -> response.body("'data'.'id'", notNullValue()));
-        restAssuredThat(response -> response.body("'data'.'name'", Matchers.equalTo("Naruto Senior")));
-        restAssuredThat(response -> response.body("'data'.'email'", Matchers.equalTo("borutoboy@gmail.com")));
+        restAssuredThat(response -> response.body("'data'.'name'", Matchers.equalTo("Naruto Senior2")));
+        restAssuredThat(response -> response.body("'data'.'email'", Matchers.equalTo("borutoboy2@gmail.com")));
         restAssuredThat(response -> response.body("'data'.'telephone_number'", Matchers.equalTo("089777777")));
 
         restAssuredThat(response -> response.body(matchesJsonSchema(schema)));

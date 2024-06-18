@@ -1,5 +1,5 @@
 @CreateComplaints
-Feature: Create Complaints with Valid Credentials
+Feature: Create Complaints
   As an user
   I want to create a new complaints with valid credentials
   So that my complaints was successfully created
@@ -14,5 +14,5 @@ Feature: Create Complaints with Valid Credentials
 
   Scenario: As an user I can create a new complaints with Invalid credentials(Invalid category_id)
     When I send request endpoint for create new complaints with Invalid credentials(Invalid category_id)
-    Then I receive status code 400 Bad Request
+    Then I receive status code 404 not found
     And I receive error message that category not found

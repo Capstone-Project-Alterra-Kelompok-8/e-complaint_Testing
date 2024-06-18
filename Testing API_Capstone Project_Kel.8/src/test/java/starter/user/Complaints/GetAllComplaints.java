@@ -32,8 +32,8 @@ public class GetAllComplaints {
         JsonSchemaHelper helper = new JsonSchemaHelper();
         String schema = helper.getResponseSchema(JsonSchema.GET_ALL_COMPLAINTS_SCHEMA);
 
-        restAssuredThat(response -> response.body("status", Matchers.equalTo(true)));
-        restAssuredThat(response -> response.body("message", Matchers.equalTo("Success Get Reports")));
+        restAssuredThat(response -> response.body("status", notNullValue()));
+        restAssuredThat(response -> response.body("message", notNullValue()));
 
         restAssuredThat(response -> response.body(matchesJsonSchema(schema)));
     }

@@ -1,5 +1,5 @@
 @GetCategoriesByID
-Feature: Get Category with Valid ID
+Feature: Get Category by ID
   As an admin/user
   I want to get category with valid id
   So that I can receive 200 OK response and category information based on id

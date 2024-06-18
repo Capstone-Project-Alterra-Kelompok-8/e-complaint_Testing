@@ -1,5 +1,5 @@
 @CreateCategory
-Feature: Create a New Category with Valid Credentials
+Feature: Create a New Category
   As an admin
   I want to create a new category
   So that category was successfully created

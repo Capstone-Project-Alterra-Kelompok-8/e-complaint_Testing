@@ -1,5 +1,5 @@
 @DeleteCategory
-Feature: Delete Category with valid ID
+Feature: Delete Category
   As an admin
   I want to delete category with valid ID
   So that the category can be removed
