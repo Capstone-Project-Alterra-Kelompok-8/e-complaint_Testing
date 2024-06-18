@@ -39,4 +39,14 @@ public class ErrorMessage {
 
         restAssuredThat(response -> response.body(matchesJsonSchema(schema)));
     }
+    @Step("I receive error message that category not found")
+    public void receiveInValidDataForNewComplaint() {
+        JsonSchemaHelper helper = new JsonSchemaHelper();
+        String schema = helper.getResponseSchema(JsonSchema.STATUS_MESSAGE_SCHEMA);
+
+        restAssuredThat(response -> response.body("status", Matchers.equalTo(false)));
+        restAssuredThat(response -> response.body("message",Matchers.equalTo("category not found")));
+
+        restAssuredThat(response -> response.body(matchesJsonSchema(schema)));
+    }
 }

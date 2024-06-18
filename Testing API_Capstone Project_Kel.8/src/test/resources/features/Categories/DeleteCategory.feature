@@ -13,5 +13,5 @@ Feature: Delete Category with valid ID
   Scenario: As an admin I can delete category with invalid ID
     Given I set API endpoint for delete category with invalid ID
     When I send request endpoint for delete category
-    Then I receive status code 400 Bad Request
-    And I receive error message that not found
+    Then I receive status code 404 not found
+    And I receive error message that category not found
