@@ -24,4 +24,9 @@ public class GetComplaintProcessSteps {
     public void receiveDetailsValidIDComplaintProcess(){
         getComplaintProcess.receiveValidComplaintProcessID();
     }
+
+    @Given("I set API endpoint with an valid ID to get complaint process by invalid ID")
+    public void setApiGetEndInValidIDComplaintProcess(){
+        getComplaintProcess.setApiGetEndInValidComplaintProcessID();
+    }
 }

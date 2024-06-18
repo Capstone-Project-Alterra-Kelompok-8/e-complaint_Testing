@@ -36,4 +36,8 @@ public class GetComplaintProcess {
 
         restAssuredThat(response -> response.body(matchesJsonSchema(schema)));
     }
+    @Step("I set API endpoint with an valid ID to get complaint process by invalid ID")
+    public String setApiGetEndInValidComplaintProcessID() {
+        return url + "/complaints/ABCD/processes";
+    }
 }

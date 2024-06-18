@@ -29,4 +29,9 @@ public class GetCategoriesByIDSteps {
     public void setApiGetEndInValidIDCategories(){
         getCategoriesByID.setApiGetEndInValidCategories();
     }
+
+    @When("I send request endpoint for get category by invalid ID")
+    public void sendGetRequestInValidIDCategories(){
+        getCategoriesByID.sendGetRequestInValidCategories();
+    }
 }
