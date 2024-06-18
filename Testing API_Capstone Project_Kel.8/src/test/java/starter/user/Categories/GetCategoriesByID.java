@@ -43,4 +43,12 @@ public class GetCategoriesByID {
     public String setApiGetEndInValidCategories() {
         return url + "/categories/100";
     }
+    @Step("I send request endpoint for get category")
+    public void sendGetRequestInValidCategories() {
+        String token = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwibmFtZSI6IlN1cGVyIEFkbWluIiwiZW1haWwiOiJzdXBlcl9hZG1pbkBnbWFpbC5jb20iLCJyb2xlIjoic3VwZXJfYWRtaW4ifQ.2wN36slPPgg24CE6Tl1o0q-Fy_Yyy-FWKhfc-UxzC18";
+        SerenityRest.given()
+                .header("Content-Type", "application/json")
+                .header("Authorization", "Bearer " + token)
+                .get(setApiGetEndInValidCategories());
+    }
 }
