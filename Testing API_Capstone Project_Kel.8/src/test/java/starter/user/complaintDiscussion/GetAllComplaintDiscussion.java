@@ -1,4 +1,4 @@
-package starter.api.complaintDiscussion;
+package starter.user.complaintDiscussion;
 
 import net.serenitybdd.annotations.Step;
 import net.serenitybdd.rest.SerenityRest;
@@ -15,11 +15,11 @@ public class GetAllComplaintDiscussion {
 
     @Step("I set the valid API endpoint and method")
     public String setTheValidApiEndpointAndMethod() {
-        return url + "/complaints/C-81jas92581/discussions";
+        return url + "/complaints/C-8ksh&s9280/discussions";
     }
 
-    @Step("I send a request to get all complaint feedback data")
-    public void sendARequestToGetAllComplaintFeedbackData() {
+    @Step("I send a request to get all complaint discussion")
+    public void sendARequestToGetAllComplaintDiscussion() {
         String token = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwibmFtZSI6IlN1cGVyIEFkbWluIiwiZW1haWwiOiJzdXBlcl9hZG1pbkBnbWFpbC5jb20iLCJyb2xlIjoic3VwZXJfYWRtaW4ifQ.2wN36slPPgg24CE6Tl1o0q-Fy_Yyy-FWKhfc-UxzC18";
         SerenityRest.given()
                 .header("Authorization", "Bearer " + token)
@@ -31,10 +31,10 @@ public class GetAllComplaintDiscussion {
         restAssuredThat(response -> response.statusCode(200));
     }
 
-    @Step("I get all complaint feedback data with valid")
-    public void getAllComplaintFeedbackDataWithValid() {
+    @Step("I get all complaint discussion with valid")
+    public void getAllComplaintDiscussionWithValid() {
         JsonSchemaHelper helper = new JsonSchemaHelper();
-        String schema = helper.getResponseSchema(JsonSchema.GET_ALL_COMPLAINT_FEEDBACK_SCHEMA);
+        String schema = helper.getResponseSchema(JsonSchema.GET_ALL_COMPLAINT_DISCUSSION_SCHEMA);
 
         restAssuredThat(response -> response.body("status", notNullValue()));
         restAssuredThat(response -> response.body("message", notNullValue()));
@@ -47,11 +47,12 @@ public class GetAllComplaintDiscussion {
 
     @Step("I set the valid API endpoint and incorrect method")
     public String setTheValidApiEndpointAndIncorrectMethod() {
-        return url + "/complaints/C-81jas92581/discussions";
+        return url + "/complaints/C-8ksh&s9280/discussions";
     }
 
-    @Step("I send request to get all complaint feedback data with invalid method")
-    public void sendRequestToGetAllComplaintFeedbackDataWithInvalidMethod() {String token = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwibmFtZSI6IlN1cGVyIEFkbWluIiwiZW1haWwiOiJzdXBlcl9hZG1pbkBnbWFpbC5jb20iLCJyb2xlIjoic3VwZXJfYWRtaW4ifQ.2wN36slPPgg24CE6Tl1o0q-Fy_Yyy-FWKhfc-UxzC18";
+    @Step("I send request to get all complaint discussion with invalid method")
+    public void sendRequestToGetAllComplaintDiscussionWithInvalidMethod() {
+        String token = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwibmFtZSI6IlN1cGVyIEFkbWluIiwiZW1haWwiOiJzdXBlcl9hZG1pbkBnbWFpbC5jb20iLCJyb2xlIjoic3VwZXJfYWRtaW4ifQ.2wN36slPPgg24CE6Tl1o0q-Fy_Yyy-FWKhfc-UxzC18";
         SerenityRest.given()
                 .header("Authorization", "Bearer " + token)
                 .patch(setTheValidApiEndpointAndIncorrectMethod());
@@ -66,11 +67,12 @@ public class GetAllComplaintDiscussion {
 
     @Step("I set a valid method and an incorrect API endpoint")
     public String setAValidMethodAndAnIncorrectApiEndpoint() {
-        return url + "/complaints/C-81jas92581/discussion";
+        return url + "/complaints/C-8ksh&s9280/discussion";
     }
 
-    @Step("I send request to get all complaint feedback data with invalid endpoint")
-    public void sendRequestToGetAllComplaintFeedbackDataWithInvalidEndpoint() {String token = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwibmFtZSI6IlN1cGVyIEFkbWluIiwiZW1haWwiOiJzdXBlcl9hZG1pbkBnbWFpbC5jb20iLCJyb2xlIjoic3VwZXJfYWRtaW4ifQ.2wN36slPPgg24CE6Tl1o0q-Fy_Yyy-FWKhfc-UxzC18";
+    @Step("I send request to get all complaint discussion with invalid endpoint")
+    public void sendRequestToGetAllComplaintDiscussionWithInvalidEndpoint() {
+        String token = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwibmFtZSI6IlN1cGVyIEFkbWluIiwiZW1haWwiOiJzdXBlcl9hZG1pbkBnbWFpbC5jb20iLCJyb2xlIjoic3VwZXJfYWRtaW4ifQ.2wN36slPPgg24CE6Tl1o0q-Fy_Yyy-FWKhfc-UxzC18";
         SerenityRest.given()
                 .header("Authorization", "Bearer " + token)
                 .get(setAValidMethodAndAnIncorrectApiEndpoint());

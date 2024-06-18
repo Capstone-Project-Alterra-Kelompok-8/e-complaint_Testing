@@ -1,4 +1,4 @@
-package starter.user.complaintDiscussion;
+package starter.user.newsComment;
 
 import net.serenitybdd.annotations.Step;
 import net.serenitybdd.rest.SerenityRest;
@@ -10,37 +10,37 @@ import static io.restassured.module.jsv.JsonSchemaValidator.matchesJsonSchema;
 import static net.serenitybdd.rest.SerenityRest.restAssuredThat;
 import static org.hamcrest.Matchers.notNullValue;
 
-public class UpdateComplaintDiscussionById {
+public class CreateNewsCommentById {
     private static String url = "https://qe-capstone.mdrizki.my.id/api/v1";
 
-    @Step("I set a valid API endpoint and method")
-    public String setWithValidApiEndpointAndMethod() {
-        return url + "/complaints/C-8ksh&s9280/discussions/12";
+    @Step("I set a valid endpoint and method")
+    public String setAValidEndpointAndMethod() {
+        return url + "/news/2/comments";
     }
 
-    @Step("I send a request to update complaint discussion by ID")
-    public void sendARequestToUpdateComplaintDiscussionById() {
+    @Step("I send a request to create news comment by ID")
+    public void sendARequestToCreateNewsCommentById() {
         JSONObject requestBody = new JSONObject();
 
-        requestBody.put("comment", "bejir");
+        requestBody.put("comment", "haha");
 
         String token = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwibmFtZSI6IlN1cGVyIEFkbWluIiwiZW1haWwiOiJzdXBlcl9hZG1pbkBnbWFpbC5jb20iLCJyb2xlIjoic3VwZXJfYWRtaW4ifQ.2wN36slPPgg24CE6Tl1o0q-Fy_Yyy-FWKhfc-UxzC18";
         SerenityRest.given()
                 .header("Content-Type", "application/json")
                 .header("Authorization", "Bearer " + token)
                 .body(requestBody.toString())
-                .put(setWithValidApiEndpointAndMethod());
+                .post(setAValidEndpointAndMethod());
     }
 
-    @Step("I receive on status code 200 OK")
-    public void receiveOnStatusCode200() {
-        restAssuredThat(response -> response.statusCode(200));
+    @Step("I received on status code 201 created")
+    public void receivedOnStatusCode201() {
+        restAssuredThat(response -> response.statusCode(201));
     }
 
-    @Step("I see complaint discussion has been update with valid")
-    public void seeComplaintDiscussionHasBeenUpdateWithValid() {
+    @Step("I create news comment with valid")
+    public void createNewsCommentWithValid() {
         JsonSchemaHelper helper = new JsonSchemaHelper();
-        String schema = helper.getResponseSchema(JsonSchema.UPDATE_COMPLAINT_DISCUSSION_BY_ID_SCHEMA);
+        String schema = helper.getResponseSchema(JsonSchema.CREATE_NEWS_COMMENT_BY_ID_SCHEMA);
 
         restAssuredThat(response -> response.body("status", notNullValue()));
         restAssuredThat(response -> response.body("message", notNullValue()));
@@ -51,75 +51,77 @@ public class UpdateComplaintDiscussionById {
 
     //NEGATIVE
 
-    @Step("I set with valid API endpoint and with wrong method")
-    public String setWithValidApiEndpointAndWithWrongMethod() {
-        return url + "/complaints/C-8ksh&s9280/discussions/12";
+    @Step("I set a valid API endpoint and incorrect method")
+    public String setAValidApiEndpointAndIncorrectMethod() {
+        return url + "/news/2/comments";
     }
 
-    @Step("I send a request to update complaint discussion by ID with invalid method")
-    public void sendARequestToUpdateComplaintDiscussionByIdWithInvalidMethod() {
+    @Step("I send request to create news comment by ID with invalid method")
+    public void sendRequestToCreateNewsCommentByIdWithInvalidMethod() {
         JSONObject requestBody = new JSONObject();
 
-        requestBody.put("comment", "bejir");
+        requestBody.put("comment", "haha");
 
         String token = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwibmFtZSI6IlN1cGVyIEFkbWluIiwiZW1haWwiOiJzdXBlcl9hZG1pbkBnbWFpbC5jb20iLCJyb2xlIjoic3VwZXJfYWRtaW4ifQ.2wN36slPPgg24CE6Tl1o0q-Fy_Yyy-FWKhfc-UxzC18";
         SerenityRest.given()
                 .header("Content-Type", "application/json")
                 .header("Authorization", "Bearer " + token)
                 .body(requestBody.toString())
-                .patch(setWithValidApiEndpointAndWithWrongMethod());
+                .patch(setAValidApiEndpointAndIncorrectMethod());
     }
-    @Step("I receive status 404 not found")
-    public void receiveStatus404(){
+
+    @Step("I received on 404 not found status code")
+    public void receivedOn404StatusCode(){
         restAssuredThat(response -> response.statusCode(404));
     }
 
-    //NEGATIVE
+    // NEGATIVE
 
-    @Step("I set with valid method and an incorrect endpoint")
-    public String setWithValidMethodAndAnIncorrectEndpoint() {
-        return url + "/complaints/C-8ksh&s9280/discussion/12";
+    @Step("I set the valid method and an incorrect API endpoint")
+    public String setTheValidMethodAndAnIncorrectApiEndpoint() {
+        return url + "/news/2/comment";
     }
 
-    @Step("I send request to update complaint discussion by ID with invalid endpoint")
-    public void sendRequestToUpdateComplaintDiscussionByIdWithInvalidEndpoint() {
+    @Step("I send request to create news comment by ID with invalid endpoint")
+    public void sendRequestToCreateNewsCommentByIdWithInvalidEndpoint() {
         JSONObject requestBody = new JSONObject();
 
-        requestBody.put("comment", "bejir");
+        requestBody.put("comment", "haha");
 
         String token = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwibmFtZSI6IlN1cGVyIEFkbWluIiwiZW1haWwiOiJzdXBlcl9hZG1pbkBnbWFpbC5jb20iLCJyb2xlIjoic3VwZXJfYWRtaW4ifQ.2wN36slPPgg24CE6Tl1o0q-Fy_Yyy-FWKhfc-UxzC18";
         SerenityRest.given()
                 .header("Content-Type", "application/json")
                 .header("Authorization", "Bearer " + token)
                 .body(requestBody.toString())
-                .put(setWithValidMethodAndAnIncorrectEndpoint());
+                .post(setTheValidMethodAndAnIncorrectApiEndpoint());
     }
-    @Step("I received status 404 not found")
-    public void receivedStatus404(){
+    @Step("I received code 404 not found")
+    public void receivedCode404(){
         restAssuredThat(response -> response.statusCode(404));
     }
 
-    //NEGATIVE
+    // NEGATIVE
 
-    @Step("I set with valid method and an invalid API endpoint ID")
-    public String setWithValidMethodAndAnInvalidApiEndpointId() {
-        return url + "/complaints/CC-8ksh&s92800/discussions/123";
+    @Step("I set valid method and an invalid API endpoint ID")
+    public String setValidMethodAndAnInvalidApiEndpointId() {
+        return url + "/news/200/comments";
     }
-    @Step("I send a request to update complaint discussion by ID with invalid ID")
-    public void sendARequestToUpdateComplaintDiscussionByIdWithInvalidId() {
+
+    @Step("I send a request to create news comment by ID with invalid ID")
+    public void sendARequestToCreateNewsCommentByIdWithInvalidId() {
         JSONObject requestBody = new JSONObject();
 
-        requestBody.put("comment", "bejir");
+        requestBody.put("comment", "haha");
 
         String token = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwibmFtZSI6IlN1cGVyIEFkbWluIiwiZW1haWwiOiJzdXBlcl9hZG1pbkBnbWFpbC5jb20iLCJyb2xlIjoic3VwZXJfYWRtaW4ifQ.2wN36slPPgg24CE6Tl1o0q-Fy_Yyy-FWKhfc-UxzC18";
         SerenityRest.given()
                 .header("Content-Type", "application/json")
                 .header("Authorization", "Bearer " + token)
                 .body(requestBody.toString())
-                .put(setWithValidMethodAndAnInvalidApiEndpointId());
+                .post(setValidMethodAndAnInvalidApiEndpointId());
     }
-    @Step("I received 404 not found")
-    public void received404(){
-        restAssuredThat(response -> response.statusCode(404));
+    @Step("I received code 400 bad request")
+    public void receivedCode400(){
+        restAssuredThat(response -> response.statusCode(400));
     }
 }

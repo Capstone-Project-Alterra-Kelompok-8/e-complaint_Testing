@@ -15,7 +15,7 @@ public class GetAllNews {
 
     @Step("I set valid API endpoint and method")
     public String setValidApiEndpointAndMethod() {
-        return url + "/news?limit=10&page=1";
+        return url + "/news";
     }
 
     @Step("I send a request to get all news data")
@@ -48,7 +48,7 @@ public class GetAllNews {
 
     @Step("I set valid API endpoint and wrong method")
     public String setValidApiEndpointAndWrongMethod() {
-        return url + "posts";
+        return url + "/news";
     }
 
     @Step("I send request to get all news data with invalid method")
@@ -67,7 +67,7 @@ public class GetAllNews {
 
     @Step("I set valid method and wrong API endpoint")
     public String setValidMethodAndWrongApiEndpoint() {
-        return url + "post";
+        return url + "/new";
     }
 
     @Step("I send request to get all news data with invalid endpoint")

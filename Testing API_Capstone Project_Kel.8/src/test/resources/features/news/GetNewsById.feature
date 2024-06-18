@@ -26,17 +26,4 @@ Feature: Get news by ID
   Scenario: As a admin I can't get news data by ID with wrong ID
     Given I set with valid method and invalid ID API endpoint
     When I send request to get news data by ID with invalid ID
-    Then I get a status code 400 bad request
-
-    #  #positive
-#  Scenario: As a admin I can get news data by ID with valid endpoint and method
-#    Given I set a API endpoint and method with valid
-#    When I send request to get news data by ID
-#    Then I get a status code 200 OK
-#    And I get a news data by ID with valid
-#
-#  #negative
-#  Scenario: As a admin I can't get news data by ID with valid method and wrong endpoint
-#    Given I set valid method with wrong API endpoint
-#    When I send a request to get news data by ID with invalid endpoint
-#    Then I received a status code 404 not found
+    Then I see status code 404 not found

@@ -17,25 +17,25 @@ public class DeleteNewsByIDSteps {
     public void setValidEndpointAndMethod(){
         deleteNewsByID.setValidEndpointAndMethod();
     }
-    @When("I send a request to delete news data by ID")
-    public void sendARequestToDeleteNewsDataById(){
-        deleteNewsByID.sendARequestToDeleteNewsDataById();
+    @When("I send a request to delete news by ID")
+    public void sendARequestToDeleteNewsById(){
+        deleteNewsByID.sendARequestToDeleteNewsById();
     }
     @Then("I receive in status code 200 OK")
     public void receiveInStatusCode200(){
         deleteNewsByID.receiveInStatusCode200();
     }
-    @And("I see news data has been delete with valid")
-    public void seeNewsDataHasBeenDeleteWithValid(){
-        deleteNewsByID.seeNewsDataHasBeenDeleteWithValid();
+    @And("I see news has been delete with valid")
+    public void seeNewsHasBeenDeleteWithValid(){
+        deleteNewsByID.seeNewsHasBeenDeleteWithValid();
     }
     @Given("I set valid API endpoint with wrong method")
     public void setValidApiEndpointWithWrongMethod(){
         deleteNewsByID.setValidApiEndpointWithWrongMethod();
     }
-    @When("I send a request to delete news data by ID with invalid method")
-    public void sendARequestToDeleteNewsDataByIdWithInvalidMethod(){
-        deleteNewsByID.sendARequestToDeleteNewsDataByIdWithInvalidMethod();
+    @When("I send a request to delete news by ID with invalid method")
+    public void sendARequestToDeleteNewsByIdWithInvalidMethod(){
+        deleteNewsByID.sendARequestToDeleteNewsByIdWithInvalidMethod();
     }
     @Then("I receive status code 404 not found")
     public void receiveStatusCode404(){
@@ -45,9 +45,9 @@ public class DeleteNewsByIDSteps {
     public void setValidMethodAndWrongEndpoint(){
         deleteNewsByID.setValidMethodAndWrongEndpoint();
     }
-    @When("I send request to delete news data by ID with invalid endpoint")
-    public void sendRequestToDeleteNewsDataByIdWithInvalidEndpoint(){
-        deleteNewsByID.sendRequestToDeleteNewsDataByIdWithInvalidEndpoint();
+    @When("I send request to delete news by ID with invalid endpoint")
+    public void sendRequestToDeleteNewsByIdWithInvalidEndpoint(){
+        deleteNewsByID.sendRequestToDeleteNewsByIdWithInvalidEndpoint();
     }
     @Then("I received in status code 404 not found")
     public void receivedInStatusCode404(){
@@ -57,12 +57,12 @@ public class DeleteNewsByIDSteps {
     public void setWithValidMethodAndInvalidApiEndpointId(){
         deleteNewsByID.setWithValidMethodAndInvalidApiEndpointId();
     }
-    @Then("I send a request to delete news data by ID with invalid ID")
-    public void sendARequestToDeleteNewsDataByIdWithInvalidId(){
-        deleteNewsByID.sendARequestToDeleteNewsDataByIdWithInvalidId();
+    @Then("I send a request to delete news by ID with invalid ID")
+    public void sendARequestToDeleteNewsByIdWithInvalidId(){
+        deleteNewsByID.sendARequestToDeleteNewsByIdWithInvalidId();
     }
-    @And("I received status code 400 bad request")
-    public void receivedStatusCode400(){
-        deleteNewsByID.receivedStatusCode400();
+    @And("I get code 404 not found")
+    public void getCode404(){
+        deleteNewsByID.getCode404();
     }
 }
