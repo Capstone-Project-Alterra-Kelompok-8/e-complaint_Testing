@@ -21,9 +21,3 @@ Feature: Create news
     Given I set valid method and an incorrect API endpoint
     When I send request to create news data with invalid endpoint
     Then I receive in status 404 not found
-
-#  #negative
-#  Scenario: As a admin I can't create news data with invalid ID
-#    Given I set valid method and invalid category ID
-#    When I send a request to create news with invalid ID
-#    Then I see status 404 not found

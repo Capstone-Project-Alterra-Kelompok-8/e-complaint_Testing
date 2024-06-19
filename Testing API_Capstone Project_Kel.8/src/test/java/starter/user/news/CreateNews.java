@@ -29,8 +29,8 @@ public class CreateNews {
                 .header("Authorization", "Bearer " + token)
                 .header("Content-Type", "application/json")
                 .contentType(ContentType.MULTIPART)
-                .multiPart("title","JALANAN")
-                .multiPart("content","BERLUBANG")
+                .multiPart("title","AREA JALAN")
+                .multiPart("content","SEDANG BERLUBANG")
                 .multiPart("category_id","5")
                 .multiPart("files", sampleFile)
                 .post(setTheValidEndpointAndMethod());
@@ -88,8 +88,8 @@ public class CreateNews {
                 .header("Authorization", "Bearer " + token)
                 .header("Content-Type", "application/json")
                 .contentType(ContentType.MULTIPART)
-                .multiPart("title","JALANAN")
-                .multiPart("content","BERLUBANG")
+                .multiPart("title","AREA JALAN")
+                .multiPart("content","SEDANG BERLUBANG")
                 .multiPart("category_id","5")
                 .multiPart("files", sampleFile)
                 .post(setValidMethodAndAnIncorrectApiEndpoint());
@@ -98,31 +98,4 @@ public class CreateNews {
     public void receiveInStatusCode404(){
         restAssuredThat(response -> response.statusCode(404));
     }
-
-    // NEGATIVE
-
-//    @Step("I set valid method and invalid category ID")
-//    public String setValidMethodAndInvalidCategoryId() {
-//        return url + "/news";
-//    }
-//
-//    @Step("I send a request to create news with invalid ID")
-//    public void sendARequestToCreateNewsWithInvalidId() {
-//        File sampleFile = new File("src/test/resources/melewatijalanberlubang.jpg");
-//
-//        String token = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwibmFtZSI6IlN1cGVyIEFkbWluIiwiZW1haWwiOiJzdXBlcl9hZG1pbkBnbWFpbC5jb20iLCJyb2xlIjoic3VwZXJfYWRtaW4ifQ.2wN36slPPgg24CE6Tl1o0q-Fy_Yyy-FWKhfc-UxzC18";
-//        SerenityRest.given()
-//                .header("Authorization", "Bearer " + token)
-//                .header("Content-Type", "application/json")
-//                .contentType(ContentType.MULTIPART)
-//                .multiPart("title","title cuy")
-//                .multiPart("content","content cuy")
-//                .multiPart("category_id","100")
-//                .multiPart("files", sampleFile)
-//                .post(setValidMethodAndInvalidCategoryId());
-//    }
-//    @Step("I see status 404 not found")
-//    public void seeStatus404(){
-//        restAssuredThat(response -> response.statusCode(404));
-//    }
 }

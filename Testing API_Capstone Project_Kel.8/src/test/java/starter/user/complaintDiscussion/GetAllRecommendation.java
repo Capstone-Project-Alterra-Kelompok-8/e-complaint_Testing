@@ -15,7 +15,7 @@ public class GetAllRecommendation {
 
     @Step("I set the API endpoint and method with valid")
     public String setTheApiEndpointAndMethodWithValid() {
-        return url + "/complaints/C-81j9aK9280/discussions/get-recommendation";
+        return url + "/complaints/C-81jas92581/discussions/get-recommendation";
     }
 
     @Step("I send a request to get all recommendation")
@@ -47,7 +47,7 @@ public class GetAllRecommendation {
 
     @Step("I set with valid API endpoint and incorrect method")
     public String setWithValidApiEndpointAndIncorrectMethod() {
-        return url + "/complaints/C-81j9aK9280/discussions/get-recommendation";
+        return url + "/complaints/C-81jas92581/discussions/get-recommendation";
     }
 
     @Step("I send request to get all recommendation with invalid method")
@@ -67,7 +67,7 @@ public class GetAllRecommendation {
 
     @Step("I set with valid method and an incorrect API endpoint")
     public String setWithValidMethodAndAnIncorrectApiEndpoint() {
-        return url + "/complaints/C-81j9aK9280/discussion/get-recommendation";
+        return url + "/complaints/C-81jas92581/discussion/get-recommendation";
     }
 
     @Step("I send request to get all recommendation with invalid endpoint")

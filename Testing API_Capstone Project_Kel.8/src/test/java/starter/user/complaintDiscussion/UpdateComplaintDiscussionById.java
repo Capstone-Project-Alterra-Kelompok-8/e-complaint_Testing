@@ -15,14 +15,14 @@ public class UpdateComplaintDiscussionById {
 
     @Step("I set a valid API endpoint and method")
     public String setWithValidApiEndpointAndMethod() {
-        return url + "/complaints/C-8ksh&s9280/discussions/12";
+        return url + "/complaints/C-81jas92581/discussions/30";
     }
 
     @Step("I send a request to update complaint discussion by ID")
     public void sendARequestToUpdateComplaintDiscussionById() {
         JSONObject requestBody = new JSONObject();
 
-        requestBody.put("comment", "bejir");
+        requestBody.put("comment", "alpa");
 
         String token = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwibmFtZSI6IlN1cGVyIEFkbWluIiwiZW1haWwiOiJzdXBlcl9hZG1pbkBnbWFpbC5jb20iLCJyb2xlIjoic3VwZXJfYWRtaW4ifQ.2wN36slPPgg24CE6Tl1o0q-Fy_Yyy-FWKhfc-UxzC18";
         SerenityRest.given()
@@ -53,14 +53,14 @@ public class UpdateComplaintDiscussionById {
 
     @Step("I set with valid API endpoint and with wrong method")
     public String setWithValidApiEndpointAndWithWrongMethod() {
-        return url + "/complaints/C-8ksh&s9280/discussions/12";
+        return url + "/complaints/C-81jas92581/discussions/30";
     }
 
     @Step("I send a request to update complaint discussion by ID with invalid method")
     public void sendARequestToUpdateComplaintDiscussionByIdWithInvalidMethod() {
         JSONObject requestBody = new JSONObject();
 
-        requestBody.put("comment", "bejir");
+        requestBody.put("comment", "alpa");
 
         String token = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwibmFtZSI6IlN1cGVyIEFkbWluIiwiZW1haWwiOiJzdXBlcl9hZG1pbkBnbWFpbC5jb20iLCJyb2xlIjoic3VwZXJfYWRtaW4ifQ.2wN36slPPgg24CE6Tl1o0q-Fy_Yyy-FWKhfc-UxzC18";
         SerenityRest.given()
@@ -78,14 +78,14 @@ public class UpdateComplaintDiscussionById {
 
     @Step("I set with valid method and an incorrect endpoint")
     public String setWithValidMethodAndAnIncorrectEndpoint() {
-        return url + "/complaints/C-8ksh&s9280/discussion/12";
+        return url + "/complaints/C-81jas92581/discussion/30";
     }
 
     @Step("I send request to update complaint discussion by ID with invalid endpoint")
     public void sendRequestToUpdateComplaintDiscussionByIdWithInvalidEndpoint() {
         JSONObject requestBody = new JSONObject();
 
-        requestBody.put("comment", "bejir");
+        requestBody.put("comment", "alpa");
 
         String token = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwibmFtZSI6IlN1cGVyIEFkbWluIiwiZW1haWwiOiJzdXBlcl9hZG1pbkBnbWFpbC5jb20iLCJyb2xlIjoic3VwZXJfYWRtaW4ifQ.2wN36slPPgg24CE6Tl1o0q-Fy_Yyy-FWKhfc-UxzC18";
         SerenityRest.given()
@@ -103,13 +103,13 @@ public class UpdateComplaintDiscussionById {
 
     @Step("I set with valid method and an invalid API endpoint ID")
     public String setWithValidMethodAndAnInvalidApiEndpointId() {
-        return url + "/complaints/CC-8ksh&s92800/discussions/123";
+        return url + "/complaints/CC-81jas92581/discussions/300";
     }
     @Step("I send a request to update complaint discussion by ID with invalid ID")
     public void sendARequestToUpdateComplaintDiscussionByIdWithInvalidId() {
         JSONObject requestBody = new JSONObject();
 
-        requestBody.put("comment", "bejir");
+        requestBody.put("comment", "alpa");
 
         String token = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwibmFtZSI6IlN1cGVyIEFkbWluIiwiZW1haWwiOiJzdXBlcl9hZG1pbkBnbWFpbC5jb20iLCJyb2xlIjoic3VwZXJfYWRtaW4ifQ.2wN36slPPgg24CE6Tl1o0q-Fy_Yyy-FWKhfc-UxzC18";
         SerenityRest.given()
