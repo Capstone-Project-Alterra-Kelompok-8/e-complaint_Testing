@@ -17,7 +17,7 @@ public class UpdateNewsById {
 
     @Step("I set valid endpoint and method with validly")
     public String setValidEndpointAndMethodWithValidly() {
-        return url + "/news/9";
+        return url + "/news/27";
     }
 
     @Step("I send a request to update news data by ID")
@@ -29,8 +29,8 @@ public class UpdateNewsById {
                 .header("Authorization", "Bearer " + token)
                 .header("Content-Type", "application/json")
                 .contentType(ContentType.MULTIPART)
-                .multiPart("title","AREA TANAH")
-                .multiPart("content","SEDANG LONGSOR")
+                .multiPart("title","AREA TANAH MERAH PUTIH")
+                .multiPart("content","DISINI SEDANG LONGSOR")
                 .multiPart("category_id","6")
                 .multiPart("files", sampleFile)
                 .post(setValidEndpointAndMethodWithValidly());

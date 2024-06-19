@@ -25,7 +25,7 @@ public class LoginUser {
         JSONObject requestBody = new JSONObject();
 
         requestBody.put("email", "mannperii16@gmail.com");
-        requestBody.put("password", "1234");
+        requestBody.put("password", "user");
 
         SerenityRest.given()
                 .header("Content-Type", "application/json")

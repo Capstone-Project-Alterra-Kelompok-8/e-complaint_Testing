@@ -10,7 +10,7 @@ public class DeleteComplaintDiscussionById {
 
     @Step("I set a valid API endpoint and method")
     public String setAValidApiEndpointAndMethod() {
-        return url + "/complaints/C-81jas92581/discussions/20";
+        return url + "/complaints/C-eac9990da3/discussions/38";
     }
 
     @Step("I send a request to delete complaint discussion by ID")

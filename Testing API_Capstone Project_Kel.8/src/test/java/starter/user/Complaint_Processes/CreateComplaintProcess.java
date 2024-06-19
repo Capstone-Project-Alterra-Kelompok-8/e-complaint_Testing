@@ -16,7 +16,7 @@ public class CreateComplaintProcess {
 
     @Step("I set API endpoint for create a complaint process")
     public String setApiForNewComplaintProcess() {
-        return url + "/complaints/C-4672cef57c/processes";
+        return url + "/complaints/C-a493babad2/processes";
     }
 
     @Step("I send request endpoint for create a complaint process with valid credentials")
@@ -24,7 +24,7 @@ public class CreateComplaintProcess {
         JSONObject requestBody = new JSONObject();
 
         requestBody.put("status", "Verifikasi");
-        requestBody.put("message", "Aduan anda sedang diverifikasi");
+        requestBody.put("message", "Aduan anda telah diverifikasi");
 
         String token = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwibmFtZSI6IlN1cGVyIEFkbWluIiwiZW1haWwiOiJzdXBlcl9hZG1pbkBnbWFpbC5jb20iLCJyb2xlIjoic3VwZXJfYWRtaW4ifQ.2wN36slPPgg24CE6Tl1o0q-Fy_Yyy-FWKhfc-UxzC18";
         SerenityRest.given()
@@ -40,9 +40,9 @@ public class CreateComplaintProcess {
         restAssuredThat(response -> response.body("status", Matchers.equalTo(true)));
         restAssuredThat(response -> response.body("message", Matchers.equalTo("Success Create Complaint Process")));
         restAssuredThat(response -> response.body("'data'.'id'", notNullValue()));
-        restAssuredThat(response -> response.body("'data'.'complaint_id'", Matchers.equalTo("C-123j9ak280")));
-        restAssuredThat(response -> response.body("'data'.'status'", Matchers.equalTo("on progress")));
-        restAssuredThat(response -> response.body("'data'.'message'", Matchers.equalTo("Aduan anda sedang diproses")));
+        restAssuredThat(response -> response.body("'data'.'complaint_id'", Matchers.equalTo("C-a493babad2")));
+        restAssuredThat(response -> response.body("'data'.'status'", Matchers.equalTo("Verifikasi")));
+        restAssuredThat(response -> response.body("'data'.'message'", Matchers.equalTo("Aduan anda telah diverifikasi")));
         restAssuredThat(response -> response.body(matchesJsonSchema(schema)));
     }
     @Step("I send request endpoint for create a complaint process with invalid status")

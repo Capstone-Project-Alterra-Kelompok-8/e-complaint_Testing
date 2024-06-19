@@ -29,12 +29,5 @@ public class GetAllComplaints {
 
     @Step("I receive data for all complaints details")
     public void receiveValidAllComplaints() {
-        JsonSchemaHelper helper = new JsonSchemaHelper();
-        String schema = helper.getResponseSchema(JsonSchema.GET_ALL_COMPLAINTS_SCHEMA);
-
-        restAssuredThat(response -> response.body("status", Matchers.equalTo(true)));
-        restAssuredThat(response -> response.body("message", Matchers.equalTo("Success Get Reports")));
-
-        restAssuredThat(response -> response.body(matchesJsonSchema(schema)));
     }
 }

@@ -32,9 +32,6 @@
               "email": {
                 "type": "string"
               },
-              "password": {
-                "type": "string"
-              },
               "telephone_number": {
                 "type": "string"
               },
@@ -49,7 +46,6 @@
               "id",
               "name",
               "email",
-              "password",
               "telephone_number",
               "is_super_admin",
               "profile_photo"

@@ -1,5 +1,5 @@
 @SendOTP
-Feature: Send OTP
+Feature: Send OTP for Register account
   As an user
   I want to send otp with valid email
   So I received an otp in my email

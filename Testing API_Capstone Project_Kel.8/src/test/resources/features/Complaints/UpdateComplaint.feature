@@ -14,5 +14,5 @@ Feature: Update Complaint
 
   Scenario: As an user i can update my complaint by invalid credentials
     When I send request to update complaint user by invalid credentials(invalid regency_id)
-    Then I receive status code 400 Bad Request
+    Then I receive status code 404 not found
     And I receive error message that regency not found

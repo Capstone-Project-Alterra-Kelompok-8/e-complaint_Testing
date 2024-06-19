@@ -15,7 +15,7 @@ public class GetCategoriesByID {
 
     @Step("I set API endpoint with an valid ID to get category by valid ID")
     public String setApiGetEndValidCategories() {
-        return url + "/categories/1";
+        return url + "/categories/2";
     }
 
     @Step("I send request endpoint for get category")
@@ -33,9 +33,9 @@ public class GetCategoriesByID {
 
         restAssuredThat(response -> response.body("status", Matchers.equalTo(true)));
         restAssuredThat(response -> response.body("message", Matchers.equalTo("Success get category by ID")));
-        restAssuredThat(response -> response.body("'data'.'ID'", Matchers.equalTo(1)));
-        restAssuredThat(response -> response.body("'data'.'Name'", Matchers.equalTo("Kesehatan")));
-        restAssuredThat(response -> response.body("'data'.'Description'", Matchers.equalTo("Kategori pengaduan yang berkaitan dengan kesehatan seperti fasilitas kesehatan, obat-obatan, dan lain-lain")));
+        restAssuredThat(response -> response.body("'data'.'ID'", Matchers.equalTo(2)));
+        restAssuredThat(response -> response.body("'data'.'Name'", Matchers.equalTo("Pendidikan")));
+        restAssuredThat(response -> response.body("'data'.'Description'", Matchers.equalTo("Kategori pengaduan yang berkaitan dengan pendidikan seperti fasilitas pendidikan, kurikulum, dan lain-lain")));
 
         restAssuredThat(response -> response.body(matchesJsonSchema(schema)));
     }

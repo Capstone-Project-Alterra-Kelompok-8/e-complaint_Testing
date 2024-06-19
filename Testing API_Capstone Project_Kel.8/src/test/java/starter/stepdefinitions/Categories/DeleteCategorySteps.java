@@ -29,4 +29,8 @@ public class DeleteCategorySteps {
     public void setDeleteInValidCategory(){
         deleteCategory.setApiDeleteInvalidIdCategoryEndpoint();
     }
+    @When("I send request endpoint for delete category with invalid ID")
+    public void sendInvalidDeleteCategoryRequest(){
+        deleteCategory.sendInvalidDeleteCategoryUserRequest();
+    }
 }

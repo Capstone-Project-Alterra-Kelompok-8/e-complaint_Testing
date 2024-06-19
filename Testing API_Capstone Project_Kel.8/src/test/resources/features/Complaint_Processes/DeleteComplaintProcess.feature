@@ -12,6 +12,6 @@ Feature: Delete Complaint Process by ID
 
   Scenario: As an admin I can delete complaint process by invalid ID
     Given I set API endpoint for delete complaint process with invalid ID
-    When I send request endpoint for delete complaint process
+    When I send request endpoint for delete complaint process with invalid ID
     Then I receive status code 404 not found
     And I receive response body that complaint process not found

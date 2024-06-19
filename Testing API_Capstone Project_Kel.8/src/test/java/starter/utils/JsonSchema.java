@@ -34,4 +34,5 @@ public class JsonSchema {
     public static final String UPDATE_NEWS_BY_ID_SCHEMA = "schema/update_news_by_id_schema.json";
     public static final String CREATE_NEWS_COMMENT_BY_ID_SCHEMA = "schema/create_news_comment_by_id_schema.json";
     public static final String UPDATE_NEWS_COMMENT_BY_ID_SCHEMA = "schema/update_news_comment_by_id_schema.json";
+    public static final String UPDATE_COMPLAINT_PROCESS_SCHEMA = "schema/update_complaint_process_schema.json";
 }

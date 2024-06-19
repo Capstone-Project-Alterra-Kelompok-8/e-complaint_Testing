@@ -29,4 +29,8 @@ public class GetComplaintProcessSteps {
     public void setApiGetEndInValidIDComplaintProcess(){
         getComplaintProcess.setApiGetEndInValidComplaintProcessID();
     }
+    @When("I send request endpoint for get complaint process by invalid ID")
+    public void sendGetRequestInValidIDComplaintProcess(){
+        getComplaintProcess.sendGetRequestInValidComplaintProcessID();
+    }
 }
