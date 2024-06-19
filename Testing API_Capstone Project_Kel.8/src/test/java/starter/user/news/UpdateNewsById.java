@@ -17,7 +17,7 @@ public class UpdateNewsById {
 
     @Step("I set valid endpoint and method with validly")
     public String setValidEndpointAndMethodWithValidly() {
-        return url + "/news/15";
+        return url + "/news/9";
     }
 
     @Step("I send a request to update news data by ID")
@@ -29,8 +29,8 @@ public class UpdateNewsById {
                 .header("Authorization", "Bearer " + token)
                 .header("Content-Type", "application/json")
                 .contentType(ContentType.MULTIPART)
-                .multiPart("title","TANAH")
-                .multiPart("content","LONGSOR")
+                .multiPart("title","AREA TANAH")
+                .multiPart("content","SEDANG LONGSOR")
                 .multiPart("category_id","6")
                 .multiPart("files", sampleFile)
                 .post(setValidEndpointAndMethodWithValidly());
@@ -57,7 +57,7 @@ public class UpdateNewsById {
 
     @Step("I set with valid endpoint and wrong method")
     public String setWithValidEndpointAndWrongMethod() {
-        return url + "/news/15";
+        return url + "/news/9";
     }
 
     @Step("I send a request to update news data by ID with invalid method")
@@ -77,7 +77,7 @@ public class UpdateNewsById {
 
     @Step("I set with valid method and incorrect endpoint")
     public String setWithValidMethodAndIncorrectEndpoint() {
-        return url + "/new/15";
+        return url + "/new/9";
     }
 
     @Step("I send request to update news data by ID with invalid endpoint")
@@ -89,8 +89,8 @@ public class UpdateNewsById {
                 .header("Authorization", "Bearer " + token)
                 .header("Content-Type", "application/json")
                 .contentType(ContentType.MULTIPART)
-                .multiPart("title","TANAH")
-                .multiPart("content","LONGSOR")
+                .multiPart("title","AREA TANAH")
+                .multiPart("content","SEDANG LONGSOR")
                 .multiPart("category_id","6")
                 .multiPart("files", sampleFile)
                 .post(setWithValidMethodAndIncorrectEndpoint());
@@ -104,7 +104,7 @@ public class UpdateNewsById {
 
     @Step("I set valid method with invalid API endpoint ID")
     public String setValidMethodWithInvalidApiEndpointId() {
-        return url + "/news/150";
+        return url + "/news/90";
     }
 
     @Step("I send a request to update news data by ID with invalid ID")
@@ -116,8 +116,8 @@ public class UpdateNewsById {
                 .header("Authorization", "Bearer " + token)
                 .header("Content-Type", "application/json")
                 .contentType(ContentType.MULTIPART)
-                .multiPart("title","TANAH")
-                .multiPart("content","LONGSOR")
+                .multiPart("title","AREA TANAH")
+                .multiPart("content","SEDANG LONGSOR")
                 .multiPart("category_id","6")
                 .multiPart("files", sampleFile)
                 .post(setValidMethodWithInvalidApiEndpointId());

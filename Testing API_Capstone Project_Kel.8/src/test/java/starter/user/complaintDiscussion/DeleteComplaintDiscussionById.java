@@ -10,7 +10,7 @@ public class DeleteComplaintDiscussionById {
 
     @Step("I set a valid API endpoint and method")
     public String setAValidApiEndpointAndMethod() {
-        return url + "/complaints/C-8ksh&s9280/discussions/11";
+        return url + "/complaints/C-81jas92581/discussions/20";
     }
 
     @Step("I send a request to delete complaint discussion by ID")
@@ -34,7 +34,7 @@ public class DeleteComplaintDiscussionById {
 
     @Step("I set a valid API endpoint with the wrong method")
     public String setAValidApiEndpointWithTheWrongMethod() {
-        return url + "/complaints/C-8ksh&s9280/discussions/11";
+        return url + "/complaints/C-81jas92581/discussions/20";
     }
 
     @Step("I send a request to delete complaint discussion by ID with invalid method")
@@ -53,7 +53,7 @@ public class DeleteComplaintDiscussionById {
 
     @Step("I set a valid method and an incorrect endpoint")
     public String setAValidMethodAndAnIncorrectEndpoint() {
-        return url + "/complaints/C-8ksh&s9280/discussion/11";
+        return url + "/complaints/C-81jas92581/discussion/20";
     }
 
     @Step("I send request to delete complaint discussion by ID with invalid endpoint")
@@ -72,7 +72,7 @@ public class DeleteComplaintDiscussionById {
 
     @Step("I set a valid method and an invalid API endpoint ID")
     public String setAValidMethodAndAnInvalidApiEndpointId() {
-        return url + "/complaints/CC-8ksh&s92800/discussions/111";
+        return url + "/complaints/CC-81jas92581/discussions/200";
     }
     @Step("I send a request to delete complaint discussion by ID with invalid ID")
     public void sendARequestToDeleteComplaintDiscussionByIdWithInvalidId() {
