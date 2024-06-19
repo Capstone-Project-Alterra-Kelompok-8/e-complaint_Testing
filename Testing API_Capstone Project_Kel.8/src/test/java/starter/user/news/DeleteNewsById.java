@@ -10,7 +10,7 @@ public class DeleteNewsById {
 
     @Step("I set valid endpoint and method")
     public String setValidEndpointAndMethod() {
-        return url + "/news/12";
+        return url + "/news/7";
     }
 
     @Step("I send a request to delete news by ID")
@@ -34,7 +34,7 @@ public class DeleteNewsById {
 
     @Step("I set valid API endpoint with wrong method")
     public String setValidApiEndpointWithWrongMethod() {
-        return url + "/news/12";
+        return url + "/news/7";
     }
 
     @Step("I send a request to delete news by ID with invalid method")
@@ -53,7 +53,7 @@ public class DeleteNewsById {
 
     @Step("I set valid method and wrong endpoint")
     public String setValidMethodAndWrongEndpoint() {
-        return url + "/new/12";
+        return url + "/new/7";
     }
 
     @Step("I send request to delete news by ID with invalid endpoint")
@@ -72,7 +72,7 @@ public class DeleteNewsById {
 
     @Step("I set with valid method and invalid API endpoint ID")
     public String setWithValidMethodAndInvalidApiEndpointId() {
-        return url + "/news/120";
+        return url + "/news/70";
     }
 
     @Step("I send a request to delete news by ID with invalid ID")

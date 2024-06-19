@@ -15,12 +15,12 @@ public class GetAllComplaintDiscussion {
 
     @Step("I set the valid API endpoint and method")
     public String setTheValidApiEndpointAndMethod() {
-        return url + "/complaints/C-8ksh&s9280/discussions";
+        return url + "/complaints/C-81jas92581/discussions";
     }
 
     @Step("I send a request to get all complaint discussion")
     public void sendARequestToGetAllComplaintDiscussion() {
-        String token = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwibmFtZSI6IlN1cGVyIEFkbWluIiwiZW1haWwiOiJzdXBlcl9hZG1pbkBnbWFpbC5jb20iLCJyb2xlIjoic3VwZXJfYWRtaW4ifQ.2wN36slPPgg24CE6Tl1o0q-Fy_Yyy-FWKhfc-UxzC18";
+        String token = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MywibmFtZSI6IkFkbWluIExlYmFrIiwiZW1haWwiOiJhZG1pbl9sZWJha0BnbWFpbC5jb20iLCJyb2xlIjoiYWRtaW4ifQ.roie-yu17r6GOyeWNj8182oLwSzyOp-CC2fxc8QedcA";
         SerenityRest.given()
                 .header("Authorization", "Bearer " + token)
                 .get(setTheValidApiEndpointAndMethod());
@@ -47,7 +47,7 @@ public class GetAllComplaintDiscussion {
 
     @Step("I set the valid API endpoint and incorrect method")
     public String setTheValidApiEndpointAndIncorrectMethod() {
-        return url + "/complaints/C-8ksh&s9280/discussions";
+        return url + "/complaints/C-81jas92581/discussions";
     }
 
     @Step("I send request to get all complaint discussion with invalid method")
@@ -67,7 +67,7 @@ public class GetAllComplaintDiscussion {
 
     @Step("I set a valid method and an incorrect API endpoint")
     public String setAValidMethodAndAnIncorrectApiEndpoint() {
-        return url + "/complaints/C-8ksh&s9280/discussion";
+        return url + "/complaints/C-81jas92581/discussion";
     }
 
     @Step("I send request to get all complaint discussion with invalid endpoint")

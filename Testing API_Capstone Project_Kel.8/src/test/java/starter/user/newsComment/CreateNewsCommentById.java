@@ -22,7 +22,7 @@ public class CreateNewsCommentById {
     public void sendARequestToCreateNewsCommentById() {
         JSONObject requestBody = new JSONObject();
 
-        requestBody.put("comment", "haha");
+        requestBody.put("comment", "BENCANA");
 
         String token = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwibmFtZSI6IlN1cGVyIEFkbWluIiwiZW1haWwiOiJzdXBlcl9hZG1pbkBnbWFpbC5jb20iLCJyb2xlIjoic3VwZXJfYWRtaW4ifQ.2wN36slPPgg24CE6Tl1o0q-Fy_Yyy-FWKhfc-UxzC18";
         SerenityRest.given()
@@ -60,7 +60,7 @@ public class CreateNewsCommentById {
     public void sendRequestToCreateNewsCommentByIdWithInvalidMethod() {
         JSONObject requestBody = new JSONObject();
 
-        requestBody.put("comment", "haha");
+        requestBody.put("comment", "BENCANA");
 
         String token = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwibmFtZSI6IlN1cGVyIEFkbWluIiwiZW1haWwiOiJzdXBlcl9hZG1pbkBnbWFpbC5jb20iLCJyb2xlIjoic3VwZXJfYWRtaW4ifQ.2wN36slPPgg24CE6Tl1o0q-Fy_Yyy-FWKhfc-UxzC18";
         SerenityRest.given()
@@ -86,7 +86,7 @@ public class CreateNewsCommentById {
     public void sendRequestToCreateNewsCommentByIdWithInvalidEndpoint() {
         JSONObject requestBody = new JSONObject();
 
-        requestBody.put("comment", "haha");
+        requestBody.put("comment", "BENCANA");
 
         String token = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwibmFtZSI6IlN1cGVyIEFkbWluIiwiZW1haWwiOiJzdXBlcl9hZG1pbkBnbWFpbC5jb20iLCJyb2xlIjoic3VwZXJfYWRtaW4ifQ.2wN36slPPgg24CE6Tl1o0q-Fy_Yyy-FWKhfc-UxzC18";
         SerenityRest.given()
@@ -111,7 +111,7 @@ public class CreateNewsCommentById {
     public void sendARequestToCreateNewsCommentByIdWithInvalidId() {
         JSONObject requestBody = new JSONObject();
 
-        requestBody.put("comment", "haha");
+        requestBody.put("comment", "BENCANA");
 
         String token = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwibmFtZSI6IlN1cGVyIEFkbWluIiwiZW1haWwiOiJzdXBlcl9hZG1pbkBnbWFpbC5jb20iLCJyb2xlIjoic3VwZXJfYWRtaW4ifQ.2wN36slPPgg24CE6Tl1o0q-Fy_Yyy-FWKhfc-UxzC18";
         SerenityRest.given()

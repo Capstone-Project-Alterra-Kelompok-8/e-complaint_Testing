@@ -15,14 +15,14 @@ public class CreateComplaintDiscussion {
 
     @Step("I set on valid API endpoint and method")
     public String setOnValidApiEndpointAndMethod() {
-        return url + "/complaints/C-8ksh&s9280/discussions";
+        return url + "/complaints/C-81jas92581/discussions";
     }
 
     @Step("I send a request to create complaint discussion")
     public void sendARequestToCreateComplaintDiscussion() {
         JSONObject requestBody = new JSONObject();
 
-        requestBody.put("comment", "kiw");
+        requestBody.put("comment", "bravo");
 
         String token = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwibmFtZSI6IlN1cGVyIEFkbWluIiwiZW1haWwiOiJzdXBlcl9hZG1pbkBnbWFpbC5jb20iLCJyb2xlIjoic3VwZXJfYWRtaW4ifQ.2wN36slPPgg24CE6Tl1o0q-Fy_Yyy-FWKhfc-UxzC18";
         SerenityRest.given()
@@ -53,14 +53,14 @@ public class CreateComplaintDiscussion {
 
     @Step("I set on valid API endpoint and incorrect method")
     public String setOnValidApiEndpointAndIncorrectMethod() {
-        return url + "/complaints/C-8ksh&s9280/discussions";
+        return url + "/complaints/C-81jas92581/discussions";
     }
 
     @Step("I send request to create complaint discussion with invalid method")
     public void sendRequestToCreateComplaintDiscussionWithInvalidMethod() {
         JSONObject requestBody = new JSONObject();
 
-        requestBody.put("comment", "kiw");
+        requestBody.put("comment", "bravo");
 
         String token = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwibmFtZSI6IlN1cGVyIEFkbWluIiwiZW1haWwiOiJzdXBlcl9hZG1pbkBnbWFpbC5jb20iLCJyb2xlIjoic3VwZXJfYWRtaW4ifQ.2wN36slPPgg24CE6Tl1o0q-Fy_Yyy-FWKhfc-UxzC18";
         SerenityRest.given()
@@ -79,14 +79,14 @@ public class CreateComplaintDiscussion {
 
     @Step("I set on valid method and an incorrect API endpoint")
     public String setOnValidMethodAndAnIncorrectApiEndpoint() {
-        return url + "/complaints/C-8ksh&s9280/discussion";
+        return url + "/complaints/C-81jas92581/discussion";
     }
 
     @Step("I send request to create complaint discussion with invalid endpoint")
     public void sendRequestToCreateComplaintDiscussionWithInvalidEndpoint() {
         JSONObject requestBody = new JSONObject();
 
-        requestBody.put("comment", "kiw");
+        requestBody.put("comment", "bravo");
 
         String token = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwibmFtZSI6IlN1cGVyIEFkbWluIiwiZW1haWwiOiJzdXBlcl9hZG1pbkBnbWFpbC5jb20iLCJyb2xlIjoic3VwZXJfYWRtaW4ifQ.2wN36slPPgg24CE6Tl1o0q-Fy_Yyy-FWKhfc-UxzC18";
         SerenityRest.given()
