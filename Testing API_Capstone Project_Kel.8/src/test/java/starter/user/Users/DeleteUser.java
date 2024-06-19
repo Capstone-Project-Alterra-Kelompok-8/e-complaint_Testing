@@ -14,7 +14,7 @@ public class DeleteUser {
 
     @Step("I set API endpoint for delete user with valid ID")
     public String setApiDeleteUserEndpoint() {
-        return url + "/users/6";
+        return url + "/users/12";
     }
 
     @Step("I send request endpoint for delete user")

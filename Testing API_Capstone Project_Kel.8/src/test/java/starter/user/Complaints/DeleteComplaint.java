@@ -14,7 +14,7 @@ public class DeleteComplaint {
 
     @Step("I set API endpoint for delete complaint with valid ID")
     public String setApiDeleteComplaintEndpoint() {
-        return url + "/complaints/C-0c561ed3db";
+        return url + "/complaints/C-47737407a7";
     }
 
     @Step("I send request endpoint for delete complaint")

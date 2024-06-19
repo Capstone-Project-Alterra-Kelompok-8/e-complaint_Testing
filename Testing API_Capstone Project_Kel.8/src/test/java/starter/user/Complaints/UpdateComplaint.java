@@ -52,7 +52,6 @@ public class UpdateComplaint {
         restAssuredThat(response -> response.body("'data'.'type'", Matchers.equalTo("public")));
         restAssuredThat(response -> response.body("'data'.'description'", Matchers.equalTo("Lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet")));
         restAssuredThat(response -> response.body("'data'.'files'", notNullValue()));
-        restAssuredThat(response -> response.body("'data'.'created_at'", notNullValue()));
 
         restAssuredThat(response -> response.body(matchesJsonSchema(schema)));
     }

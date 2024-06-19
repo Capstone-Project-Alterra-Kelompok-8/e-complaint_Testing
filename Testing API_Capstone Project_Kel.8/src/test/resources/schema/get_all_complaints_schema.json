@@ -1,284 +1,190 @@
 {
-  "$schema": "http://json-schema.org/draft-06/schema#",
-  "$ref": "#/definitions/Welcome2",
-  "definitions": {
-    "Welcome2": {
-      "type": "object",
-      "additionalProperties": false,
-      "properties": {
-        "status": {
-          "type": "boolean"
-        },
-        "message": {
-          "type": "string"
-        },
-        "metadata": {
-          "$ref": "#/definitions/Metadata"
-        },
-        "data": {
-          "type": "array",
-          "items": {
-            "$ref": "#/definitions/Datum"
-          }
-        }
-      },
-      "required": [
-        "data",
-        "message",
-        "metadata",
-        "status"
-      ],
-      "title": "Welcome2"
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Generated schema for Root",
+  "type": "object",
+  "properties": {
+    "status": {
+      "type": "boolean"
     },
-    "Datum": {
-      "type": "object",
-      "additionalProperties": false,
-      "properties": {
-        "id": {
-          "type": "string"
-        },
-        "user": {
-          "$ref": "#/definitions/User"
-        },
-        "category": {
-          "$ref": "#/definitions/Category"
-        },
-        "regency": {
-          "$ref": "#/definitions/Regency"
-        },
-        "address": {
-          "type": "string"
-        },
-        "description": {
-          "type": "string"
-        },
-        "status": {
-          "type": "string"
-        },
-        "type": {
-          "$ref": "#/definitions/Type"
-        },
-        "files": {
-          "anyOf": [
-            {
-              "type": "array",
-              "items": {
-                "$ref": "#/definitions/File"
-              }
-            },
-            {
-              "type": "null"
-            }
-          ]
-        },
-        "date": {
-          "$ref": "#/definitions/Date"
-        },
-        "total_likes": {
-          "type": "integer"
-        },
-        "updated_at": {
-          "type": "string"
-        }
-      },
-      "required": [
-        "address",
-        "category",
-        "date",
-        "description",
-        "files",
-        "id",
-        "regency",
-        "status",
-        "total_likes",
-        "type",
-        "updated_at",
-        "user"
-      ],
-      "title": "Datum"
+    "message": {
+      "type": "string"
     },
-    "Category": {
+    "metadata": {
       "type": "object",
-      "additionalProperties": false,
-      "properties": {
-        "id": {
-          "type": "integer"
-        },
-        "name": {
-          "type": "string"
-        },
-        "description": {
-          "type": "string"
-        }
-      },
-      "required": [
-        "description",
-        "id",
-        "name"
-      ],
-      "title": "Category"
-    },
-    "File": {
-      "type": "object",
-      "additionalProperties": false,
-      "properties": {
-        "id": {
-          "type": "integer"
-        },
-        "complaint_id": {
-          "type": "string"
-        },
-        "path": {
-          "type": "string"
-        }
-      },
-      "required": [
-        "complaint_id",
-        "id",
-        "path"
-      ],
-      "title": "File"
-    },
-    "Regency": {
-      "type": "object",
-      "additionalProperties": false,
-      "properties": {
-        "id": {
-          "type": "string",
-          "format": "integer"
-        },
-        "name": {
-          "type": "string"
-        }
-      },
-      "required": [
-        "id",
-        "name"
-      ],
-      "title": "Regency"
-    },
-    "User": {
-      "type": "object",
-      "additionalProperties": false,
-      "properties": {
-        "id": {
-          "type": "integer"
-        },
-        "name": {
-          "$ref": "#/definitions/Name"
-        },
-        "email": {
-          "$ref": "#/definitions/Email"
-        },
-        "telephone_number": {
-          "type": "string"
-        },
-        "profile_photo": {
-          "$ref": "#/definitions/ProfilePhoto"
-        }
-      },
-      "required": [
-        "email",
-        "id",
-        "name",
-        "profile_photo",
-        "telephone_number"
-      ],
-      "title": "User"
-    },
-    "Metadata": {
-      "type": "object",
-      "additionalProperties": false,
       "properties": {
         "total_data": {
-          "type": "integer"
+          "type": "number"
         },
         "Pagination": {
-          "$ref": "#/definitions/Pagination"
+          "type": "object",
+          "properties": {
+            "total_data_per_page": {
+              "type": "number"
+            },
+            "first_page": {
+              "type": "number"
+            },
+            "last_page": {
+              "type": "number"
+            },
+            "current_page": {
+              "type": "number"
+            },
+            "next_page": {
+              "type": "number"
+            },
+            "prev_page": {
+              "type": "number"
+            }
+          },
+          "required": [
+            "total_data_per_page",
+            "first_page",
+            "last_page",
+            "current_page",
+            "next_page",
+            "prev_page"
+          ]
         }
       },
       "required": [
-        "Pagination",
-        "total_data"
-      ],
-      "title": "Metadata"
+        "total_data",
+        "Pagination"
+      ]
     },
-    "Pagination": {
-      "type": "object",
-      "additionalProperties": false,
-      "properties": {
-        "total_data_per_page": {
-          "type": "integer"
+    "data": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "user": {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "number"
+              },
+              "name": {
+                "type": "string"
+              },
+              "email": {
+                "type": "string"
+              },
+              "telephone_number": {
+                "type": "string"
+              },
+              "profile_photo": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "id",
+              "name",
+              "email",
+              "telephone_number",
+              "profile_photo"
+            ]
+          },
+          "category": {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "number"
+              },
+              "name": {
+                "type": "string"
+              },
+              "description": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "id",
+              "name",
+              "description"
+            ]
+          },
+          "regency": {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "name": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "id",
+              "name"
+            ]
+          },
+          "address": {
+            "type": "string"
+          },
+          "description": {
+            "type": "string"
+          },
+          "status": {
+            "type": "string"
+          },
+          "type": {
+            "type": "string"
+          },
+          "files": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "number"
+                },
+                "complaint_id": {
+                  "type": "string"
+                },
+                "path": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "id",
+                "complaint_id",
+                "path"
+              ]
+            }
+          },
+          "date": {
+            "type": "string"
+          },
+          "total_likes": {
+            "type": "number"
+          },
+          "updated_at": {
+            "type": "string"
+          }
         },
-        "first_page": {
-          "type": "integer"
-        },
-        "last_page": {
-          "type": "integer"
-        },
-        "current_page": {
-          "type": "integer"
-        },
-        "next_page": {
-          "type": "integer"
-        },
-        "prev_page": {
-          "type": "integer"
-        }
-      },
-      "required": [
-        "current_page",
-        "first_page",
-        "last_page",
-        "next_page",
-        "prev_page",
-        "total_data_per_page"
-      ],
-      "title": "Pagination"
-    },
-    "Date": {
-      "type": "string",
-      "enum": [
-        "13 June 2024",
-        "12 May 2024",
-        "14 June 2024"
-      ],
-      "title": "Date"
-    },
-    "Type": {
-      "type": "string",
-      "enum": [
-        "public",
-        "private"
-      ],
-      "title": "Type"
-    },
-    "Email": {
-      "type": "string",
-      "enum": [
-        "mannperii16@gmail.com",
-        "user3@gmail.com",
-        "user1@gmail.com",
-        "user2@gmail.com"
-      ],
-      "title": "Email"
-    },
-    "Name": {
-      "type": "string",
-      "enum": [
-        "testing_my_updated",
-        "User 3",
-        "User 1",
-        "User 2"
-      ],
-      "title": "Name"
-    },
-    "ProfilePhoto": {
-      "type": "string",
-      "enum": [
-        "profile-photos/default.jpg"
-      ],
-      "title": "ProfilePhoto"
+        "required": [
+          "id",
+          "user",
+          "category",
+          "regency",
+          "address",
+          "description",
+          "status",
+          "type",
+          "date",
+          "total_likes",
+          "updated_at"
+        ]
+      }
     }
-  }
+  },
+  "required": [
+    "status",
+    "message",
+    "metadata",
+    "data"
+  ]
 }

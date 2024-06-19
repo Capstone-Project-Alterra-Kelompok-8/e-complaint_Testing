@@ -25,7 +25,7 @@ public class CreateAdminAccount {
         JSONObject requestBody = new JSONObject();
 
         requestBody.put("name", "testing_test");
-        requestBody.put("email", "halo00001test@gmail.com");
+        requestBody.put("email", "polisi1@gmail.com");
         requestBody.put("telephone_number", "089999");
         requestBody.put("password","12345");
 
@@ -45,7 +45,7 @@ public class CreateAdminAccount {
         restAssuredThat(response -> response.body("message", Matchers.equalTo("Success Create Account")));
         restAssuredThat(response -> response.body("'data'.'id'", notNullValue()));
         restAssuredThat(response -> response.body("'data'.'name'", Matchers.equalTo("testing_test")));
-        restAssuredThat(response -> response.body("'data'.'email'", Matchers.equalTo("halo00001test@gmail.com")));
+        restAssuredThat(response -> response.body("'data'.'email'", Matchers.equalTo("polisi1@gmail.com")));
         restAssuredThat(response -> response.body("'data'.'telephone_number'", Matchers.equalTo("089999")));
         restAssuredThat(response -> response.body(matchesJsonSchema(schema)));
     }

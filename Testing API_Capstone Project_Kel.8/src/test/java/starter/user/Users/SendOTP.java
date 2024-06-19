@@ -16,7 +16,7 @@ public class SendOTP {
     private static String url = "https://qe-capstone.mdrizki.my.id/api/v1";
     @Step("I set users API endpoint for send otp")
     public String setApiOTPUser() {
-        return url + "/users/send-otp";
+        return url + "/users/register/send-otp";
     }
 
     @Step("I send request endpoint for send otp with valid email")

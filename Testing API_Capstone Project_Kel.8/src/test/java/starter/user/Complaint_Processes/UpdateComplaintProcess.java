@@ -24,20 +24,20 @@ public class UpdateComplaintProcess {
         SerenityRest.given().header("Authorization", "Bearer " + token)
                 .header("Content-Type", "application/json")
                 .contentType(ContentType.MULTIPART)
-                .multiPart("message", "Aduan anda diverifikasi")
+                .multiPart("message", "Aduan anda Pending. Mohon Tunggu")
                 .put(setApiUpdateComplaintProcess());
     }
     @Step("I should get data complaint process that I updated")
     public void receiveComplaintProcessDataUpdated(){
         JsonSchemaHelper helper = new JsonSchemaHelper();
-        String schema = helper.getResponseSchema(JsonSchema.CREATE_COMPLAINT_PROCESS_SCHEMA);
+        String schema = helper.getResponseSchema(JsonSchema.UPDATE_COMPLAINT_PROCESS_SCHEMA);
 
         restAssuredThat(response -> response.body("status", Matchers.equalTo(true)));
         restAssuredThat(response -> response.body("message", Matchers.equalTo("Success Update Complaint Process")));
         restAssuredThat(response -> response.body("'data'.'id'", Matchers.equalTo(22)));
         restAssuredThat(response -> response.body("'data'.'complaint_id'", Matchers.equalTo("C-4abc1106dd")));
         restAssuredThat(response -> response.body("'data'.'status'", Matchers.equalTo("Pending")));
-        restAssuredThat(response -> response.body("'data'.'message'", Matchers.equalTo("Aduan anda akan segera kami periksa")));
+        restAssuredThat(response -> response.body("'data'.'message'", Matchers.equalTo("Aduan anda Pending. Mohon Tunggu")));
 
         restAssuredThat(response -> response.body(matchesJsonSchema(schema)));
     }

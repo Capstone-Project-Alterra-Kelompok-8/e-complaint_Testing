@@ -14,7 +14,7 @@ public class DeleteComplaintProcess {
 
     @Step("I set API endpoint for delete complaint process with valid ID")
     public String setApiDeleteComplaintProcessEndpoint() {
-        return url + "/complaints/C-123j9ak280/processes/12";
+        return url + "/complaints/C-4672cef57c/processes/33";
     }
 
     @Step("I send request endpoint for delete complaint process")

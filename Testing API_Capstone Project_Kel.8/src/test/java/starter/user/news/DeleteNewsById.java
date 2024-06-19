@@ -10,7 +10,7 @@ public class DeleteNewsById {
 
     @Step("I set valid endpoint and method")
     public String setValidEndpointAndMethod() {
-        return url + "/news/7";
+        return url + "/news/28";
     }
 
     @Step("I send a request to delete news by ID")
