@@ -23,7 +23,7 @@ public class ChangePasswordUser {
     public void sendPassUser() {
         JSONObject requestBody = new JSONObject();
 
-        requestBody.put("new_password", "user");
+        requestBody.put("new_password", "password");
 
         String token = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTIsIm5hbWUiOiJteV9hY2NvdW50X2ZlciIsImVtYWlsIjoibWFubnBlcmlpMTZAZ21haWwuY29tIiwicm9sZSI6InVzZXIifQ.nN5RUaMMDeooPpKtjMnlIhTXVy-rWWKr_t2arrlLlzI";
         SerenityRest.given()
