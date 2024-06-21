@@ -14,7 +14,7 @@ public class GetComplaintByID {
 
     @Step("I set API endpoint with an valid ID to get complaint by valid ID")
     public String setApiGetEndValidComplaint(){
-        return url + "/complaints/C-19e37aa35f";
+        return url + "/complaints/C-8kshis9280";
     }
 
     @Step("I send request endpoint for get complaint by ID")
@@ -33,7 +33,7 @@ public class GetComplaintByID {
 
         restAssuredThat(response -> response.body("status", Matchers.equalTo(true)));
         restAssuredThat(response -> response.body("message", Matchers.equalTo("Success Get Report")));
-        restAssuredThat(response -> response.body("'data'.'id'", Matchers.equalTo("C-19e37aa35f")));
+        restAssuredThat(response -> response.body("'data'.'id'", Matchers.equalTo("C-8kshis9280")));
 
         restAssuredThat(response -> response.body(matchesJsonSchema(schema)));
     }

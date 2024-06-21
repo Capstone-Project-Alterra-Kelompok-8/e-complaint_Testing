@@ -19,13 +19,13 @@ public class UpdateComplaint {
 
     @Step("I set API endpoint for update complaint user")
     public String setApiUpdateComplaint(){
-        return url + "/complaints/C-2643e92ffc";
+        return url + "/complaints/C-b11d50ba46";
     }
 
     @Step("I send request to update complaint user by valid credentials")
     public void sendPutRequestUpdateComplaint(){
         File sampleFile = new File("src/test/resources/tanahlongsor.jpeg");
-        String token = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTIsIm5hbWUiOiJteV9hY2NvdW50X2ZlciIsImVtYWlsIjoibWFubnBlcmlpMTZAZ21haWwuY29tIiwicm9sZSI6InVzZXIifQ.nN5RUaMMDeooPpKtjMnlIhTXVy-rWWKr_t2arrlLlzI";
+        String token = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MywibmFtZSI6Ik11aGFtbWFkIElxYmFsIiwiZW1haWwiOiJtdWhhbW1hZGlxYmFsQGdtYWlsLmNvbSIsInJvbGUiOiJ1c2VyIn0.aVe1vWDl25I0zlIPuXZ8z4p3htE0dsar5Ck-oQNdRo8";
         SerenityRest.given().header("Authorization", "Bearer " + token)
                 .header("Content-Type", "application/json")
                 .contentType(ContentType.MULTIPART)
@@ -45,7 +45,7 @@ public class UpdateComplaint {
 
         restAssuredThat(response -> response.body("status", Matchers.equalTo(true)));
         restAssuredThat(response -> response.body("message", Matchers.equalTo("Success Update Report")));
-        restAssuredThat(response -> response.body("'data'.'id'", Matchers.equalTo("C-2643e92ffc")));
+        restAssuredThat(response -> response.body("'data'.'id'", Matchers.equalTo("C-b11d50ba46")));
         restAssuredThat(response -> response.body("'data'.'category'.'id'", Matchers.equalTo(7)));
         restAssuredThat(response -> response.body("'data'.'regency'.'id'", Matchers.equalTo("3604")));
         restAssuredThat(response -> response.body("'data'.'address'", Matchers.equalTo("Jl. pemuda no 31, RT. 04 RW. 05, Lorem ipsum, Indonesia")));
@@ -58,7 +58,7 @@ public class UpdateComplaint {
     @Step("I send request to update complaint user by invalid credentials(invalid regency_id)")
     public void sendPutInvalidRequestUpdateComplaint(){
         File sampleFile = new File("src/test/resources/tanahlongsor.jpeg");
-        String token = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTIsIm5hbWUiOiJteV9hY2NvdW50X2ZlciIsImVtYWlsIjoibWFubnBlcmlpMTZAZ21haWwuY29tIiwicm9sZSI6InVzZXIifQ.nN5RUaMMDeooPpKtjMnlIhTXVy-rWWKr_t2arrlLlzI";
+        String token = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MywibmFtZSI6Ik11aGFtbWFkIElxYmFsIiwiZW1haWwiOiJtdWhhbW1hZGlxYmFsQGdtYWlsLmNvbSIsInJvbGUiOiJ1c2VyIn0.aVe1vWDl25I0zlIPuXZ8z4p3htE0dsar5Ck-oQNdRo8";
         SerenityRest.given().header("Authorization", "Bearer " + token)
                 .header("Content-Type", "application/json")
                 .contentType(ContentType.MULTIPART)

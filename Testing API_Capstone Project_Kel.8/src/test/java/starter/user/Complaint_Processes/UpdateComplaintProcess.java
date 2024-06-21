@@ -15,7 +15,7 @@ public class UpdateComplaintProcess {
 
     @Step("I set API endpoint for update complaint process by valid credentials")
     public String setApiUpdateComplaintProcess(){
-        return url + "/complaints/C-4abc1106dd/processes/22";
+        return url + "/complaints/C-0ea85ed770/processes/36";
     }
 
     @Step("I send request to update complaint process")
@@ -24,7 +24,7 @@ public class UpdateComplaintProcess {
         SerenityRest.given().header("Authorization", "Bearer " + token)
                 .header("Content-Type", "application/json")
                 .contentType(ContentType.MULTIPART)
-                .multiPart("message", "Aduan anda Pending. Mohon Tunggu")
+                .multiPart("message", "Aduan anda sedang diverifikasi. Mohon Tunggu")
                 .put(setApiUpdateComplaintProcess());
     }
     @Step("I should get data complaint process that I updated")
@@ -34,10 +34,10 @@ public class UpdateComplaintProcess {
 
         restAssuredThat(response -> response.body("status", Matchers.equalTo(true)));
         restAssuredThat(response -> response.body("message", Matchers.equalTo("Success Update Complaint Process")));
-        restAssuredThat(response -> response.body("'data'.'id'", Matchers.equalTo(22)));
-        restAssuredThat(response -> response.body("'data'.'complaint_id'", Matchers.equalTo("C-4abc1106dd")));
-        restAssuredThat(response -> response.body("'data'.'status'", Matchers.equalTo("Pending")));
-        restAssuredThat(response -> response.body("'data'.'message'", Matchers.equalTo("Aduan anda Pending. Mohon Tunggu")));
+        restAssuredThat(response -> response.body("'data'.'id'", Matchers.equalTo(36)));
+        restAssuredThat(response -> response.body("'data'.'complaint_id'", Matchers.equalTo("C-0ea85ed770")));
+        restAssuredThat(response -> response.body("'data'.'status'", Matchers.equalTo("Verifikasi")));
+        restAssuredThat(response -> response.body("'data'.'message'", Matchers.equalTo("Aduan anda sedang diverifikasi. Mohon Tunggu")));
 
         restAssuredThat(response -> response.body(matchesJsonSchema(schema)));
     }

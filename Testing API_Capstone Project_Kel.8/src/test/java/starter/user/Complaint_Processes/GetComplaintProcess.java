@@ -15,7 +15,7 @@ public class GetComplaintProcess {
 
     @Step("I set API endpoint with an valid ID to get complaint process by valid ID")
     public String setApiGetEndValidComplaintProcessID() {
-        return url + "/complaints/C-81jas92581/processes";
+        return url + "/complaints/C-18581bec2f/processes";
     }
 
     @Step("I send request endpoint for get complaint process by ID")
