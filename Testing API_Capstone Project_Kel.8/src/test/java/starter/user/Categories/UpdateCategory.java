@@ -17,7 +17,7 @@ public class UpdateCategory {
 
     @Step("I set API endpoint for update category")
     public String setApiUpdateCategory(){
-        return url + "/categories/15";
+        return url + "/categories/11";
     }
 
     @Step("I send request to update category with valid credentials")
@@ -37,7 +37,7 @@ public class UpdateCategory {
 
         restAssuredThat(response -> response.body("status", Matchers.equalTo(true)));
         restAssuredThat(response -> response.body("message", Matchers.equalTo("Success update category")));
-        restAssuredThat(response -> response.body("'data'.'id'", Matchers.equalTo(15)));
+        restAssuredThat(response -> response.body("'data'.'id'", Matchers.equalTo(11)));
         restAssuredThat(response -> response.body("'data'.'name'", Matchers.equalTo("Update Category vol.1")));
         restAssuredThat(response -> response.body("'data'.'description'", Matchers.equalTo("Update vol.1")));
 

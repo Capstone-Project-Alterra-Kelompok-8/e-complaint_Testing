@@ -15,7 +15,7 @@ public class GetAllComplaintDiscussion {
 
     @Step("I set the valid API endpoint and method")
     public String setTheValidApiEndpointAndMethod() {
-        return url + "/complaints/C-81jas92581/discussions";
+        return url + "/complaints/C-1da0192be5/discussions";
     }
 
     @Step("I send a request to get all complaint discussion")

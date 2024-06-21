@@ -17,7 +17,7 @@ public class UpdateProfileAdmin {
 
     @Step("I set API endpoint for update profile admin")
     public String setApiUpdateAdmin(){
-        return url + "/admins/7";
+        return url + "/admins/12";
     }
 
     @Step("I send request to update profile admin")
@@ -27,7 +27,7 @@ public class UpdateProfileAdmin {
         requestBody.put("name", "testing_qe_updated");
         requestBody.put("email", "update12@gmail.com");
         requestBody.put("telephone_number", "08256952663");
-        requestBody.put("password", "abcdefgh");
+        requestBody.put("password", "password");
 
         String token = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwibmFtZSI6IlN1cGVyIEFkbWluIiwiZW1haWwiOiJzdXBlcl9hZG1pbkBnbWFpbC5jb20iLCJyb2xlIjoic3VwZXJfYWRtaW4ifQ.2wN36slPPgg24CE6Tl1o0q-Fy_Yyy-FWKhfc-UxzC18";
         SerenityRest.given()
@@ -44,7 +44,7 @@ public class UpdateProfileAdmin {
 
         restAssuredThat(response -> response.body("status", Matchers.equalTo(true)));
         restAssuredThat(response -> response.body("message",Matchers.equalTo("Success Update Admin")));
-        restAssuredThat(response -> response.body("'data'.'id'",Matchers.equalTo(7)));
+        restAssuredThat(response -> response.body("'data'.'id'",Matchers.equalTo(12)));
         restAssuredThat(response -> response.body("'data'.'name'",Matchers.equalTo("testing_qe_updated")));
         restAssuredThat(response -> response.body("'data'.'email'",Matchers.equalTo("update12@gmail.com")));
         restAssuredThat(response -> response.body("'data'.'password'",notNullValue()));

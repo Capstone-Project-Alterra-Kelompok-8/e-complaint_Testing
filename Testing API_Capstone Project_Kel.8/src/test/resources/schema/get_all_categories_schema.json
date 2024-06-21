@@ -22,12 +22,22 @@
           },
           "Description": {
             "type": "string"
-          }
+          },
+          "CreatedAt": {
+            "type": "string"
+          },
+          "UpdatedAt": {
+            "type": "string"
+          },
+          "DeletedAt": {}
         },
         "required": [
           "ID",
           "Name",
-          "Description"
+          "Description",
+          "CreatedAt",
+          "UpdatedAt",
+          "DeletedAt"
         ]
       }
     }

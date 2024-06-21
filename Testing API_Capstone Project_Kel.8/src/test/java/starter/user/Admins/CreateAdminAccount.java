@@ -27,7 +27,7 @@ public class CreateAdminAccount {
         requestBody.put("name", "testing_test");
         requestBody.put("email", "polisi1@gmail.com");
         requestBody.put("telephone_number", "089999");
-        requestBody.put("password","12345");
+        requestBody.put("password","password");
 
         String token = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwibmFtZSI6IlN1cGVyIEFkbWluIiwiZW1haWwiOiJzdXBlcl9hZG1pbkBnbWFpbC5jb20iLCJyb2xlIjoic3VwZXJfYWRtaW4ifQ.2wN36slPPgg24CE6Tl1o0q-Fy_Yyy-FWKhfc-UxzC18";
         SerenityRest.given()

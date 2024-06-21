@@ -16,7 +16,7 @@ public class CreateComplaintProcess {
 
     @Step("I set API endpoint for create a complaint process")
     public String setApiForNewComplaintProcess() {
-        return url + "/complaints/C-a493babad2/processes";
+        return url + "/complaints/C-46bb1affaa/processes";
     }
 
     @Step("I send request endpoint for create a complaint process with valid credentials")
@@ -40,7 +40,7 @@ public class CreateComplaintProcess {
         restAssuredThat(response -> response.body("status", Matchers.equalTo(true)));
         restAssuredThat(response -> response.body("message", Matchers.equalTo("Success Create Complaint Process")));
         restAssuredThat(response -> response.body("'data'.'id'", notNullValue()));
-        restAssuredThat(response -> response.body("'data'.'complaint_id'", Matchers.equalTo("C-a493babad2")));
+        restAssuredThat(response -> response.body("'data'.'complaint_id'", Matchers.equalTo("C-46bb1affaa")));
         restAssuredThat(response -> response.body("'data'.'status'", Matchers.equalTo("Verifikasi")));
         restAssuredThat(response -> response.body("'data'.'message'", Matchers.equalTo("Aduan anda telah diverifikasi")));
         restAssuredThat(response -> response.body(matchesJsonSchema(schema)));

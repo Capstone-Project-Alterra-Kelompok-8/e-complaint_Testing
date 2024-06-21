@@ -23,7 +23,7 @@ public class SendOTP {
     public void sendValidOTPUser() {
         JSONObject requestBody = new JSONObject();
 
-        requestBody.put("email", "mannperii16@gmail.com");
+        requestBody.put("email", "skaha578562@gmail.com");
 
 //        String token = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwibmFtZSI6IlN1cGVyIEFkbWluIiwicm9sZSI6InN1cGVyX2FkbWluIiwiZXhwIjoxNzE3NjM4ODAxfQ._9zLuCrTyIzNnstjdIFKlJm7IisnPArGQFW3KQb9wXw";
         SerenityRest.given()

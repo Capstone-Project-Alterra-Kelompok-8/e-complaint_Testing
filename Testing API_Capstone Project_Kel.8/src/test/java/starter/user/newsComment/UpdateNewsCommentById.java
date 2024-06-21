@@ -15,7 +15,7 @@ public class UpdateNewsCommentById {
 
     @Step("I set valid endpoint and method with valid")
     public String setValidEndpointAndMethodWithValid() {
-        return url + "/news/2/comments/15";
+        return url + "/news/8/comments/10";
     }
 
     @Step("I send a request to update news comment by ID")

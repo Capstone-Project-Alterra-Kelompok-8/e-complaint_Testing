@@ -17,7 +17,7 @@ public class GetUserByID {
 
     @Step("I set API endpoint for get user with valid id")
     public String setApiMyUserById(){
-        return url + "/users/12";
+        return url + "/users/9";
     }
 
     @Step("I send request to get user information with valid ID")
@@ -36,9 +36,9 @@ public class GetUserByID {
 
         restAssuredThat(response -> response.body("status", Matchers.equalTo(true)));
         restAssuredThat(response -> response.body("message",Matchers.equalTo("Success Get User By ID")));
-        restAssuredThat(response -> response.body("'data'.'id'",Matchers.equalTo(12)));
-        restAssuredThat(response -> response.body("'data'.'name'",notNullValue()));
-        restAssuredThat(response -> response.body("'data'.'email'",Matchers.equalTo("mannperii16@gmail.com")));
+        restAssuredThat(response -> response.body("'data'.'id'",Matchers.equalTo(9)));
+        restAssuredThat(response -> response.body("'data'.'name'",Matchers.equalTo("test3")));
+        restAssuredThat(response -> response.body("'data'.'email'",Matchers.equalTo("abcd3@gmail.com")));
         restAssuredThat(response -> response.body("'data'.'telephone_number'",notNullValue()));
         restAssuredThat(response -> response.body("'data'.'profile_photo'",Matchers.equalTo("profile-photos/default.jpg")));
 
