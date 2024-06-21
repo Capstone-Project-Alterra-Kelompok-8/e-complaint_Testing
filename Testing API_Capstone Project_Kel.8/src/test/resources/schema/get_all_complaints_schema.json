@@ -155,6 +155,12 @@
               ]
             }
           },
+          "date": {
+            "type": "string"
+          },
+          "total_likes": {
+            "type": "number"
+          },
           "updated_at": {
             "type": "string"
           }
@@ -168,7 +174,8 @@
           "description",
           "status",
           "type",
-          "files",
+          "date",
+          "total_likes",
           "updated_at"
         ]
       }

@@ -15,10 +15,10 @@ public class GetCategoriesByID {
 
     @Step("I set API endpoint with an valid ID to get category by valid ID")
     public String setApiGetEndValidCategories() {
-        return url + "/categories/1";
+        return url + "/categories/2";
     }
 
-    @Step("I send request endpoint for get category by valid ID")
+    @Step("I send request endpoint for get category")
     public void sendGetRequestValidCategories() {
         String token = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwibmFtZSI6IlN1cGVyIEFkbWluIiwiZW1haWwiOiJzdXBlcl9hZG1pbkBnbWFpbC5jb20iLCJyb2xlIjoic3VwZXJfYWRtaW4ifQ.2wN36slPPgg24CE6Tl1o0q-Fy_Yyy-FWKhfc-UxzC18";
         SerenityRest.given()
@@ -33,10 +33,22 @@ public class GetCategoriesByID {
 
         restAssuredThat(response -> response.body("status", Matchers.equalTo(true)));
         restAssuredThat(response -> response.body("message", Matchers.equalTo("Success get category by ID")));
-        restAssuredThat(response -> response.body("'data'.'ID'", Matchers.equalTo(1)));
-        restAssuredThat(response -> response.body("'data'.'Name'", Matchers.equalTo("Kesehatan")));
-        restAssuredThat(response -> response.body("'data'.'Description'", Matchers.equalTo("Kategori pengaduan yang berkaitan dengan kesehatan seperti fasilitas kesehatan, obat-obatan, dan lain-lain")));
+        restAssuredThat(response -> response.body("'data'.'ID'", Matchers.equalTo(2)));
+        restAssuredThat(response -> response.body("'data'.'Name'", Matchers.equalTo("Pendidikan")));
+        restAssuredThat(response -> response.body("'data'.'Description'", Matchers.equalTo("Kategori pengaduan yang berkaitan dengan pendidikan seperti fasilitas pendidikan, kurikulum, dan lain-lain")));
 
         restAssuredThat(response -> response.body(matchesJsonSchema(schema)));
+    }
+    @Step("I set API endpoint with an valid ID to get category by invalid ID")
+    public String setApiGetEndInValidCategories() {
+        return url + "/categories/100";
+    }
+    @Step("I send request endpoint for get category")
+    public void sendGetRequestInValidCategories() {
+        String token = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwibmFtZSI6IlN1cGVyIEFkbWluIiwiZW1haWwiOiJzdXBlcl9hZG1pbkBnbWFpbC5jb20iLCJyb2xlIjoic3VwZXJfYWRtaW4ifQ.2wN36slPPgg24CE6Tl1o0q-Fy_Yyy-FWKhfc-UxzC18";
+        SerenityRest.given()
+                .header("Content-Type", "application/json")
+                .header("Authorization", "Bearer " + token)
+                .get(setApiGetEndInValidCategories());
     }
 }

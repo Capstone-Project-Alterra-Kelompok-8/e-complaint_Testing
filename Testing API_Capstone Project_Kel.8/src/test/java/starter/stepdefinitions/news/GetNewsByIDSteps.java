@@ -5,12 +5,12 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import net.serenitybdd.annotations.Steps;
-import starter.user.news.GetNewsByID;
+import starter.user.news.GetNewsById;
 
 public class GetNewsByIDSteps {
 
     @Steps
-    GetNewsByID getNewsByID;
+    GetNewsById getNewsByID;
 
     @Given("I set API endpoint and method with valid")
     public void setApiEndpointAndMethodWithValid(){
@@ -60,9 +60,8 @@ public class GetNewsByIDSteps {
     public void sendRequestToGetNewsDataByIdWithInvalidId(){
         getNewsByID.sendRequestToGetNewsDataByIdWithInvalidId();
     }
-    @And("I get a status code 400 bad request")
-    public void getAStatusCode400(){
-        getNewsByID.getAStatusCode400();
+    @And("I see status code 404 not found")
+    public void seeStatusCode404(){
+        getNewsByID.seeStatusCode404();
     }
-
 }

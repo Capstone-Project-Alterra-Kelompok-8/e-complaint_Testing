@@ -23,11 +23,11 @@ public class UpdateUser {
     public void sendPUTupdateUser(){
         JSONObject requestBody = new JSONObject();
 
-        requestBody.put("name", "testing_my_updated");
-        requestBody.put("email", "mannperii16@gmail.com");
+        requestBody.put("name", "Muhammad Iqbal");
+        requestBody.put("email", "muhammadiqbal@gmail.com");
         requestBody.put("telephone_number", "08256952663");
 
-        String token = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTIsIm5hbWUiOiJteV9hY2NvdW50X2ZlciIsImVtYWlsIjoibWFubnBlcmlpMTZAZ21haWwuY29tIiwicm9sZSI6InVzZXIifQ.nN5RUaMMDeooPpKtjMnlIhTXVy-rWWKr_t2arrlLlzI";
+        String token = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MywibmFtZSI6Ik11aGFtbWFkIElxYmFsIiwiZW1haWwiOiJtdWhhbW1hZGlxYmFsQGdtYWlsLmNvbSIsInJvbGUiOiJ1c2VyIn0.aVe1vWDl25I0zlIPuXZ8z4p3htE0dsar5Ck-oQNdRo8";
         SerenityRest.given()
                 .header("Content-Type","application/json")
                 .header("Authorization", "Bearer " + token)
@@ -43,8 +43,8 @@ public class UpdateUser {
         restAssuredThat(response -> response.body("status", Matchers.equalTo(true)));
         restAssuredThat(response -> response.body("message",Matchers.equalTo("Success Update User")));
         restAssuredThat(response -> response.body("'data'.'id'",notNullValue()));
-        restAssuredThat(response -> response.body("'data'.'name'",Matchers.equalTo("testing_my_updated")));
-        restAssuredThat(response -> response.body("'data'.'email'",Matchers.equalTo("mannperii16@gmail.com")));
+        restAssuredThat(response -> response.body("'data'.'name'",Matchers.equalTo("Muhammad Iqbal")));
+        restAssuredThat(response -> response.body("'data'.'email'",Matchers.equalTo("muhammadiqbal@gmail.com")));
         restAssuredThat(response -> response.body("'data'.'telephone_number'",Matchers.equalTo("08256952663")));
 
         restAssuredThat(response -> response.body(matchesJsonSchema(schema)));

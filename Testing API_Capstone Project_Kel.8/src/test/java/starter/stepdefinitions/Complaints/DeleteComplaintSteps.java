@@ -24,4 +24,13 @@ public class DeleteComplaintSteps {
     public void receiveDeleteComplaintResponse(){
         deleteComplaint.receiveComplaintResponseBody();
     }
+
+    @Given("I set API endpoint for delete complaint with Invalid ID")
+    public void setDeleteInValidComplaint(){
+        deleteComplaint.setApiInvalidDeleteComplaintEndpoint();
+    }
+    @When("I send request endpoint for delete complaint with invalid ID")
+    public void sendInvalidDeleteComplaintRequest(){
+        deleteComplaint.sendInvalidDeleteComplaintUserRequest();
+    }
 }

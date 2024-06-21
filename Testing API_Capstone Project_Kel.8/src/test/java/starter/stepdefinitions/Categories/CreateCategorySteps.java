@@ -24,4 +24,9 @@ public class CreateCategorySteps {
     public void receiveNewCategory(){
         createCategory.receiveValidDataForCreateNewCategory();
     }
+
+    @When("I sent the endpoint a request to create a new category by leaving one of the fields blank")
+    public void sendRequestNewCategoryWithBlankField(){
+        createCategory.sendCreateCategoryBlankFieldRequest();
+    }
 }

@@ -16,14 +16,14 @@ public class SendOTP {
     private static String url = "https://qe-capstone.mdrizki.my.id/api/v1";
     @Step("I set users API endpoint for send otp")
     public String setApiOTPUser() {
-        return url + "/users/send-otp";
+        return url + "/users/register/send-otp";
     }
 
     @Step("I send request endpoint for send otp with valid email")
     public void sendValidOTPUser() {
         JSONObject requestBody = new JSONObject();
 
-        requestBody.put("email", "mannperii16@gmail.com");
+        requestBody.put("email", "skaha578562@gmail.com");
 
 //        String token = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwibmFtZSI6IlN1cGVyIEFkbWluIiwicm9sZSI6InN1cGVyX2FkbWluIiwiZXhwIjoxNzE3NjM4ODAxfQ._9zLuCrTyIzNnstjdIFKlJm7IisnPArGQFW3KQb9wXw";
         SerenityRest.given()

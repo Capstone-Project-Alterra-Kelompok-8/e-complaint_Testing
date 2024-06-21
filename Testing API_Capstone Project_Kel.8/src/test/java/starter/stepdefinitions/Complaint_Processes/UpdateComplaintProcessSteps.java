@@ -15,7 +15,7 @@ public class UpdateComplaintProcessSteps {
         updateComplaintProcess.setApiUpdateComplaintProcess();
     }
 
-    @When("I send request to update complaint process")
+    @When("I send request to update complaint process by valid credentials")
     public void sendGetRequestValidUpdateComplaintProcess(){
         updateComplaintProcess.sendPutRequestUpdateComplaintProcess();
     }
@@ -23,5 +23,10 @@ public class UpdateComplaintProcessSteps {
     @And("I should get data complaint process that I updated")
     public void ReceiveDataComplaintProcessUpdated(){
         updateComplaintProcess.receiveComplaintProcessDataUpdated();
+    }
+
+    @When("I send request to update complaint process by blank field")
+    public void sendGetRequestBlankFieldUpdateComplaintProcess(){
+        updateComplaintProcess.sendPutBlankFieldRequestUpdateComplaintProcess();
     }
 }

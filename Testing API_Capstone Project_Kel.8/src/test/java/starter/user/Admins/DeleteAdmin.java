@@ -16,7 +16,7 @@ public class DeleteAdmin {
 
     @Step("I set API endpoint for delete admin with valid ID")
     public String setApiDeleteAdminEndpoint() {
-        return url + "/admins/11";
+        return url + "/admins/5";
     }
 
     @Step("I send request endpoint for delete admin")

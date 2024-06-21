@@ -24,8 +24,8 @@ public class LoginUser {
 
         JSONObject requestBody = new JSONObject();
 
-        requestBody.put("email", "mannperii16@gmail.com");
-        requestBody.put("password", "1234");
+        requestBody.put("email", "muhammadiqbal@gmail.com");
+        requestBody.put("password", "password");
 
         SerenityRest.given()
                 .header("Content-Type", "application/json")
@@ -42,7 +42,7 @@ public class LoginUser {
         restAssuredThat(response -> response.body("message",Matchers.equalTo("Success Login")));
         restAssuredThat(response -> response.body("'data'.'id'",notNullValue()));
         restAssuredThat(response -> response.body("'data'.'name'",notNullValue()));
-        restAssuredThat(response -> response.body("'data'.'email'",Matchers.equalTo("mannperii16@gmail.com")));
+        restAssuredThat(response -> response.body("'data'.'email'",Matchers.equalTo("muhammadiqbal@gmail.com")));
         restAssuredThat(response -> response.body("'data'.'token'",notNullValue()));
 
         restAssuredThat(response -> response.body(matchesJsonSchema(schema)));

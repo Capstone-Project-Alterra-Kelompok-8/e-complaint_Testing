@@ -25,9 +25,9 @@ public class CreateAdminAccount {
         JSONObject requestBody = new JSONObject();
 
         requestBody.put("name", "testing_test");
-        requestBody.put("email", "halotest@gmail.com");
+        requestBody.put("email", "polisi1@gmail.com");
         requestBody.put("telephone_number", "089999");
-        requestBody.put("password","12345");
+        requestBody.put("password","password");
 
         String token = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwibmFtZSI6IlN1cGVyIEFkbWluIiwiZW1haWwiOiJzdXBlcl9hZG1pbkBnbWFpbC5jb20iLCJyb2xlIjoic3VwZXJfYWRtaW4ifQ.2wN36slPPgg24CE6Tl1o0q-Fy_Yyy-FWKhfc-UxzC18";
         SerenityRest.given()
@@ -45,7 +45,7 @@ public class CreateAdminAccount {
         restAssuredThat(response -> response.body("message", Matchers.equalTo("Success Create Account")));
         restAssuredThat(response -> response.body("'data'.'id'", notNullValue()));
         restAssuredThat(response -> response.body("'data'.'name'", Matchers.equalTo("testing_test")));
-        restAssuredThat(response -> response.body("'data'.'email'", Matchers.equalTo("halotest@gmail.com")));
+        restAssuredThat(response -> response.body("'data'.'email'", Matchers.equalTo("polisi1@gmail.com")));
         restAssuredThat(response -> response.body("'data'.'telephone_number'", Matchers.equalTo("089999")));
         restAssuredThat(response -> response.body(matchesJsonSchema(schema)));
     }

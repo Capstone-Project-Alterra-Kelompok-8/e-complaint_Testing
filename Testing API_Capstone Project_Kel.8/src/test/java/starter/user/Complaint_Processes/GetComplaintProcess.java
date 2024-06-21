@@ -13,12 +13,12 @@ import static org.hamcrest.Matchers.notNullValue;
 public class GetComplaintProcess {
     private static String url = "https://qe-capstone.mdrizki.my.id/api/v1";
 
-    @Step("I set API endpoint with an valid ID to get complaint process by ID")
+    @Step("I set API endpoint with an valid ID to get complaint process by valid ID")
     public String setApiGetEndValidComplaintProcessID() {
-        return url + "/complaints/C-8ksh&s9280/processes";
+        return url + "/complaints/C-18581bec2f/processes";
     }
 
-    @Step("I send request endpoint for get complaint process by valid ID")
+    @Step("I send request endpoint for get complaint process by ID")
     public void sendGetRequestValidComplaintProcessID() {
         String token = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwibmFtZSI6IlN1cGVyIEFkbWluIiwiZW1haWwiOiJzdXBlcl9hZG1pbkBnbWFpbC5jb20iLCJyb2xlIjoic3VwZXJfYWRtaW4ifQ.2wN36slPPgg24CE6Tl1o0q-Fy_Yyy-FWKhfc-UxzC18";
         SerenityRest.given()
@@ -35,5 +35,17 @@ public class GetComplaintProcess {
         restAssuredThat(response -> response.body("message", Matchers.equalTo("Success Get Complaint Process")));
 
         restAssuredThat(response -> response.body(matchesJsonSchema(schema)));
+    }
+    @Step("I set API endpoint with an valid ID to get complaint process by invalid ID")
+    public String setApiGetEndInValidComplaintProcessID() {
+        return url + "/complaints/ABCD/processes";
+    }
+    @Step("I send request endpoint for get complaint process by invalid ID")
+    public void sendGetRequestInValidComplaintProcessID() {
+        String token = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwibmFtZSI6IlN1cGVyIEFkbWluIiwiZW1haWwiOiJzdXBlcl9hZG1pbkBnbWFpbC5jb20iLCJyb2xlIjoic3VwZXJfYWRtaW4ifQ.2wN36slPPgg24CE6Tl1o0q-Fy_Yyy-FWKhfc-UxzC18";
+        SerenityRest.given()
+                .header("Content-Type", "application/json")
+                .header("Authorization", "Bearer " + token)
+                .get(setApiGetEndInValidComplaintProcessID());
     }
 }

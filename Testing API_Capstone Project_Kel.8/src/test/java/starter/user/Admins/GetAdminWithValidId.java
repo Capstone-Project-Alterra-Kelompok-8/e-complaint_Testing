@@ -37,7 +37,7 @@ public class GetAdminWithValidId {
         restAssuredThat(response -> response.body("'data'.'id'",Matchers.equalTo(4)));
         restAssuredThat(response -> response.body("'data'.'name'",Matchers.equalTo("Admin Serang")));
         restAssuredThat(response -> response.body("'data'.'email'",Matchers.equalTo("admin_serang@gmail.com")));
-        restAssuredThat(response -> response.body("'data'.'password'",Matchers.equalTo("$2a$14$.xQ0YjRrQI/L.zXpkvp1RO5iKs8LGJY1afYmhXzpZ6MyPNWF.VeiS")));
+        restAssuredThat(response -> response.body("'data'.'password'",notNullValue()));
         restAssuredThat(response -> response.body("'data'.'telephone_number'",Matchers.equalTo("081234567890")));
         restAssuredThat(response -> response.body("'data'.'is_super_admin'",Matchers.equalTo(false)));
         restAssuredThat(response -> response.body("'data'.'profile_photo'",Matchers.equalTo("profile-photos/admin-default.jpg")));

@@ -14,7 +14,7 @@ public class DeleteCategory {
 
     @Step("I set API endpoint for delete category with valid ID")
     public String setApiDeleteCategoryEndpoint() {
-        return url + "/categories/11";
+        return url + "/categories/8";
     }
 
     @Step("I send request endpoint for delete category")
@@ -34,5 +34,18 @@ public class DeleteCategory {
         restAssuredThat(response -> response.body("message",Matchers.equalTo("Success delete category")));
 
         restAssuredThat(response -> response.body(matchesJsonSchema(schema)));
+    }
+
+    @Step("I set API endpoint for delete category with valid ID")
+    public String setApiDeleteInvalidIdCategoryEndpoint() {
+        return url + "/categories/199";
+    }
+    @Step("I send request endpoint for delete category with invalid ID")
+    public void sendInvalidDeleteCategoryUserRequest() {
+        String token = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwibmFtZSI6IlN1cGVyIEFkbWluIiwiZW1haWwiOiJzdXBlcl9hZG1pbkBnbWFpbC5jb20iLCJyb2xlIjoic3VwZXJfYWRtaW4ifQ.2wN36slPPgg24CE6Tl1o0q-Fy_Yyy-FWKhfc-UxzC18";
+        SerenityRest.given()
+                .header("Content-Type","application/json")
+                .header("Authorization", "Bearer " + token)
+                .delete(setApiDeleteInvalidIdCategoryEndpoint());
     }
 }
