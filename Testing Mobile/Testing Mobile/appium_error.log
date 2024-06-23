@@ -1,0 +1,55 @@
+[38;5;48m[AndroidUiautomator2Driver@80ff (06665812)][0m Hidden API policy (https://developer.android.com/guide/app-compatibility/restrictions-non-sdk-interfaces) cannot be enabled. This might be happening because the device under test is not configured properly. Please check https://github.com/appium/appium/issues/13802 for more details. You could also set the "appium:ignoreHiddenApiPolicyError" capability to true in order to ignore this error, which might later lead to unexpected crashes or behavior of the automation server. Original error: Check https://github.com/appium/appium/issues/13802 for throubleshooting. Error executing adbExec. Original error: 'Command 'C:\\Users\\skaha\\AppData\\Local\\Android\\Sdk\\platform-tools\\adb.exe -P 5037 -s 95362ce27d78 shell 'settings put global hidden_api_policy_pre_p_apps 1;settings put global hidden_api_policy_p_apps 1;settings put global hidden_api_policy 1'' exited with code 255'; Command output: 
+[38;5;48m[AndroidUiautomator2Driver@80ff (06665812)][0m Exception occurred while executing 'put':
+[38;5;48m[AndroidUiautomator2Driver@80ff (06665812)][0m java.lang.SecurityException: Permission denial: writing to settings requires:android.permission.WRITE_SECURE_SETTINGS
+[38;5;48m[AndroidUiautomator2Driver@80ff (06665812)][0m 	at com.android.providers.settings.SettingsProvider.enforceWritePermission(SettingsProvider.java:2329)
+[38;5;48m[AndroidUiautomator2Driver@80ff (06665812)][0m 	at com.android.providers.settings.SettingsProvider.mutateGlobalSetting(SettingsProvider.java:1473)
+[38;5;48m[AndroidUiautomator2Driver@80ff (06665812)][0m 	at com.android.providers.settings.SettingsProvider.insertGlobalSetting(SettingsProvider.java:1427)
+[38;5;48m[AndroidUiautomator2Driver@80ff (06665812)][0m 	at com.android.providers.settings.SettingsProvider.call(SettingsProvider.java:455)
+[38;5;48m[AndroidUiautomator2Driver@80ff (06665812)][0m 	at android.content.ContentProvider.call(ContentProvider.java:2533)
+[38;5;48m[AndroidUiautomator2Driver@80ff (06665812)][0m 	at android.content.ContentProvider$Transport.call(ContentProvider.java:530)
+[38;5;48m[AndroidUiautomator2Driver@80ff (06665812)][0m 	at com.android.providers.settings.SettingsService$MyShellCommand.putForUser(SettingsService.java:382)
+[38;5;48m[AndroidUiautomator2Driver@80ff (06665812)][0m 	at com.android.providers.settings.SettingsService$MyShellCommand.onCommand(SettingsService.java:278)
+[38;5;48m[AndroidUiautomator2Driver@80ff (06665812)][0m 	at com.android.modules.utils.BasicShellCommandHandler.exec(BasicShellCommandHandler.java:97)
+[38;5;48m[AndroidUiautomator2Driver@80ff (06665812)][0m 	at android.os.ShellCommand.exec(ShellCommand.java:38)
+[38;5;48m[AndroidUiautomator2Driver@80ff (06665812)][0m 	at com.android.providers.settings.SettingsService.onShellCommand(SettingsService.java:50)
+[38;5;48m[AndroidUiautomator2Driver@80ff (06665812)][0m 	at android.os.Binder.shellCommand(Binder.java:1054)
+[38;5;48m[AndroidUiautomator2Driver@80ff (06665812)][0m 	at android.os.Binder.onTransact(Binder.java:882)
+[38;5;48m[AndroidUiautomator2Driver@80ff (06665812)][0m 	at android.os.Binder.execTransactInternal(Binder.java:1290)
+[38;5;48m[AndroidUiautomator2Driver@80ff (06665812)][0m 	at android.os.Binder.execTransact(Binder.java:1249)
+[38;5;48m[AndroidUiautomator2Driver@80ff (06665812)][0m 
+[38;5;48m[AndroidUiautomator2Driver@80ff (06665812)][0m Exception occurred while executing 'put':
+[38;5;48m[AndroidUiautomator2Driver@80ff (06665812)][0m java.lang.SecurityException: Permission denial: writing to settings requires:android.permission.WRITE_SECURE_SETTINGS
+[38;5;48m[AndroidUiautomator2Driver@80ff (06665812)][0m 	at com.android.providers.settings.SettingsProvider.enforceWritePermission(SettingsProvider.java:2329)
+[38;5;48m[AndroidUiautomator2Driver@80ff (06665812)][0m 	at com.android.providers.settings.SettingsProvider.mutateGlobalSetting(SettingsProvider.java:1473)
+[38;5;48m[AndroidUiautomator2Driver@80ff (06665812)][0m 	at com.android.providers.settings.SettingsProvider.insertGlobalSetting(SettingsProvider.java:1427)
+[38;5;48m[AndroidUiautomator2Driver@80ff (06665812)][0m 	at com.android.providers.settings.SettingsProvider.call(SettingsProvider.java:455)
+[38;5;48m[AndroidUiautomator2Driver@80ff (06665812)][0m 	at android.content.ContentProvider.call(ContentProvider.java:2533)
+[38;5;48m[AndroidUiautomator2Driver@80ff (06665812)][0m 	at android.content.ContentProvider$Transport.call(ContentProvider.java:530)
+[38;5;48m[AndroidUiautomator2Driver@80ff (06665812)][0m 	at com.android.providers.settings.SettingsService$MyShellCommand.putForUser(SettingsService.java:382)
+[38;5;48m[AndroidUiautomator2Driver@80ff (06665812)][0m 	at com.android.providers.settings.SettingsService$MyShellCommand.onCommand(SettingsService.java:278)
+[38;5;48m[AndroidUiautomator2Driver@80ff (06665812)][0m 	at com.android.modules.utils.BasicShellCommandHandler.exec(BasicShellCommandHandler.java:97)
+[38;5;48m[AndroidUiautomator2Driver@80ff (06665812)][0m 	at android.os.ShellCommand.exec(ShellCommand.java:38)
+[38;5;48m[AndroidUiautomator2Driver@80ff (06665812)][0m 	at com.android.providers.settings.SettingsService.onShellCommand(SettingsService.java:50)
+[38;5;48m[AndroidUiautomator2Driver@80ff (06665812)][0m 	at android.os.Binder.shellCommand(Binder.java:1054)
+[38;5;48m[AndroidUiautomator2Driver@80ff (06665812)][0m 	at android.os.Binder.onTransact(Binder.java:882)
+[38;5;48m[AndroidUiautomator2Driver@80ff (06665812)][0m 	at android.os.Binder.execTransactInternal(Binder.java:1290)
+[38;5;48m[AndroidUiautomator2Driver@80ff (06665812)][0m 	at android.os.Binder.execTransact(Binder.java:1249)
+[38;5;48m[AndroidUiautomator2Driver@80ff (06665812)][0m 
+[38;5;48m[AndroidUiautomator2Driver@80ff (06665812)][0m Exception occurred while executing 'put':
+[38;5;48m[AndroidUiautomator2Driver@80ff (06665812)][0m java.lang.SecurityException: Permission denial: writing to settings requires:android.permission.WRITE_SECURE_SETTINGS
+[38;5;48m[AndroidUiautomator2Driver@80ff (06665812)][0m 	at com.android.providers.settings.SettingsProvider.enforceWritePermission(SettingsProvider.java:2329)
+[38;5;48m[AndroidUiautomator2Driver@80ff (06665812)][0m 	at com.android.providers.settings.SettingsProvider.mutateGlobalSetting(SettingsProvider.java:1473)
+[38;5;48m[AndroidUiautomator2Driver@80ff (06665812)][0m 	at com.android.providers.settings.SettingsProvider.insertGlobalSetting(SettingsProvider.java:1427)
+[38;5;48m[AndroidUiautomator2Driver@80ff (06665812)][0m 	at com.android.providers.settings.SettingsProvider.call(SettingsProvider.java:455)
+[38;5;48m[AndroidUiautomator2Driver@80ff (06665812)][0m 	at android.content.ContentProvider.call(ContentProvider.java:2533)
+[38;5;48m[AndroidUiautomator2Driver@80ff (06665812)][0m 	at android.content.ContentProvider$Transport.call(ContentProvider.java:530)
+[38;5;48m[AndroidUiautomator2Driver@80ff (06665812)][0m 	at com.android.providers.settings.SettingsService$MyShellCommand.putForUser(SettingsService.java:382)
+[38;5;48m[AndroidUiautomator2Driver@80ff (06665812)][0m 	at com.android.providers.settings.SettingsService$MyShellCommand.onCommand(SettingsService.java:278)
+[38;5;48m[AndroidUiautomator2Driver@80ff (06665812)][0m 	at com.android.modules.utils.BasicShellCommandHandler.exec(BasicShellCommandHandler.java:97)
+[38;5;48m[AndroidUiautomator2Driver@80ff (06665812)][0m 	at android.os.ShellCommand.exec(ShellCommand.java:38)
+[38;5;48m[AndroidUiautomator2Driver@80ff (06665812)][0m 	at com.android.providers.settings.SettingsService.onShellCommand(SettingsService.java:50)
+[38;5;48m[AndroidUiautomator2Driver@80ff (06665812)][0m 	at android.os.Binder.shellCommand(Binder.java:1054)
+[38;5;48m[AndroidUiautomator2Driver@80ff (06665812)][0m 	at android.os.Binder.onTransact(Binder.java:882)
+[38;5;48m[AndroidUiautomator2Driver@80ff (06665812)][0m 	at android.os.Binder.execTransactInternal(Binder.java:1290)
+[38;5;48m[AndroidUiautomator2Driver@80ff (06665812)][0m 	at android.os.Binder.execTransact(Binder.java:1249)
+[38;5;48m[AndroidUiautomator2Driver@80ff (06665812)][0m 
