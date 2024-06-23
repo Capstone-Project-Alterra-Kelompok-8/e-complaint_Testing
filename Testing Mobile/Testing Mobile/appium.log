@@ -1,0 +1,178 @@
+[35m[Appium][39m Welcome to Appium v2.5.4
+[35m[Appium][39m Non-default server args:
+[35m[Appium][39m { basePath: [32m'/wd/hub'[39m, port: [33m54772[39m }
+[35m[Appium][39m The APPIUM_HOME environment variable: C:\Users\skaha\.appium
+[35m[Appium][39m Attempting to load driver uiautomator2...
+[35m[Appium][39m Requiring driver at C:\Users\skaha\.appium\node_modules\appium-uiautomator2-driver\build\index.js
+[35m[Appium][39m AndroidUiautomator2Driver has been successfully loaded in 9.757s
+[35m[Appium][39m Appium REST http interface listener started on http://0.0.0.0:54772/wd/hub
+[35m[Appium][39m You can provide the following URLs in your client code to connect to this server:
+[35m[Appium][39m 	http://192.168.1.3:54772/wd/hub
+[35m[Appium][39m 	http://127.0.0.1:54772/wd/hub (only accessible from the same host)
+[35m[Appium][39m 	http://172.31.0.1:54772/wd/hub
+[35m[Appium][39m Available drivers:
+[35m[Appium][39m   - uiautomator2@3.0.0 (automationName 'UiAutomator2')
+[35m[Appium][39m No plugins have been installed. Use the "appium plugin" command to install the one(s) you want to use.
+[38;5;0m[HTTP][0m [37m-->[39m [37mGET[39m [37m/wd/hub/status[39m
+[38;5;0m[HTTP][0m [90m{}[39m
+[38;5;16m[AppiumDriver@bc30][0m Calling AppiumDriver.getStatus() with args: []
+[38;5;16m[AppiumDriver@bc30][0m Responding to client with driver.getStatus() result: {"ready":true,"message":"The server is ready to accept new connections","build":{"version":"2.5.4"}}
+[38;5;0m[HTTP][0m [37m<-- GET /wd/hub/status [39m[32m200[39m [90m35 ms - 110[39m
+[38;5;0m[HTTP][0m [90m[39m
+[38;5;0m[HTTP][0m [37m-->[39m [37mGET[39m [37m/wd/hub/status[39m
+[38;5;0m[HTTP][0m [90m{}[39m
+[38;5;16m[AppiumDriver@bc30][0m Calling AppiumDriver.getStatus() with args: []
+[38;5;16m[AppiumDriver@bc30][0m Responding to client with driver.getStatus() result: {"ready":true,"message":"The server is ready to accept new connections","build":{"version":"2.5.4"}}
+[38;5;0m[HTTP][0m [37m<-- GET /wd/hub/status [39m[32m200[39m [90m11 ms - 110[39m
+[38;5;0m[HTTP][0m [90m[39m
+[38;5;0m[HTTP][0m [37m-->[39m [37mPOST[39m [37m/wd/hub/session[39m
+[38;5;0m[HTTP][0m [90m{"desiredCapabilities":{"appium:systemPort":54827,"appium:newCommandTimeout":1800,"appium:automationName":"uiautomator2","appium:fullReset":false,"appium:platformVersion":"13","appium:noReset":true,"appium:udid":"95362ce27d78","appium:autoGrantPermissions":true,"appium:platformName":"ANDROID","appium:deviceName":"Xiaomi 23053RN02A (Android 13)","platformName":"Android","appium:app":"C:\\Users\\skaha\\Downloads\\app-profile.apk"},"capabilities":{"firstMatch":[{"appium:app":"C:\\Users\\skaha\\Downloads\\app-profile.apk","appium:autoGrantPermissions":true,"appium:automationName":"uiautomator2","appium:deviceName":"Xiaomi 23053RN02A (Android 13)","appium:fullReset":false,"appium:newCommandTimeout":1800,"appium:noReset":true,"appium:platformName":"ANDROID","appium:platformVersion":"13","appium:systemPort":54827,"appium:udid":"95362ce27d78","platformName":"android"}]}}[39m
+[38;5;16m[AppiumDriver@bc30][0m Calling AppiumDriver.createSession() with args: [{"appium:systemPort":54827,"appium:newCommandTimeout":1800,"appium:automationName":"uiautomator2","appium:fullReset":false,"appium:platformVersion":"13","appium:noReset":true,"appium:udid":"95362ce27d78","appium:autoGrantPermissions":true,"appium:platformName":"ANDROID","appium:deviceName":"Xiaomi 23053RN02A (Android 13)","platformName":"Android","appium:app":"C:\\Users\\skaha\\Downloads\\app-profile.apk"},null,{"firstMatch":[{"appium:app":"C:\\Users\\skaha\\Downloads\\app-profile.apk","appium:autoGrantPermissions":true,"appium:automationName":"uiautomator2","appium:deviceName":"Xiaomi 23053RN02A (Android 13)","appium:fullReset":false,"appium:newCommandTimeout":1800,"appium:noReset":true,"appium:platformName":"ANDROID","appium:platformVersion":"13","appium:systemPort":54827,"appium:udid":"95362ce27d78","platformName":"android"}]}]
+[38;5;16m[AppiumDriver@bc30][0m Event 'newSessionRequested' logged at 1719143038564 (18:43:58 GMT+0700 (Western Indonesia Time))
+[38;5;32m[BaseDriver][0m Ignoring capability 'appium:platformName=ANDROID' and using capability 'platformName=android'
+[38;5;32m[BaseDriver][0m The capabilities ["platformName"] are standard capabilities and do not require "appium:" prefix
+[35m[Appium][39m Attempting to find matching driver for automationName 'uiautomator2' and platformName 'android'
+[35m[Appium][39m The 'uiautomator2' driver was installed and matched caps.
+[35m[Appium][39m Will require it at C:\Users\skaha\.appium\node_modules\appium-uiautomator2-driver
+[35m[Appium][39m Requiring driver at C:\Users\skaha\.appium\node_modules\appium-uiautomator2-driver\build\index.js
+[38;5;16m[AppiumDriver@bc30][0m Appium v2.5.4 creating new AndroidUiautomator2Driver (v3.0.0) session
+[38;5;16m[AppiumDriver@bc30][0m Checking BaseDriver versions for Appium and AndroidUiautomator2Driver
+[38;5;16m[AppiumDriver@bc30][0m Appium's BaseDriver version is 9.6.0
+[38;5;16m[AppiumDriver@bc30][0m AndroidUiautomator2Driver's BaseDriver version is 9.6.0
+[38;5;48m[AndroidUiautomator2Driver@80ff][0m Creating session with W3C capabilities: {
+[38;5;48m[AndroidUiautomator2Driver@80ff][0m   "alwaysMatch": {
+[38;5;48m[AndroidUiautomator2Driver@80ff][0m     "platformName": "android",
+[38;5;48m[AndroidUiautomator2Driver@80ff][0m     "appium:app": "C:\\Users\\skaha\\Downloads\\app-profile.apk",
+[38;5;48m[AndroidUiautomator2Driver@80ff][0m     "appium:autoGrantPermissions": true,
+[38;5;48m[AndroidUiautomator2Driver@80ff][0m     "appium:automationName": "uiautomator2",
+[38;5;48m[AndroidUiautomator2Driver@80ff][0m     "appium:deviceName": "Xiaomi 23053RN02A (Android 13)",
+[38;5;48m[AndroidUiautomator2Driver@80ff][0m     "appium:fullReset": false,
+[38;5;48m[AndroidUiautomator2Driver@80ff][0m     "appium:newCommandTimeout": 1800,
+[38;5;48m[AndroidUiautomator2Driver@80ff][0m     "appium:noReset": true,
+[38;5;48m[AndroidUiautomator2Driver@80ff][0m     "appium:platformVersion": "13",
+[38;5;48m[AndroidUiautomator2Driver@80ff][0m     "appium:systemPort": 54827,
+[38;5;48m[AndroidUiautomator2Driver@80ff][0m     "appium:udid": "95362ce27d78"
+[38;5;48m[AndroidUiautomator2Driver@80ff][0m   },
+[38;5;48m[AndroidUiautomator2Driver@80ff][0m   "firstMatch": [
+[38;5;48m[AndroidUiautomator2Driver@80ff][0m     {}
+[38;5;48m[AndroidUiautomator2Driver@80ff][0m   ]
+[38;5;48m[AndroidUiautomator2Driver@80ff][0m }
+[38;5;48m[AndroidUiautomator2Driver@80ff (06665812)][0m Session created with session id: 06665812-f10e-469f-a69a-9226a503facc
+[38;5;64m[ADB][0m Found 1 'build-tools' folders under 'C:\Users\skaha\AppData\Local\Android\Sdk' (newest first):
+[38;5;64m[ADB][0m     C:\Users\skaha\AppData\Local\Android\Sdk\build-tools\34.0.0
+[38;5;64m[ADB][0m Using 'adb.exe' from 'C:\Users\skaha\AppData\Local\Android\Sdk\platform-tools\adb.exe'
+[38;5;64m[ADB][0m Running 'C:\Users\skaha\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 start-server'
+[38;5;48m[AndroidUiautomator2Driver@80ff (06665812)][0m Retrieving device list
+[38;5;64m[ADB][0m Trying to find connected Android devices
+[38;5;64m[ADB][0m Getting connected devices
+[38;5;64m[ADB][0m Connected devices: [{"udid":"95362ce27d78","state":"device"}]
+[38;5;48m[AndroidUiautomator2Driver@80ff (06665812)][0m Using device: 95362ce27d78
+[38;5;64m[ADB][0m Using 'adb.exe' from 'C:\Users\skaha\AppData\Local\Android\Sdk\platform-tools\adb.exe'
+[38;5;64m[ADB][0m Running 'C:\Users\skaha\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 start-server'
+[38;5;64m[ADB][0m Setting device id to 95362ce27d78
+[38;5;32m[BaseDriver][0m Using local app 'C:\Users\skaha\Downloads\app-profile.apk'
+[38;5;48m[AndroidUiautomator2Driver@80ff (06665812)][0m Checking whether app is actually present
+[38;5;64m[ADB][0m Running 'C:\Users\skaha\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s 95362ce27d78 shell getprop ro.build.version.sdk'
+[38;5;64m[ADB][0m Current device property 'ro.build.version.sdk': 33
+[38;5;64m[ADB][0m Getting device platform version
+[38;5;64m[ADB][0m Running 'C:\Users\skaha\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s 95362ce27d78 shell getprop ro.build.version.release'
+[38;5;64m[ADB][0m Current device property 'ro.build.version.release': 13
+[38;5;64m[ADB][0m Device API level: 33
+[38;5;48m[AndroidUiautomator2Driver@80ff (06665812)][0m Relaxing hidden api policy
+[38;5;64m[ADB][0m Running 'C:\Users\skaha\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s 95362ce27d78 shell 'settings put global hidden_api_policy_pre_p_apps 1;settings put global hidden_api_policy_p_apps 1;settings put global hidden_api_policy 1''
+[38;5;48m[AndroidUiautomator2Driver@80ff (06665812)][0m Parsing package and activity from app manifest
+[38;5;48m[AndroidUiautomator2Driver@80ff (06665812)][0m Pushing settings apk to the device...
+[38;5;64m[ADB][0m Getting package info for 'io.appium.settings'
+[38;5;64m[ADB][0m Running 'C:\Users\skaha\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s 95362ce27d78 shell dumpsys package io.appium.settings'
+[38;5;64m[ADB][0m Package name: 'com.example.e_complaint_app'
+[38;5;64m[ADB][0m Main activity name: 'com.example.e_complaint_app.MainActivity'
+[38;5;48m[AndroidUiautomator2Driver@80ff (06665812)][0m Parsed package and activity are: com.example.e_complaint_app/com.example.e_complaint_app.MainActivity
+[38;5;48m[AndroidUiautomator2Driver@80ff (06665812)][0m Deleting UiAutomator2 session
+[38;5;48m[AndroidUiautomator2Driver@80ff (06665812)][0m Unable to stop ChromeDriver proxies: Cannot read properties of undefined (reading 'proxyReqRes')
+[38;5;64m[ADB][0m Running 'C:\Users\skaha\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s 95362ce27d78 shell dumpsys activity services io.appium.settings/.recorder.RecorderService'
+[38;5;48m[AndroidUiautomator2Driver@80ff (06665812)][0m Restoring hidden api policy to the device default configuration
+[38;5;64m[ADB][0m Running 'C:\Users\skaha\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s 95362ce27d78 shell 'settings delete global hidden_api_policy_pre_p_apps;settings delete global hidden_api_policy_p_apps;settings delete global hidden_api_policy''
+[38;5;64m[ADB][0m App 'C:\Users\skaha\.appium\node_modules\appium-uiautomator2-driver\node_modules\io.appium.settings\apks\settings_apk-debug.apk' is not installed
+[38;5;64m[ADB][0m Installing 'C:\Users\skaha\.appium\node_modules\appium-uiautomator2-driver\node_modules\io.appium.settings\apks\settings_apk-debug.apk'
+[38;5;64m[ADB][0m Running 'C:\Users\skaha\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s 95362ce27d78 help'
+[38;5;64m[ADB][0m Running 'C:\Users\skaha\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s 95362ce27d78 features'
+[38;5;16m[AppiumDriver@bc30][0m Event 'newSessionStarted' logged at 1719143048844 (18:44:08 GMT+0700 (Western Indonesia Time))
+[38;5;16m[AppiumDriver@bc30][0m Encountered internal error running command: Check https://github.com/appium/appium/issues/13802 for throubleshooting. Error executing adbExec. Original error: 'Command 'C:\\Users\\skaha\\AppData\\Local\\Android\\Sdk\\platform-tools\\adb.exe -P 5037 -s 95362ce27d78 shell 'settings delete global hidden_api_policy_pre_p_apps;settings delete global hidden_api_policy_p_apps;settings delete global hidden_api_policy'' exited with code 255'; Command output: 
+[38;5;16m[AppiumDriver@bc30][0m Exception occurred while executing 'delete':
+[38;5;16m[AppiumDriver@bc30][0m java.lang.SecurityException: Permission denial: writing to settings requires:android.permission.WRITE_SECURE_SETTINGS
+[38;5;16m[AppiumDriver@bc30][0m 	at com.android.providers.settings.SettingsProvider.enforceWritePermission(SettingsProvider.java:2329)
+[38;5;16m[AppiumDriver@bc30][0m 	at com.android.providers.settings.SettingsProvider.mutateGlobalSetting(SettingsProvider.java:1473)
+[38;5;16m[AppiumDriver@bc30][0m 	at com.android.providers.settings.SettingsProvider.mutateGlobalSetting(SettingsProvider.java:1465)
+[38;5;16m[AppiumDriver@bc30][0m 	at com.android.providers.settings.SettingsProvider.deleteGlobalSetting(SettingsProvider.java:1436)
+[38;5;16m[AppiumDriver@bc30][0m 	at com.android.providers.settings.SettingsProvider.call(SettingsProvider.java:528)
+[38;5;16m[AppiumDriver@bc30][0m 	at android.content.ContentProvider.call(ContentProvider.java:2533)
+[38;5;16m[AppiumDriver@bc30][0m 	at android.content.ContentProvider$Transport.call(ContentProvider.java:530)
+[38;5;16m[AppiumDriver@bc30][0m 	at com.android.providers.settings.SettingsService$MyShellCommand.deleteForUser(SettingsService.java:408)
+[38;5;16m[AppiumDriver@bc30][0m 	at com.android.providers.settings.SettingsService$MyShellCommand.onCommand(SettingsService.java:282)
+[38;5;16m[AppiumDriver@bc30][0m 	at com.android.modules.utils.BasicShellCommandHandler.exec(BasicShellCommandHandler.java:97)
+[38;5;16m[AppiumDriver@bc30][0m 	at android.os.ShellCommand.exec(ShellCommand.java:38)
+[38;5;16m[AppiumDriver@bc30][0m 	at com.android.providers.settings.SettingsService.onShellCommand(SettingsService.java:50)
+[38;5;16m[AppiumDriver@bc30][0m 	at android.os.Binder.shellCommand(Binder.java:1054)
+[38;5;16m[AppiumDriver@bc30][0m 	at android.os.Binder.onTransact(Binder.java:882)
+[38;5;16m[AppiumDriver@bc30][0m 	at android.os.Binder.execTransactInternal(Binder.java:1290)
+[38;5;16m[AppiumDriver@bc30][0m 	at android.os.Binder.execTransact(Binder.java:1249)
+[38;5;16m[AppiumDriver@bc30][0m 
+[38;5;16m[AppiumDriver@bc30][0m Exception occurred while executing 'delete':
+[38;5;16m[AppiumDriver@bc30][0m java.lang.SecurityException: Permission denial: writing to settings requires:android.permission.WRITE_SECURE_SETTINGS
+[38;5;16m[AppiumDriver@bc30][0m 	at com.android.providers.settings.SettingsProvider.enforceWritePermission(SettingsProvider.java:2329)
+[38;5;16m[AppiumDriver@bc30][0m 	at com.android.providers.settings.SettingsProvider.mutateGlobalSetting(SettingsProvider.java:1473)
+[38;5;16m[AppiumDriver@bc30][0m 	at com.android.providers.settings.SettingsProvider.mutateGlobalSetting(SettingsProvider.java:1465)
+[38;5;16m[AppiumDriver@bc30][0m 	at com.android.providers.settings.SettingsProvider.deleteGlobalSetting(SettingsProvider.java:1436)
+[38;5;16m[AppiumDriver@bc30][0m 	at com.android.providers.settings.SettingsProvider.call(SettingsProvider.java:528)
+[38;5;16m[AppiumDriver@bc30][0m 	at android.content.ContentProvider.call(ContentProvider.java:2533)
+[38;5;16m[AppiumDriver@bc30][0m 	at android.content.ContentProvider$Transport.call(ContentProvider.java:530)
+[38;5;16m[AppiumDriver@bc30][0m 	at com.android.providers.settings.SettingsService$MyShellCommand.deleteForUser(SettingsService.java:408)
+[38;5;16m[AppiumDriver@bc30][0m 	at com.android.providers.settings.SettingsService$MyShellCommand.onCommand(SettingsService.java:282)
+[38;5;16m[AppiumDriver@bc30][0m 	at com.android.modules.utils.BasicShellCommandHandler.exec(BasicShellCommandHandler.java:97)
+[38;5;16m[AppiumDriver@bc30][0m 	at android.os.ShellCommand.exec(ShellCommand.java:38)
+[38;5;16m[AppiumDriver@bc30][0m 	at com.android.providers.settings.SettingsService.onShellCommand(SettingsService.java:50)
+[38;5;16m[AppiumDriver@bc30][0m 	at android.os.Binder.shellCommand(Binder.java:1054)
+[38;5;16m[AppiumDriver@bc30][0m 	at android.os.Binder.onTransact(Binder.java:882)
+[38;5;16m[AppiumDriver@bc30][0m 	at android.os.Binder.execTransactInternal(Binder.java:1290)
+[38;5;16m[AppiumDriver@bc30][0m 	at android.os.Binder.execTransact(Binder.java:1249)
+[38;5;16m[AppiumDriver@bc30][0m 
+[38;5;16m[AppiumDriver@bc30][0m Exception occurred while executing 'delete':
+[38;5;16m[AppiumDriver@bc30][0m java.lang.SecurityException: Permission denial: writing to settings requires:android.permission.WRITE_SECURE_SETTINGS
+[38;5;16m[AppiumDriver@bc30][0m 	at com.android.providers.settings.SettingsProvider.enforceWritePermission(SettingsProvider.java:2329)
+[38;5;16m[AppiumDriver@bc30][0m 	at com.android.providers.settings.SettingsProvider.mutateGlobalSetting(SettingsProvider.java:1473)
+[38;5;16m[AppiumDriver@bc30][0m 	at com.android.providers.settings.SettingsProvider.mutateGlobalSetting(SettingsProvider.java:1465)
+[38;5;16m[AppiumDriver@bc30][0m 	at com.android.providers.settings.SettingsProvider.deleteGlobalSetting(SettingsProvider.java:1436)
+[38;5;16m[AppiumDriver@bc30][0m 	at com.android.providers.settings.SettingsProvider.call(SettingsProvider.java:528)
+[38;5;16m[AppiumDriver@bc30][0m 	at android.content.ContentProvider.call(ContentProvider.java:2533)
+[38;5;16m[AppiumDriver@bc30][0m 	at android.content.ContentProvider$Transport.call(ContentProvider.java:530)
+[38;5;16m[AppiumDriver@bc30][0m 	at com.android.providers.settings.SettingsService$MyShellCommand.deleteForUser(SettingsService.java:408)
+[38;5;16m[AppiumDriver@bc30][0m 	at com.android.providers.settings.SettingsService$MyShellCommand.onCommand(SettingsService.java:282)
+[38;5;16m[AppiumDriver@bc30][0m 	at com.android.modules.utils.BasicShellCommandHandler.exec(BasicShellCommandHandler.java:97)
+[38;5;16m[AppiumDriver@bc30][0m 	at android.os.ShellCommand.exec(ShellCommand.java:38)
+[38;5;16m[AppiumDriver@bc30][0m 	at com.android.providers.settings.SettingsService.onShellCommand(SettingsService.java:50)
+[38;5;16m[AppiumDriver@bc30][0m 	at android.os.Binder.shellCommand(Binder.java:1054)
+[38;5;16m[AppiumDriver@bc30][0m 	at android.os.Binder.onTransact(Binder.java:882)
+[38;5;16m[AppiumDriver@bc30][0m 	at android.os.Binder.execTransactInternal(Binder.java:1290)
+[38;5;16m[AppiumDriver@bc30][0m 	at android.os.Binder.execTransact(Binder.java:1249)
+[38;5;16m[AppiumDriver@bc30][0m 
+[38;5;16m[AppiumDriver@bc30][0m Error: Command 'C:\\Users\\skaha\\AppData\\Local\\Android\\Sdk\\platform-tools\\adb.exe -P 5037 -s 95362ce27d78 shell 'settings delete global hidden_api_policy_pre_p_apps;settings delete global hidden_api_policy_p_apps;settings delete global hidden_api_policy'' exited with code 255
+[38;5;16m[AppiumDriver@bc30][0m     at ChildProcess.<anonymous> (C:\Users\skaha\.appium\node_modules\appium-uiautomator2-driver\node_modules\teen_process\lib\exec.js:128:19)
+[38;5;16m[AppiumDriver@bc30][0m     at ChildProcess.emit (node:events:518:28)
+[38;5;16m[AppiumDriver@bc30][0m     at maybeClose (node:internal/child_process:1105:16)
+[38;5;16m[AppiumDriver@bc30][0m     at Process.ChildProcess._handle.onexit (node:internal/child_process:305:5)
+[38;5;0m[HTTP][0m [37m<-- POST /wd/hub/session [39m[31m500[39m [90m10317 ms - 10622[39m
+[38;5;0m[HTTP][0m [90m[39m
+[38;5;64m[ADB][0m The application at 'C:\Users\skaha\.appium\node_modules\appium-uiautomator2-driver\node_modules\io.appium.settings\apks\settings_apk-debug.apk' will not be cached, because the device under test has confirmed the support of streamed installs
+[38;5;64m[ADB][0m Running 'C:\Users\skaha\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s 95362ce27d78 install -g C:\Users\skaha\.appium\node_modules\appium-uiautomator2-driver\node_modules\io.appium.settings\apks\settings_apk-debug.apk'
+[38;5;64m[ADB][0m Getting package info for 'io.appium.settings'
+[38;5;64m[ADB][0m Running 'C:\Users\skaha\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s 95362ce27d78 shell dumpsys package io.appium.settings'
+[38;5;64m[ADB][0m App 'C:\Users\skaha\.appium\node_modules\appium-uiautomator2-driver\node_modules\io.appium.settings\apks\settings_apk-debug.apk' is not installed
+[38;5;64m[ADB][0m Installing 'C:\Users\skaha\.appium\node_modules\appium-uiautomator2-driver\node_modules\io.appium.settings\apks\settings_apk-debug.apk'
+[38;5;64m[ADB][0m The application at 'C:\Users\skaha\.appium\node_modules\appium-uiautomator2-driver\node_modules\io.appium.settings\apks\settings_apk-debug.apk' will not be cached, because the device under test has confirmed the support of streamed installs
+[38;5;64m[ADB][0m Running 'C:\Users\skaha\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s 95362ce27d78 install -g C:\Users\skaha\.appium\node_modules\appium-uiautomator2-driver\node_modules\io.appium.settings\apks\settings_apk-debug.apk'
+[38;5;64m[ADB][0m Getting package info for 'io.appium.settings'
+[38;5;64m[ADB][0m Running 'C:\Users\skaha\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s 95362ce27d78 shell dumpsys package io.appium.settings'
+[38;5;64m[ADB][0m App 'C:\Users\skaha\.appium\node_modules\appium-uiautomator2-driver\node_modules\io.appium.settings\apks\settings_apk-debug.apk' is not installed
+[38;5;64m[ADB][0m Installing 'C:\Users\skaha\.appium\node_modules\appium-uiautomator2-driver\node_modules\io.appium.settings\apks\settings_apk-debug.apk'
+[38;5;64m[ADB][0m The application at 'C:\Users\skaha\.appium\node_modules\appium-uiautomator2-driver\node_modules\io.appium.settings\apks\settings_apk-debug.apk' will not be cached, because the device under test has confirmed the support of streamed installs
+[38;5;64m[ADB][0m Running 'C:\Users\skaha\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s 95362ce27d78 install -g C:\Users\skaha\.appium\node_modules\appium-uiautomator2-driver\node_modules\io.appium.settings\apks\settings_apk-debug.apk'
