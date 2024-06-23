@@ -17,20 +17,16 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-Mobile.startApplication('C:\\Users\\skaha\\Downloads\\app-profile.apk', true)
+Mobile.startApplication('C:\\Users\\skaha\\Downloads\\e-complaint-mobile-master\\app-release.apk', true)
 
-Mobile.tap(findTestObject('Object Repository/Chat Feature with Admin/android.widget.ImageView'), 0)
+Mobile.tap(findTestObject('Object Repository/Chat Admin with Off Topic/android.widget.ImageView'), 0)
 
-Mobile.tap(findTestObject('Object Repository/Chat Feature with Admin/android.widget.EditText'), 0)
+Mobile.tap(findTestObject('Object Repository/Chat Admin with Off Topic/android.widget.EditText'), 0)
 
-Mobile.setText(findTestObject('Object Repository/Chat Feature with Admin/android.widget.EditText'), 'Min, dirumah saya jalan berlubang, apakah bisa segera ditindak lanjuti?', 
+Mobile.setText(findTestObject('Object Repository/Chat Admin with Off Topic/android.widget.EditText'), 'Hai admin, saya belum makan. makanan apa yang enak ya', 
     0)
 
-Mobile.hideKeyboard()
-
-Mobile.tap(findTestObject('Object Repository/Chat Feature with Admin/android.widget.Button'), 0)
-
-Mobile.tap(findTestObject('Object Repository/Chat Feature with Admin/android.widget.Button'), 0)
+Mobile.tap(findTestObject('Object Repository/Chat Admin with Off Topic/android.widget.Button'), 0)
 
 Mobile.closeApplication()
 

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>TC-Chat Feature with Admin</name>
+   <name>TC-Chat Admin with Off Topic</name>
    <tag></tag>
    <comment></comment>
-   <testCaseGuid>45b3b766-4ba9-4bdb-ad4d-69915e6908b2</testCaseGuid>
+   <testCaseGuid>8fa34bff-cb12-4fba-915d-5742ea5001a9</testCaseGuid>
 </TestCaseEntity>
