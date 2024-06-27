@@ -14,5 +14,8 @@ Aplikasi akan digunakan oleh pengguna (end user), admin, dan juga superadmin. En
 - Rest Assured (API Testing)
 - Qase.io (Test Case Management Tools)
 
-## Link Test Case
-(On Progress)
+## Link
+- Link Test Case : (On Progress)
+- Link MVP : [Key Activity QE](https://docs.google.com/presentation/d/1QGs-lh4m4XC09Dyyr9_ZKNnzlufvwhurtaRPEBWHqjw/edit#slide=id.g1fd8d527276_0_91)
+- Link Repo CI/CD :
+- Link PPT :
