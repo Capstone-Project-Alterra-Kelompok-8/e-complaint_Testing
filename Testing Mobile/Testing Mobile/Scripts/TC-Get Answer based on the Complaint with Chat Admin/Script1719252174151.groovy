@@ -22,23 +22,19 @@ Mobile.startApplication('C:\\Users\\skaha\\Downloads\\e-complaint-mobile-master\
 Mobile.tap(findTestObject('Object Repository/Get Answer based on the Complaint with Chat Admin/android.widget.ImageView'), 
     0)
 
-Mobile.tap(findTestObject('Object Repository/Get Answer based on the Complaint with Chat Admin/android.widget.ImageView (1)'), 
-    0)
-
 Mobile.tap(findTestObject('Object Repository/Get Answer based on the Complaint with Chat Admin/android.widget.Button'), 
     0)
 
 Mobile.tap(findTestObject('Object Repository/Get Answer based on the Complaint with Chat Admin/android.widget.Button (1)'), 
     0)
 
-Mobile.tap(findTestObject('Object Repository/Get Answer based on the Complaint with Chat Admin/android.widget.EditText'), 
-    0)
-
 Mobile.setText(findTestObject('Object Repository/Get Answer based on the Complaint with Chat Admin/android.widget.EditText'), 
-    'Halo min, kenapa status saya masih diverifikasi yah. kapan di prosesnya?', 0)
+    'Halo min, kapan complaint saya diproses?', 0)
 
 Mobile.tap(findTestObject('Object Repository/Get Answer based on the Complaint with Chat Admin/android.widget.Button (1)'), 
     0)
+
+Mobile.hideKeyboard()
 
 Mobile.closeApplication()
 
