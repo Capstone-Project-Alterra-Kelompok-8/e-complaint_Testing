@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Check dashboard summary statistic with invalid step.</description>
+   <name>Check dashboard summary statistic with invalid step</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>dd9721ad-3d0f-416d-95e4-86db5f42f323</testCaseGuid>
+</TestCaseEntity>

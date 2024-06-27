@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>input_Admin Lebak_flex-grow rounded px-4 py_c2a0ba</name>
+   <tag></tag>
+   <elementGuidId>4c36933a-9afa-4bca-b01c-6b16a0002b1e</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//input[@value='']</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>input.flex-grow.rounded.px-4.py-2.text-gray-600.font-montserrat.border-none</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:attr=[placeholder=&quot;Tambahkan komentar...&quot;i]</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>input</value>
+      <webElementGuid>775f81ee-5527-4f83-8173-1539f67bddee</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>type</name>
+      <type>Main</type>
+      <value>text</value>
+      <webElementGuid>ab483841-2dc1-499b-8a05-d6da8be7e535</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>flex-grow rounded px-4 py-2 text-gray-600 font-montserrat border-none</value>
+      <webElementGuid>75931d47-20a5-4ee0-8a4e-9c38caecb157</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>placeholder</name>
+      <type>Main</type>
+      <value>Tambahkan komentar...</value>
+      <webElementGuid>ed4ffd08-9618-46e8-ac89-de30bd1d25b5</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;root&quot;)/main[1]/section[@class=&quot;flex w-full flex-col&quot;]/div[@class=&quot;bg-light-2 px-3 pb-6&quot;]/div[@class=&quot;container mt-9 lg:ml-80 lg:flex lg:gap-2 bg-gray-300 w-fit justify-between p-5 rounded-lg&quot;]/div[@class=&quot;lg:w-6/12&quot;]/form[@class=&quot;flex items-center py-6 px-7 border-t bg-white w-full&quot;]/input[@class=&quot;flex-grow rounded px-4 py-2 text-gray-600 font-montserrat border-none&quot;]</value>
+      <webElementGuid>04c89661-a417-45f3-b453-768d939f90cb</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//input[@value='']</value>
+      <webElementGuid>de1e8fd2-85e2-4f0f-bbae-19196a6376be</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='root']/main/section/div[2]/div[2]/div[2]/form/input</value>
+      <webElementGuid>ee656ffa-374f-4c5b-8a55-a85f29c3d68d</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//input</value>
+      <webElementGuid>093ffbb9-d318-4e00-b3b0-6ea7499cba24</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//input[@type = 'text' and @placeholder = 'Tambahkan komentar...']</value>
+      <webElementGuid>c47d6675-3b58-418a-aecf-84e660cbe8ba</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

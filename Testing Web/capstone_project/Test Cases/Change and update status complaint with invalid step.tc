@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Change and update status complaint with invalid step.</description>
+   <name>Change and update status complaint with invalid step</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>bd96338b-09e2-4079-8519-71f1625e618c</testCaseGuid>
+</TestCaseEntity>
