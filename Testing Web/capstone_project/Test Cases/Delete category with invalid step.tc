@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Delete category with invalid step.</description>
+   <name>Delete category with invalid step</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>d9ba6774-3e30-4389-850e-04578bde0875</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Create category with valid input credentials.</description>
+   <name>Create category with valid input</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>b23d74a2-ac25-4c1b-a364-7a2b5480cc8b</testCaseGuid>
+</TestCaseEntity>

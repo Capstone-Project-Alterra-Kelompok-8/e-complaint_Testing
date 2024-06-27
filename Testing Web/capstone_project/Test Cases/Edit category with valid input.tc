@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Edit category with valid input credential</description>
+   <name>Edit category with valid input</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>d2dabf55-a5b8-4cd5-9470-fbca1357abe2</testCaseGuid>
+</TestCaseEntity>

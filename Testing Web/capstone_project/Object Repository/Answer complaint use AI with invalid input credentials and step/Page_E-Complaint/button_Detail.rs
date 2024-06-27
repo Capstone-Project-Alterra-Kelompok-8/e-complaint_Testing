@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>button_Detail</name>
+   <tag></tag>
+   <elementGuidId>25a6a394-cec4-4582-8a17-89f329d0c67f</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='root']/main/section/div[2]/main/div/div[2]/table/tbody/tr[9]/td[8]/button</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value></value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:role=row[name=&quot;9 C-271j9ak280 20 Juni 2024 KOTA TANGERANG Keamanan public On Progress Detail&quot;i] >> internal:role=button</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>button</value>
+      <webElementGuid>792e4e74-7971-46cb-adcd-280e56b25741</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>bg-info-3 text-white px-3 py-2 rounded</value>
+      <webElementGuid>991499dd-d904-4d18-9a85-2e1352c4abab</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Detail</value>
+      <webElementGuid>aba4c45c-3fda-46ac-a043-17a1be8f2e27</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;root&quot;)/main[1]/section[@class=&quot;flex w-full flex-col&quot;]/div[@class=&quot;lg:ml-80 py-3 px-2 min-h-[80dvh] overflow-y-auto&quot;]/main[@class=&quot;container mx-auto px-4 py-4&quot;]/div[@class=&quot;MuiBox-root css-lqilb5&quot;]/div[@class=&quot;MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiTableContainer-root font-poppins css-qb8r61&quot;]/table[@class=&quot;MuiTable-root css-1owb465&quot;]/tbody[@class=&quot;MuiTableBody-root css-1xnox0e&quot;]/tr[@class=&quot;MuiTableRow-root css-1gqug66&quot;]/td[@class=&quot;MuiTableCell-root MuiTableCell-body MuiTableCell-alignCenter MuiTableCell-sizeMedium css-1a4b21o&quot;]/button[@class=&quot;bg-info-3 text-white px-3 py-2 rounded&quot;]</value>
+      <webElementGuid>d68b53df-27fa-4f61-b28a-da6a8b67dd28</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='root']/main/section/div[2]/main/div/div[2]/table/tbody/tr[9]/td[8]/button</value>
+      <webElementGuid>3750803a-954f-4ca6-973f-ca264d9c651e</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='On Progress'])[2]/following::button[1]</value>
+      <webElementGuid>b8cf01ab-3ceb-4194-983d-26baa4b0784b</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='public'])[8]/following::button[1]</value>
+      <webElementGuid>a8a35ff0-8de3-494e-b61a-fa136c900722</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='C-81jas92581'])[1]/preceding::button[1]</value>
+      <webElementGuid>fa76e426-a117-4755-8b1d-e085678e6bf1</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='KOTA SERANG'])[1]/preceding::button[1]</value>
+      <webElementGuid>8f24a62f-c025-4fc6-bc79-4e5dd18864d9</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//tr[9]/td[8]/button</value>
+      <webElementGuid>d7c3dcce-60e3-4c09-9c88-79ce0d01bb32</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//button[(text() = 'Detail' or . = 'Detail')]</value>
+      <webElementGuid>f7d6cf18-5af9-4cf9-a5c2-6698a0a7a64b</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

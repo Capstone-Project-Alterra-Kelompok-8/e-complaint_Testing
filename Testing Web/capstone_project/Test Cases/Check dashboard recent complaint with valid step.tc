@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Check dashboard recent complaint with valid step.</description>
+   <name>Check dashboard recent complaint with valid step</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>aa08957c-5697-476e-852b-1faca5975f27</testCaseGuid>
+</TestCaseEntity>

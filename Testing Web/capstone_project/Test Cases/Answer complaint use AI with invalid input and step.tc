@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Answer complaint use AI with invalid input credentials blank field.</description>
+   <name>Answer complaint use AI with invalid input and step</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>2dd163b3-1662-4806-aeb8-6a64228676f8</testCaseGuid>
+</TestCaseEntity>

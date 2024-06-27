@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>section_Tambah BeritaDashboardComplaintChat_3fac2f</name>
+   <tag></tag>
+   <elementGuidId>67f30dec-e303-4861-af33-563717e2c6a6</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='root']/main/section</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>section.flex.w-full.flex-col</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:text=&quot;Tambah BeritaDashboardComplaintChat PageKategoriBeritaKeluarDrop image here or s&quot;i</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>section</value>
+      <webElementGuid>361be37c-f167-4dd0-8b8f-96535c3f2e1d</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>flex w-full flex-col</value>
+      <webElementGuid>ccc4b8b4-c9f5-475d-ae3a-a821aa622e8c</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Tambah BeritaDashboardComplaintChat PageKategoriBeritaKeluarDrop image here or select FileRecommended use 300 x 300 px for default themeJudul BeritaKategori BeritaPilih kategori BeritaKesehatanPendidikanKependudukanKeamananInfrastukturLingkunganTransportasiSosialKepedulianKeadilanIsi BeritaKembali ke Kelola BeritaSimpan</value>
+      <webElementGuid>500dff4f-7319-45fb-8d9e-2e6f1a65d6dd</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;root&quot;)/main[1]/section[@class=&quot;flex w-full flex-col&quot;]</value>
+      <webElementGuid>bf5925e6-13df-4307-a357-fac55432ab66</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='root']/main/section</value>
+      <webElementGuid>1e082056-f542-42f1-8797-87cc130f0355</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//section</value>
+      <webElementGuid>20e86c8d-6b5c-4176-a0bc-440dd3ef9b71</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//section[(text() = 'Tambah BeritaDashboardComplaintChat PageKategoriBeritaKeluarDrop image here or select FileRecommended use 300 x 300 px for default themeJudul BeritaKategori BeritaPilih kategori BeritaKesehatanPendidikanKependudukanKeamananInfrastukturLingkunganTransportasiSosialKepedulianKeadilanIsi BeritaKembali ke Kelola BeritaSimpan' or . = 'Tambah BeritaDashboardComplaintChat PageKategoriBeritaKeluarDrop image here or select FileRecommended use 300 x 300 px for default themeJudul BeritaKategori BeritaPilih kategori BeritaKesehatanPendidikanKependudukanKeamananInfrastukturLingkunganTransportasiSosialKepedulianKeadilanIsi BeritaKembali ke Kelola BeritaSimpan')]</value>
+      <webElementGuid>44e48b01-5c8a-40e7-83c7-1bcd7200cf77</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

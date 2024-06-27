@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>select_Pilih kategori BeritaKesehatanPendid_f551f2</name>
+   <tag></tag>
+   <elementGuidId>cf28f447-2153-418a-b0d4-a8b369f6a95f</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//select[@id='kategory']</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>#kategory</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:label=&quot;Kategori Berita&quot;i</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>select</value>
+      <webElementGuid>54123bb8-4df6-4711-81e8-0d771531281e</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>id</name>
+      <type>Main</type>
+      <value>kategory</value>
+      <webElementGuid>692a84ef-2491-4fa8-9aea-1f1e278d0147</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>p-2 border border-gray-300 rounded</value>
+      <webElementGuid>820b0a21-3a3f-4b38-83b9-2421a4a9c633</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Pilih kategori BeritaKesehatanPendidikanKependudukanKeamananInfrastukturLingkunganTransportasiSosialKepedulianKeadilan</value>
+      <webElementGuid>21bafd8f-7b19-4265-8eb2-1fd641b03806</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;kategory&quot;)</value>
+      <webElementGuid>1fa705ac-0ea6-4858-b9d1-fb230f3cc0a6</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//select[@id='kategory']</value>
+      <webElementGuid>3d552394-2d4b-4d47-9e99-21aaed6cc832</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='root']/main/section/div[2]/main/form/div/div/div[2]/div[2]/select</value>
+      <webElementGuid>35c613ca-2d3d-4df4-bd97-a8768f1eb9eb</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Kategori Berita'])[1]/following::select[1]</value>
+      <webElementGuid>963b8036-0112-4ca2-a350-2431cef5519b</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Judul Berita'])[1]/following::select[1]</value>
+      <webElementGuid>b72d3571-5d99-45f7-bb73-ade10d313eb8</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Isi Berita'])[1]/preceding::select[1]</value>
+      <webElementGuid>b3c02ead-2d3a-470f-8c59-fc79a2447816</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Kembali ke Kelola Berita'])[1]/preceding::select[1]</value>
+      <webElementGuid>2b584983-f9ea-4ed7-af0c-969acdca6d97</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//select</value>
+      <webElementGuid>40695512-a098-40f9-8820-ec6fd6a0f649</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//select[@id = 'kategory' and (text() = 'Pilih kategori BeritaKesehatanPendidikanKependudukanKeamananInfrastukturLingkunganTransportasiSosialKepedulianKeadilan' or . = 'Pilih kategori BeritaKesehatanPendidikanKependudukanKeamananInfrastukturLingkunganTransportasiSosialKepedulianKeadilan')]</value>
+      <webElementGuid>80a9b693-31f4-4df9-a90e-54f299d8e318</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>
