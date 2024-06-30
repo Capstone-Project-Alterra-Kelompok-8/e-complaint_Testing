@@ -14,7 +14,7 @@ public class DeleteCategory {
 
     @Step("I set API endpoint for delete category with valid ID")
     public String setApiDeleteCategoryEndpoint() {
-        return url + "/categories/8";
+        return url + "/categories/24";
     }
 
     @Step("I send request endpoint for delete category")

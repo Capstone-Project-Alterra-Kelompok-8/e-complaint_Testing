@@ -26,8 +26,8 @@ public class UpdateCategory {
         SerenityRest.given().header("Authorization", "Bearer " + token)
                 .header("Content-Type", "application/json")
                 .contentType(ContentType.MULTIPART)
-                .multiPart("name", "Update Category vol.1")
-                .multiPart("description", "Update vol.1")
+                .multiPart("name", "Update Category vol.2")
+                .multiPart("description", "Update vol.2")
                 .put(setApiUpdateCategory());
     }
     @Step("I should get data category that I updated")
@@ -38,8 +38,8 @@ public class UpdateCategory {
         restAssuredThat(response -> response.body("status", Matchers.equalTo(true)));
         restAssuredThat(response -> response.body("message", Matchers.equalTo("Success update category")));
         restAssuredThat(response -> response.body("'data'.'id'", Matchers.equalTo(11)));
-        restAssuredThat(response -> response.body("'data'.'name'", Matchers.equalTo("Update Category vol.1")));
-        restAssuredThat(response -> response.body("'data'.'description'", Matchers.equalTo("Update vol.1")));
+        restAssuredThat(response -> response.body("'data'.'name'", Matchers.equalTo("Update Category vol.2")));
+        restAssuredThat(response -> response.body("'data'.'description'", Matchers.equalTo("Update vol.2")));
 
         restAssuredThat(response -> response.body(matchesJsonSchema(schema)));
     }

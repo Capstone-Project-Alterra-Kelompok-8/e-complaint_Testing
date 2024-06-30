@@ -9,3 +9,4 @@ Feature: Update Profile Admin with valid credentials
     When I send request to update profile admin
     Then I receive status code 200 OK response
     And I should get the data admin that I updated
+    

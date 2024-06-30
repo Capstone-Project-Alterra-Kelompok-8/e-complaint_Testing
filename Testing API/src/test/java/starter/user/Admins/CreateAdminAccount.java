@@ -12,7 +12,7 @@ import static io.restassured.module.jsv.JsonSchemaValidator.matchesJsonSchema;
 import static net.serenitybdd.rest.SerenityRest.restAssuredThat;
 import static org.hamcrest.Matchers.notNullValue;
 
-public class CreateAdminAccount {
+public class    CreateAdminAccount {
     private static String url = "https://qe-capstone.mdrizki.my.id/api/v1";
 
     @Step("I set API endpoint for create a new admin account")
@@ -24,8 +24,8 @@ public class CreateAdminAccount {
     public void sendCreateAdminRequest() {
         JSONObject requestBody = new JSONObject();
 
-        requestBody.put("name", "testing_test");
-        requestBody.put("email", "polisi1@gmail.com");
+        requestBody.put("name", "testing_test_1");
+        requestBody.put("email", "polisi86@gmail.com");
         requestBody.put("telephone_number", "089999");
         requestBody.put("password","password");
 
@@ -44,8 +44,8 @@ public class CreateAdminAccount {
         restAssuredThat(response -> response.body("status", Matchers.equalTo(true)));
         restAssuredThat(response -> response.body("message", Matchers.equalTo("Success Create Account")));
         restAssuredThat(response -> response.body("'data'.'id'", notNullValue()));
-        restAssuredThat(response -> response.body("'data'.'name'", Matchers.equalTo("testing_test")));
-        restAssuredThat(response -> response.body("'data'.'email'", Matchers.equalTo("polisi1@gmail.com")));
+        restAssuredThat(response -> response.body("'data'.'name'", Matchers.equalTo("testing_test_1")));
+        restAssuredThat(response -> response.body("'data'.'email'", Matchers.equalTo("polisi86@gmail.com")));
         restAssuredThat(response -> response.body("'data'.'telephone_number'", Matchers.equalTo("089999")));
         restAssuredThat(response -> response.body(matchesJsonSchema(schema)));
     }
