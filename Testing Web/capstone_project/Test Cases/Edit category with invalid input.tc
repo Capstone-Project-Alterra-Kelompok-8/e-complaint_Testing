@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Edit category with invalid input credentials blank field.</description>
+   <name>Edit category with invalid input</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>36d1290b-98e1-47dc-a6ed-62c50c9a4cb4</testCaseGuid>
+</TestCaseEntity>

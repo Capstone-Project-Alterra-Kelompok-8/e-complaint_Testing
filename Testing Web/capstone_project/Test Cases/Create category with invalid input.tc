@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Create category with invalid input blank field.</description>
+   <name>Create category with invalid input</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>3540caa8-8d12-4be8-bdcf-3cdc49fc0dbe</testCaseGuid>
+</TestCaseEntity>

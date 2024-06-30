@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>button_On Progress</name>
+   <tag></tag>
+   <elementGuidId>f5e525e5-8d6a-45ab-b386-6f2f32183bbe</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='root']/main/main/section/div[2]/main/section/section/div[2]/button</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>button.text-main-darker</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:role=button[name=&quot;On Progress&quot;i]</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>button</value>
+      <webElementGuid>09e187c7-ed5b-48de-95cf-a04c46a6ff09</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>text-main-darker</value>
+      <webElementGuid>ea2f304a-3ac7-4111-abf9-1e2e873e99d0</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>On Progress</value>
+      <webElementGuid>9a585b7b-c2ea-4ea3-8b8c-d328c35dcc62</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;root&quot;)/main[1]/main[1]/section[@class=&quot;flex w-full flex-col&quot;]/div[@class=&quot;min-h-[80dvh] max-h-max overflow-y-auto bg-light-2&quot;]/main[@class=&quot;lg:ml-80 py-3 pb-10 px-2 lg:pr-7&quot;]/section[@class=&quot;flex w-full flex-col&quot;]/section[@class=&quot;flex md:flex-row flex-col gap-3 mt-5 w-full&quot;]/div[@class=&quot;font-poppins bg-white border border-gray-300 rounded-lg px-4 py-2 flex justify-center items-center&quot;]/button[@class=&quot;text-main-darker&quot;]</value>
+      <webElementGuid>6e6aef40-ccba-4f91-8956-876fe49fd9b2</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='root']/main/main/section/div[2]/main/section/section/div[2]/button</value>
+      <webElementGuid>88e20b55-d292-4875-b374-abbc35c00ebe</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Kelola Complaint / Detail'])[1]/following::button[1]</value>
+      <webElementGuid>82fb6547-8269-4aa9-bc14-8549aef6b6c5</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Keluar'])[1]/following::button[1]</value>
+      <webElementGuid>e44a8220-1a62-4c24-aa22-9369cc6a9a7e</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Hapus'])[1]/preceding::button[1]</value>
+      <webElementGuid>38ca399f-c5a6-4004-97e5-0ef8f71dff10</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Previous'])[1]/preceding::button[3]</value>
+      <webElementGuid>755d250e-b236-43c8-a385-995480bac6cb</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='On Progress']/parent::*</value>
+      <webElementGuid>8b6693d1-d40c-43ad-98f2-5feb83a4240a</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[2]/button</value>
+      <webElementGuid>80eeea90-6904-491b-af99-41961476cd9c</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//button[(text() = 'On Progress' or . = 'On Progress')]</value>
+      <webElementGuid>0fb91e32-9f6c-40f8-af4d-5170566817bf</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

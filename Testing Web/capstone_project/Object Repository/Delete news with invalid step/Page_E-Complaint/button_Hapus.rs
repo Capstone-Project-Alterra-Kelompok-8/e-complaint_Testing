@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>button_Hapus</name>
+   <tag></tag>
+   <elementGuidId>9ba55a3e-2af8-432a-8452-a9862ed1d514</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='root']/main/section/div[2]/div/div[2]/div[2]/div/div/div[2]/div/button[2]</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value></value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:role=button[name=&quot;Hapus&quot;i] >> nth=0</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>button</value>
+      <webElementGuid>6386a788-548b-49ba-b18b-60d7dea422db</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>bg-error-3 text-white px-6 py-2.5 rounded shadow</value>
+      <webElementGuid>7881baff-9aa3-4469-8831-681053ef158e</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Hapus</value>
+      <webElementGuid>7e17325d-28ba-40d5-8d3a-f4cce73b3705</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;root&quot;)/main[1]/section[@class=&quot;flex w-full flex-col&quot;]/div[@class=&quot;flex-grow lg:ml-[287px] min-h-[80dvh] overflow-y-auto&quot;]/div[@class=&quot;bg-light-2 px-8&quot;]/div[@class=&quot;container mt-9 w-full bg-gray-300 justify-between px-5 pt-5 rounded-lg min-h-[70vh]&quot;]/div[@class=&quot;container w-full flex flex-wrap gap-2&quot;]/div[1]/div[@class=&quot;lg:w-[486px] h-auto px-5 py-8 bg-slate-50 rounded-2xl flex flex-col shadow&quot;]/div[@class=&quot;flex gap-6 mt-auto items-center justify-between&quot;]/div[@class=&quot;flex gap-6&quot;]/button[@class=&quot;bg-error-3 text-white px-6 py-2.5 rounded shadow&quot;]</value>
+      <webElementGuid>95360f4b-4ebc-4b32-a127-096c99d57764</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='root']/main/section/div[2]/div/div[2]/div[2]/div/div/div[2]/div/button[2]</value>
+      <webElementGuid>ad04800c-44dc-4532-be42-03380668356f</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Detail'])[1]/following::button[1]</value>
+      <webElementGuid>d9a3d334-8f09-4b9d-9881-93a100adb149</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='furniture gratis nih.'])[1]/following::button[2]</value>
+      <webElementGuid>4a421133-978e-4916-9947-d2c07b316c66</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='BPJN Banten Kerjakan 10 Ruas Jalan Daerah Melalui Inpres Pada 2023'])[1]/preceding::button[1]</value>
+      <webElementGuid>1188d5ef-ec71-493d-b244-a29386bde0fe</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Detail'])[2]/preceding::button[1]</value>
+      <webElementGuid>871646e2-b019-4721-b5b7-8a068e5d4af3</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='Hapus']/parent::*</value>
+      <webElementGuid>7402d9fe-7887-4d36-835a-5d1d41879d61</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//button[2]</value>
+      <webElementGuid>df25d7b7-d2a1-4c36-b44d-616dee40f3b0</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//button[(text() = 'Hapus' or . = 'Hapus')]</value>
+      <webElementGuid>2a931c0a-d322-478a-84ce-56f096c1d1c1</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

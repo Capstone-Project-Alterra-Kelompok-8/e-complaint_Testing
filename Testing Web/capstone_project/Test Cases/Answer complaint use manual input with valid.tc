@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Answer complaint use manual input with valid credentials and step.</description>
+   <name>Answer complaint use manual input with valid</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>b3036b96-3680-4aed-980c-48587e071dc6</testCaseGuid>
+</TestCaseEntity>

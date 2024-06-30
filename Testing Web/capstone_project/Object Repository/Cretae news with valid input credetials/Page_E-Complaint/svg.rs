@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>svg</name>
+   <tag></tag>
+   <elementGuidId>03718dbc-9e38-4b75-a557-c44dfd88bce2</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>(.//*[normalize-space(text()) and normalize-space(.)='Keluar'])[1]/following::*[name()='svg'][1]</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>div.flex.flex-col.items-center.justify-center.pb-6.pt-5 > svg</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>[data-testid=&quot;flowbite-label&quot;] >> internal:role=img</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>svg</value>
+      <webElementGuid>988fc8cf-8e0e-4c0b-a835-451c704bb406</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>width</name>
+      <type>Main</type>
+      <value>27</value>
+      <webElementGuid>2c36813a-a90b-415e-abd1-6fd87bf3ff13</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>height</name>
+      <type>Main</type>
+      <value>27</value>
+      <webElementGuid>53c4fc71-aba8-4d2f-bd1a-1d9a2cbfe5a8</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>viewBox</name>
+      <type>Main</type>
+      <value>0 0 27 27</value>
+      <webElementGuid>c8c51ee5-7d90-40dc-82f7-f99d0d502286</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>fill</name>
+      <type>Main</type>
+      <value>none</value>
+      <webElementGuid>d0d5e1a0-7077-4e89-bc92-78d8ee8bec94</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xmlns</name>
+      <type>Main</type>
+      <value>http://www.w3.org/2000/svg</value>
+      <webElementGuid>403bef55-2652-4e6f-96f4-f68135933754</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;root&quot;)/main[1]/section[@class=&quot;flex w-full flex-col&quot;]/div[@class=&quot;lg:ml-80 py-3 px-2 min-h-[80dvh] overflow-y-auto&quot;]/main[1]/form[1]/div[@class=&quot;flex flex-col space-y-4&quot;]/div[@class=&quot;flex items-start space-x-4&quot;]/div[@class=&quot;flex w-1/2 items-center justify-center&quot;]/label[@class=&quot;text-sm font-medium text-gray-900 dark:text-white flex h-64 w-full cursor-pointer flex-col items-center justify-center rounded-lg border-2 border-dashed border-[#D50000] bg-gray-50 hover:bg-gray-100 dark:border-gray-600 dark:bg-gray-700 dark:hover:border-gray-500 dark:hover:bg-gray-600&quot;]/div[@class=&quot;flex flex-col items-center justify-center pb-6 pt-5&quot;]/svg[1]</value>
+      <webElementGuid>ae543e91-c838-42f2-a647-d2b0e73f32db</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Keluar'])[1]/following::*[name()='svg'][1]</value>
+      <webElementGuid>95c02890-d2ff-4611-b4fa-69c6060068e6</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Berita'])[1]/following::*[name()='svg'][2]</value>
+      <webElementGuid>eaed55d0-47b9-4434-a769-4def43b94500</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Judul Berita'])[1]/preceding::*[name()='svg'][1]</value>
+      <webElementGuid>08bca084-782e-45f8-9f92-ca8ed1aa9cc5</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Kategori Berita'])[1]/preceding::*[name()='svg'][1]</value>
+      <webElementGuid>e4fffac8-93c5-4834-9ea8-6218553322a8</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

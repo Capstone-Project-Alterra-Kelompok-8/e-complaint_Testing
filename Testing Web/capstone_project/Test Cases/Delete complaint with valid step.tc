@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Delete complaint with valid step.</description>
+   <name>Delete complaint with valid step</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>cc03c1cf-e8a4-4a33-8286-4f741b843516</testCaseGuid>
+</TestCaseEntity>

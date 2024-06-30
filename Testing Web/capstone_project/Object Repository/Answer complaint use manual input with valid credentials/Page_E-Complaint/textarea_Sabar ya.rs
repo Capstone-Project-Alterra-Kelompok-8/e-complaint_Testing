@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>textarea_Sabar ya</name>
+   <tag></tag>
+   <elementGuidId>8749f1df-35c6-46a0-b64f-fa640a238c28</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='root']/main/main/section/div[2]/main/section[3]/div[2]/div[2]/textarea</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>textarea.w-full.mt-5.border.border-gray-300.rounded.p-2.min-h-28</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:text=&quot;Sabar ya&quot;s</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>textarea</value>
+      <webElementGuid>423a75bf-0413-4160-bf7c-2431290cb47b</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>w-full mt-5 border border-gray-300 rounded p-2 min-h-28</value>
+      <webElementGuid>f11e6ef1-82b0-4d86-8970-6465186d87a9</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>cols</name>
+      <type>Main</type>
+      <value>30</value>
+      <webElementGuid>0afb60a2-b556-45ef-a25f-2265c94709b6</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Sabar ya</value>
+      <webElementGuid>31c25d96-74fe-49d8-852c-4879cfb4ce75</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;root&quot;)/main[1]/main[1]/section[@class=&quot;flex w-full flex-col&quot;]/div[@class=&quot;min-h-[80dvh] max-h-max overflow-y-auto bg-light-2&quot;]/main[@class=&quot;lg:ml-80 py-3 pb-10 px-2 lg:pr-7&quot;]/section[@class=&quot;flex flex-col lg:flex-row gap-4 mt-6 w-full&quot;]/div[@class=&quot;bg-white w-full rounded-2xl py-4 px-5 flex flex-col gap-4&quot;]/div[@class=&quot;flex flex-col w-full&quot;]/textarea[@class=&quot;w-full mt-5 border border-gray-300 rounded p-2 min-h-28&quot;]</value>
+      <webElementGuid>94cbf657-701f-4167-823b-1041b8222f35</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='root']/main/main/section/div[2]/main/section[3]/div[2]/div[2]/textarea</value>
+      <webElementGuid>9900b449-f70e-4171-a494-00ab10c287e7</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Admin Lebak'])[4]/following::textarea[1]</value>
+      <webElementGuid>48b25ec6-f3b1-41b9-95a7-ede9f1d74ef9</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Kirim Diskusi'])[1]/preceding::textarea[1]</value>
+      <webElementGuid>23230de7-a88e-444f-b670-e39b7231bd02</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='Sabar ya']/parent::*</value>
+      <webElementGuid>ea13c873-98d9-4abf-bcac-2cb342b29d8c</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//textarea</value>
+      <webElementGuid>acb06962-d532-4e4f-930a-e7497b905d43</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//textarea[(text() = 'Sabar ya' or . = 'Sabar ya')]</value>
+      <webElementGuid>fb8c8d3f-e0c5-42ff-8dc3-837098a4365b</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

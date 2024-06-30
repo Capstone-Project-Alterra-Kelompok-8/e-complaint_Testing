@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>button_Detail</name>
+   <tag></tag>
+   <elementGuidId>1606c30b-bea2-45d4-b836-963af899507d</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='root']/main/section/div[2]/div/div[2]/div[2]/div[2]/div/div[2]/div/button</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value></value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:role=button[name=&quot;Detail&quot;i] >> nth=1</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>button</value>
+      <webElementGuid>5f5f3860-44b6-41f8-acc5-027b25d2a508</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>bg-info-3 text-white px-6 py-2.5 rounded shadow</value>
+      <webElementGuid>faa2bdcc-886a-4224-ac6a-17b948476ff6</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Detail</value>
+      <webElementGuid>d302345d-8e4b-4d12-bacd-fe03028f653b</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;root&quot;)/main[1]/section[@class=&quot;flex w-full flex-col&quot;]/div[@class=&quot;flex-grow lg:ml-[287px] min-h-[80dvh] overflow-y-auto&quot;]/div[@class=&quot;bg-light-2 px-8&quot;]/div[@class=&quot;container mt-9 w-full bg-gray-300 justify-between px-5 pt-5 rounded-lg min-h-[70vh]&quot;]/div[@class=&quot;container w-full flex flex-wrap gap-2&quot;]/div[2]/div[@class=&quot;lg:w-[486px] h-auto px-5 py-8 bg-slate-50 rounded-2xl flex flex-col shadow&quot;]/div[@class=&quot;flex gap-6 mt-auto items-center justify-between&quot;]/div[@class=&quot;flex gap-6&quot;]/button[@class=&quot;bg-info-3 text-white px-6 py-2.5 rounded shadow&quot;]</value>
+      <webElementGuid>d93f35f2-7063-4570-a9f9-2256dcafb7ab</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='root']/main/section/div[2]/div/div[2]/div[2]/div[2]/div/div[2]/div/button</value>
+      <webElementGuid>f6ca937a-3c18-453b-b82b-52903a641633</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Perbaikan Fasilitas Pendidikan di SMA Negeri 1 Cilegon Menjawab Aspirasi Masyarakat'])[1]/following::button[1]</value>
+      <webElementGuid>2ab194c6-587b-4048-9602-6406749f6b1c</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Hapus'])[1]/following::button[1]</value>
+      <webElementGuid>3a790035-60f9-4add-b8e1-cc7b2c013133</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Hapus'])[2]/preceding::button[1]</value>
+      <webElementGuid>d170f7d9-e985-45d1-870b-b95a0d569bd1</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Upaya Peningkatan Keamanan di Kota Tangerang Mendapat Dukungan Luas'])[1]/preceding::button[2]</value>
+      <webElementGuid>33951f95-de85-415a-880c-44e09c3edb9e</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[2]/div[2]/div/div[2]/div/button</value>
+      <webElementGuid>228356b3-fc70-46fe-9392-de2c0d5fae71</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//button[(text() = 'Detail' or . = 'Detail')]</value>
+      <webElementGuid>0405f482-972f-4fd2-be39-15b051c7fd10</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

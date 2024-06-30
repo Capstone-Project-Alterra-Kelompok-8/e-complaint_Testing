@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>p_Baik kak</name>
+   <tag></tag>
+   <elementGuidId>6aa2cfbc-fec8-4310-8f5f-64a12d5c7cbd</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='root']/main/section/div[2]/div[2]/div[2]/div/div[2]/div/p</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>p.text-right</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:text=&quot;Baik kak&quot;i</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>p</value>
+      <webElementGuid>33d792db-7142-47a4-a94e-00859241feb1</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>text-right</value>
+      <webElementGuid>52e65be3-801f-415c-9071-6ce0b6543127</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Baik kak</value>
+      <webElementGuid>9b5f07a7-6e82-47f2-a587-a56f42b93996</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;root&quot;)/main[1]/section[@class=&quot;flex w-full flex-col&quot;]/div[@class=&quot;bg-light-2 px-3 pb-6&quot;]/div[@class=&quot;container mt-9 lg:ml-80 lg:flex lg:gap-2 bg-gray-300 w-fit justify-between p-5 rounded-lg&quot;]/div[@class=&quot;lg:w-6/12&quot;]/div[@class=&quot;bg-white rounded-t-2xl rounded max-h-[500px] overflow-y-auto&quot;]/div[@class=&quot;flex items-start p-4 border-b font-montserrat justify-end&quot;]/div[@class=&quot;flex-grow&quot;]/p[@class=&quot;text-right&quot;]</value>
+      <webElementGuid>4d577f18-3a40-4d71-a4df-b1cb6809f186</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='root']/main/section/div[2]/div[2]/div[2]/div/div[2]/div/p</value>
+      <webElementGuid>a10ec4cd-c2e3-4d8f-ae43-a3d721f10e53</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Admin Lebak'])[2]/following::p[1]</value>
+      <webElementGuid>981e9127-8b54-4384-b1fe-47c569af27c0</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Hapus'])[2]/following::p[1]</value>
+      <webElementGuid>b62f1196-52d1-41d9-9d72-c35d73f49858</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='Baik kak']/parent::*</value>
+      <webElementGuid>c95b4221-5c83-4689-8845-699ed4cecbbb</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[2]/div/p</value>
+      <webElementGuid>b879677e-cfbe-4ebf-ba0f-249900682f76</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//p[(text() = 'Baik kak' or . = 'Baik kak')]</value>
+      <webElementGuid>5011d599-f6bc-467b-866c-a485d6513c67</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

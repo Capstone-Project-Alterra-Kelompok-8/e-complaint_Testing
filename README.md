@@ -15,7 +15,7 @@ Aplikasi akan digunakan oleh pengguna (end user), admin, dan juga superadmin. En
 - Qase.io (Test Case Management Tools)
 
 ## Link
-- Link Test Case : (On Progress)
+- Link Test Case : [Qase.io](https://app.qase.io/projects?status=%5B%22active%22%5D)
 - Link MVP : [Key Activity QE](https://docs.google.com/presentation/d/1QGs-lh4m4XC09Dyyr9_ZKNnzlufvwhurtaRPEBWHqjw/edit#slide=id.g1fd8d527276_0_91)
-- Link Repo CI/CD :
-- Link PPT :
+- Link Repo CI/CD : https://github.com/Capstone-Project-Alterra-Kelompok-8/CI_CD_TestingAPI.git
+- Link PPT : [Canva](https://www.canva.com/design/DAGJTbooaeQ/6Wyc4qQhe-VMDsYTUvQeDA/edit?utm_content=DAGJTbooaeQ&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)

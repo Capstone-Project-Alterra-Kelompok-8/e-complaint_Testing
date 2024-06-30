@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Delete news with invalid step.</description>
+   <name>Delete news with invalid step</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>5c3eb852-0aef-481f-92f3-d3551f6b0365</testCaseGuid>
+</TestCaseEntity>
